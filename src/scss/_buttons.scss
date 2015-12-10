@@ -1,0 +1,276 @@
+/**
+ * Buttons
+ */
+
+// reset default buttons
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+
+// BUTTONS
+.button {
+  background-color: $button-color;
+  border: 1px solid $button-border-color;
+  border-radius: 999px;
+  color: $text-color;
+  display: inline-block;
+  font-family: $basefont;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .2s ease-in-out;
+  white-space: nowrap;
+
+  &:focus {
+    color: $text-color;
+  }
+
+  &:hover {
+    color: $text-color;
+    cursor: pointer;
+    opacity: .8;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $text-color;
+    opacity: 1;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // Sizes
+  &.button-big {
+    font-size: 16px;
+    padding: 10px 30px;
+
+    @include breakpoint(bp-large) {
+      padding: 10px 40px;
+    }
+  }
+
+  &.button-small {
+    font-size: 11px;
+    line-height: 14px;
+    padding: 6px 20px;
+  }
+
+  &.button-huge {
+    font-size: 16px;
+    padding: 15px 30px;
+
+    @include breakpoint(bp-large) {
+      font-size: 18px;
+      padding: 18px 50px;
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  &.button-large {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    width: 100%;
+  }
+
+  // colors
+  &.button-primary {
+    background-color: $brand-primary;
+    border: 1px solid $brand-primary;
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &.button-secondary {
+    background-color: $brand-secondary;
+    border: 1px solid $brand-secondary;
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &.button-transparent {
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+
+  &.button-white {
+    background-color: $white;
+    border: 1px solid $white;
+    color: $brand-primary;
+  }
+
+  &.button-green {
+    background-color: $color-success;
+    border-color: $color-success;
+    color: $white;
+  }
+
+  &.button-red {
+    background-color: $color-error;
+    border-color: $color-error;
+    color: $white;
+  }
+
+  // Types
+  &.button-outlined {
+    background-color: transparent;
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+  }
+
+  &.button-disabled {
+    cursor: default;
+    opacity: .4;
+  }
+
+  &.button-only-icon {
+    height: 43px;
+    padding: 0;
+    width: 43px;
+
+    i {
+      margin: 0;
+    }
+  }
+
+  &.button-selected {
+    background-color:  $brand-primary;
+    border: 1px solid $brand-primary;
+    color: $white;
+  }
+
+  &.button-google {
+    background-color: $googleplus;
+    border-color: transparent;
+    color: $white;
+  }
+
+  // icons on buttons
+  i {
+    bottom: -2px;
+    font-size: 12px;
+    margin-left: .8em;
+    margin-right: .8em;
+    position: relative;
+    transition: all .3s ease;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &::before {
+      float: left;
+    }
+
+
+  }
+}
+
+.button-link {
+  color: $brand-primary;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  i {
+    font-size: 18px;
+    line-height: 14px;
+    margin-bottom: -2px;
+    margin-left: 4px;
+    margin-right: 8px;
+    transition: all .3s ease;
+
+    &::before {
+      float: left;
+    }
+  }
+  // (animation rotating icon)
+  &.button-link-rotated {
+    i {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+// BUTTON GROUP
+.button-group {
+  white-space: nowrap;
+
+  a,
+  .button {
+    border-radius: 0;
+    border-right: 0;
+    display: inline-block;
+    margin: 0;
+  }
+
+  a:first-child,
+  .button:first-child {
+    border-bottom-left-radius: 99px;
+    border-top-left-radius: 99px;
+  }
+
+  a:last-child,
+  .button:last-child {
+    border-bottom-right-radius: 99px;
+    border-top-right-radius: 99px;
+  }
+}
+
+// Buttons in tables
+table .button {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+// dashed horizontal button
+.add-new-horizontal {
+  border: 1px dashed $brand-primary;
+  color: $brand-primary;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+// circle buttons
+a.button-circle {
+  color: $text-grey;
+
+  .fa {
+    border: 1px dashed $text-grey;
+    border-radius: 999px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+  }
+}

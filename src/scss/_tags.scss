@@ -1,0 +1,70 @@
+/**
+ * Tags
+ */
+
+.tags {
+  @extend %clearfix;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 25px 10px 0;
+  }
+
+  .tag {
+    background-color: $tag-bg;
+    border-radius: $radius 0 0 $radius;
+    color: $white;
+    display: inline-block;
+    float: left;
+    line-height: 34px;
+    padding: 0 10px;
+    position: relative;
+
+    //triangle arrow
+    &::before {
+      border-bottom: 17px solid transparent;
+      border-left: 10px solid $tag-bg;
+      border-top: 17px solid transparent;
+      content: '';
+      height: 0;
+      position: absolute;
+      right: -10px;
+      top: 0;
+      width: 0;
+    }
+
+    // bullet
+    &::after {
+      background: $tag-bullet;
+      border-radius: 6px;
+      content: '';
+      float: left;
+      height: 5px;
+      position: absolute;
+      right: -3px;
+      top: 14px;
+      width: 5px;
+    }
+  }
+
+  a.tag {
+    color: $white;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+      background-color: lighten($tag-bg, 10%);
+      text-decoration: none;
+      &::before {
+        border-left: 10px solid lighten($tag-bg, 10%);
+      }
+    }
+  }
+}
+
+

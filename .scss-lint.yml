@@ -1,0 +1,160 @@
+# http://sass-guidelin.es/es/
+# For SCSS-Lint v0.32.0
+
+linters:
+
+  BangFormat:
+    enabled: true
+    space_before_bang: true
+    space_after_bang: false
+
+  BorderZero:
+    enabled: true
+
+  ColorVariable:
+    enabled: true
+
+  Comment:
+    enabled: false
+
+  DebugStatement:
+    enabled: true
+
+  DeclarationOrder:
+    enabled: true
+
+  DuplicateProperty:
+    enabled: false
+
+  ElsePlacement:
+    enabled: true
+    style: same_line
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+    ignore_single_line_blocks: true
+
+  EmptyRule:
+    enabled: true
+
+  FinalNewline:
+    enabled: true
+    present: true
+
+  HexLength:
+    enabled: true
+    style: long
+
+  HexNotation:
+    enabled: true
+    style: lowercase
+
+  HexValidation:
+    enabled: true
+
+  IdSelector:
+    enabled: true
+
+  ImportantRule:
+    enabled: true
+
+  ImportPath:
+    enabled: true
+    leading_underscore: false
+    filename_extension: true
+
+  Indentation:
+    enabled: true
+    character: space
+    width: 2
+
+  LeadingZero:
+    enabled: true
+    style: exclude_zero
+
+  MergeableSelector:
+    enabled: true
+
+  NameFormat:
+    enabled: true
+    convention: hyphenated_lowercase
+    allow_leading_underscore: true
+
+  NestingDepth:
+    enabled: true
+    max_depth: 4
+
+  PlaceholderInExtend:
+    enabled: true
+
+  PropertySortOrder:
+    enabled: true
+
+  PropertySpelling:
+    enabled: true
+    extra_properties: []
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 3
+
+  SelectorFormat:
+    enabled: true
+    class_convention: '^(?:[a-zA-Z0-9]*)(?:\-[a-z][a-zA-Z0-9]*)*?(?:\-\-[a-z][a-zA-Z0-9]*)?$'
+
+  Shorthand:
+    enabled: true
+
+  SingleLinePerProperty:
+    enabled: true
+    allow_single_line_rule_sets: false
+
+  SingleLinePerSelector:
+    enabled: true
+
+  SpaceAfterComma:
+    enabled: true
+
+  SpaceAfterPropertyColon:
+    enabled: true
+    style: at_least_one_space
+
+  SpaceAfterPropertyName:
+    enabled: true
+
+  SpaceBeforeBrace:
+    enabled: true
+    style: space
+    allow_single_line_padding: true
+
+  SpaceBetweenParens:
+    enabled: true
+    spaces: 0
+
+  StringQuotes:
+    enabled: true
+    style: single_quotes
+
+  TrailingSemicolon:
+    enabled: true
+
+  TrailingZero:
+    enabled: true
+
+  UnnecessaryMantissa:
+    enabled: true
+
+  UnnecessaryParentReference:
+    enabled: true
+
+  UrlFormat:
+    enabled: false
+
+  UrlQuotes:
+    enabled: false
+
+  VendorPrefixes:
+    enabled: true
+
+  ZeroUnit:
+    enabled: true

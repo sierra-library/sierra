@@ -1,0 +1,43 @@
+/**
+ *  Main rules
+ */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: $body-bg;
+  font-weight: normal;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+p {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+strong {
+  font-weight: 600;
+}
+
+ul {
+  margin-bottom: 1em;
+}
+
+li {
+  list-style: none;
+  margin-bottom: .5em;
+}
+
+pre {
+  margin-bottom: 2em !important;
+}

@@ -1,0 +1,215 @@
+
+/**
+ *  $LAYOUT
+ */
+
+$gutterwidth:             24px;
+$pagemaxwidth:            1380px;
+$radius:                  3px;
+$border-box:              true;
+
+
+/**
+ *  $FONT
+ */
+
+$basefont: 'Lato', sans-serif;
+$codefont: "Courier New", monospace;
+
+$font-size-base:        14px;
+$font-size-base-medium: 15px;
+$font-size-base-large:  15px;
+
+$line-height-base:      1.5em;
+
+
+/**
+ *  $COLOURS
+ */
+
+// white
+$white:					#ffffff;
+
+// Brand colours
+$brand-primary:         #1abc9c;
+$brand-secondary:       #9b59b6;
+$brand-dark:			#18232f;
+
+$deep-blue:				#171722;
+$color-success:         #4caf50;
+$color-info:            #5bc0de;
+$color-warning:         #f0ad4e;
+$color-error:           #e74c3c;
+
+// Body background
+$body-bg:               #2c3e50;
+
+// Button
+$button-color:			#64829f; // default color for buttons
+$button-border-color:	$body-bg;
+
+// Tags
+$tag-bg:				#34495e;
+$tag-bullet:			$body-bg;
+
+// Rating
+$rating-bg:				#34495e;
+
+// Grey :              	#dee6ea;
+$grey-light:        	#edf3f6;
+$grey-soft:        		#edf3f6;
+$grey-dark:				#969da6;
+$background-grey:		$grey-soft;
+$border-color:			#465f78;
+
+// Tipography colors
+$text-dark:             #3e4145; 	// body text
+$text-color:            $white;
+$text-grey:	            #969da6;
+
+// Headings
+$heading-font: 			$basefont;
+$heading-weight:		300;
+$heading-case:			none;
+
+// Shadows
+$shadow-color:			rgba(0, 0, 0, .2);
+$box-shadow:			0 0 5px $shadow-color;
+
+// Forms
+$form-bg-color:			#34495e;
+$form-text-color:		$white;
+
+// Tables
+$table-bg-color:		#34495e;
+$table-header-bg-color:	$body-bg;
+$table-text-color:		$white;
+
+
+// Links
+
+// $linkcolor         : $brand-primary;
+// $linkcolorhover    : darken($linkcolor, 10);
+// $linkcolorvisited  : $brand-primary;
+// $linkcolorfocus    : darken($linkcolorvisited, 10);
+
+
+// Social colors
+
+$fb: rgb(59, 89, 182);
+$tw: rgb(64, 153, 255);
+$googleplus: rgb(215, 61, 50);
+$pinterest: rgb(203, 32, 39);
+$skype: rgb(18, 165, 244);
+$spotify: rgb(129, 183, 26);
+$instagram: #4e433c;
+$tumblr: #2b4964;
+$vimeo: #86b32d;
+$soundcloud: #f76600;
+$youtube: #ff3333;
+$linkedin: #4875b4;
+$flickr: #fe0883;
+$foursquare: #8fd400;
+
+
+// Rating colors
+$rating1: 		#dd2c00;
+$rating2: 		#ff5722;
+$rating3: 		#ff9800;
+$rating4: 		#ffc107;
+$rating5: 		#f5dc00;
+$rating6: 		#cddc39;
+$rating7: 		#8bc34a;
+$rating8: 		#4caf50;
+$rating9: 		#43a047;
+$rating10: 		#388e3c;
+
+
+
+
+/**
+ *  $MEDIA QUERIES BREAKPOINTS
+ */
+
+// Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+$screen-xs:                  480px;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1280px;
+$screen-lg-min:              $screen-lg;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+
+
+
+/**
+ *  $GRID SYSTEM
+ */
+
+$flexboxgrid: false; // https://github.com/kristoferjoseph/flexboxgrid
+
+
+/**
+ *  $BOOTSTRAP GRID SYSTEM CONFIG
+ */
+
+// Number of columns in the grid.
+$grid-columns:              12;
+
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px;
+
+// Navbar collapse (point at which the navbar becomes uncollapsed.)
+$grid-float-breakpoint:     $screen-sm-min;
+
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+
+/**
+ *  $CONTAINER SIZES
+ */
+
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             auto; // (720px + $grid-gutter-width);
+//** For `$screen-sm-min` and up.
+$container-sm:                 auto; // $container-tablet;
+
+// Medium screen / desktop
+$container-desktop:            auto; // (940px + $grid-gutter-width);
+//** For `$screen-md-min` and up.
+$container-md:                 auto; // $container-desktop;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1140px + $grid-gutter-width);
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop;

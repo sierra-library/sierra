@@ -1,0 +1,86 @@
+/**
+ * $LAYOUT
+ */
+.main-wrap {
+  overflow: hidden;
+  position: relative;
+  transition: padding .25s ease-in-out;
+
+  @include breakpoint(bp-huge) {
+    padding-left: 250px;
+  }
+}
+
+.main-content {
+  float: right;
+  margin-left: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    clear: none;
+  }
+}
+
+// paddings on top / bottom
+.section {
+  @include clearfix();
+
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  @include breakpoint(bp-medium) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+}
+
+// paddings on sides
+.container {
+  margin: 0 auto;
+  max-width: $pagemaxwidth;
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+  width: 100%;
+
+  @include breakpoint(bp-medium) {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+}
+
+.container-small {
+  margin: 0 auto;
+  max-width: 944px;
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+
+  @include breakpoint(bp-medium) {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+}
+
+.container-xs {
+  margin: 0 auto;
+  max-width: 400px;
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+
+  @include breakpoint(bp-medium) {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+}
+
+.full-width {
+  @extend %full-width;
+}
+
+// separator
+.separator {
+  border-bottom: 1px solid $background-grey;
+}

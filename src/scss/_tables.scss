@@ -1,0 +1,285 @@
+/**
+ * Tables
+ */
+.table {
+  background-color: $table-bg-color;
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+  border-radius: $radius;
+  color: $table-text-color;
+  //font-size: 14px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+
+  th,
+  td {
+    border-bottom: 1px solid $border-color;
+    padding: 10px;
+
+    @include breakpoint(bp-large) {
+      padding: 10px 20px;
+    }
+  }
+
+  td {
+    padding: 14px;
+    position: relative;
+  }
+
+  tr {
+    border-bottom: 1px solid $border-color;
+  }
+
+
+  &.table-vertical-center td {
+    vertical-align: middle;
+  }
+
+  thead {
+    //background-color: #f2f2f2;
+  }
+
+  th {
+    background-color: $table-header-bg-color;
+    color: $text-grey;
+    font-weight: normal;
+    padding: 5px 14px;
+    white-space: nowrap;
+  }
+
+  thead {
+    border-bottom: 1px solid $border-color;
+  }
+
+  // rows with colors
+  tr.bg-primary {
+    td {
+      background-color: #ffeaef;
+    }
+    &:hover td {
+      background-color: #ffdde5!important;
+    }
+  }
+  tr.bg-secondary {
+      td {
+        background-color: #e5f9f6;
+      }
+      &:hover td {
+        background-color: #d1fef7!important;
+      }
+  }
+  // rows with clikable primary action
+  tr.row-with-primary-action {
+      cursor:pointer;
+      &:hover td {
+        background-color:#f4f8fa;
+      }
+  }
+  // row with premium info (used in mobonaut app profile)
+  tr.row-premium-info {
+      background-color: #0f243b;
+      color: $text-grey;
+
+      a {
+        color: $brand-primary;
+      }
+  }
+
+  // selectable rows in table (used in keyword and category trends)
+  tr.selectable-row {
+      cursor: pointer;
+
+      &:hover td {
+        background-color: #f4f8fa;
+      }
+
+      td:first-child {
+        padding-left: 50px;
+        position: relative;
+
+        ::after {
+          border: 1px solid #cce3e8;
+          border-radius: 2px;
+          content: '';
+          display: block;
+          height: 16px;
+          left: 20px;
+          margin-top: -8px;
+          position: absolute;
+          top: 50%;
+          width: 16px;
+        }
+    }
+
+    &.selected {
+      td {
+        background-color: $brand-primary;
+        color: $white;
+
+        a {
+          color: $white;
+        }
+
+        &:first-child {
+          ::after {
+            font-family: FontAwesome;
+            content: '\f06e';
+            border: 0;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  &.table-transparent-header {
+    background-color: transparent; 
+    border: 0;
+
+    td {
+      background-color: $table-bg-color; 
+    }
+
+    tr {
+      border: 1px solid $border-color;
+    }
+
+    thead {
+      background-color: transparent;
+
+      th {
+        background-color: transparent;
+        border: 0;
+      }
+
+      tr {
+        border: 0;
+      }
+    }
+  }
+}
+
+/**
+ * Table responsive
+ *
+ * Markup:
+ *
+    <table class="table-responsive table-break-small">
+        <tr>
+            <th>First column</th>
+            <th>Second column</th>
+            <th>Third column</th>
+        </tr>
+        <tr>
+            <td data-th="First column">Blue</td>
+            <td data-th="Second column">One</td>
+            <td data-th="Third column">My life fades</td>
+        </tr>
+        <tr>
+            <td data-th="First column">Green</td>
+            <td data-th="Second column">Two</td>
+            <td data-th="Third column">when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. </td>
+        </tr>
+        <tr>
+            <td data-th="First column">Yellow</td>
+            <td data-th="Second column">Three</td>
+            <td data-th="Third column">A whirlwind of looting, a firestorm of fear. Men began to feed on men. </td>
+        </tr>
+    </table>
+*/
+
+.table-responsive {
+
+  th {
+    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!
+  }
+
+  td {
+    display: block;
+
+    &:first-child {
+      border-top: 1px solid $border-color;
+      padding-top: 14px;
+    }
+
+    &:last-child {
+      padding-bottom: 14px;
+    }
+
+    &::before {
+      @extend .text-grey;
+      content: attr(data-th)': '; // who knew you could do this? The internet, that's who.
+      display: block;
+      font-weight: normal;
+    }
+  }
+
+  th,
+  td {
+    text-align: left;
+  }
+
+  &.table-break-medium {
+    tr {
+      border-top: 1px solid $border-color;
+    }
+
+    td {
+      @include breakpoint(bp-medium, max) {
+        border: 0;
+        padding-bottom: 0;
+      }
+
+      &::before {
+        @include breakpoint(bp-medium) {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 14px;
+      }
+    }
+
+    th,
+    td {
+
+      @include breakpoint(bp-medium) {
+        display: table-cell;
+      }
+    }
+  }
+
+  &.table-break-small {
+
+    tr {
+      border-top: 1px solid $border-color;
+    }
+
+    td {
+
+      @include breakpoint(bp-small, max) {
+        border: 0;
+        padding-bottom: 0;
+      }
+
+      &::before {
+        @include breakpoint(bp-small) {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 14px;
+      }
+    }
+
+    th,
+    td {
+      @include breakpoint(bp-small) {
+        display: table-cell;
+      }
+    }
+  }
+}

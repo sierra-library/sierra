@@ -1,0 +1,411 @@
+/**
+ * Mixins
+ */
+
+
+// Creates a wrapper for a series of columns
+// @include make-row();
+
+@mixin make-row($gutter: $grid-gutter-width) {
+  margin-left:  ($gutter / -2);
+  margin-right: ($gutter / -2);
+  @include clearfix();
+}
+
+//  Breakpoints and media queries:
+//
+//  Usage:
+//------------------------------------
+//
+//  @include breakpoint($breakpoint, $query1) {
+//   /* Styles */
+//  }
+//
+//  $breakpoint: select the device type: bp-small, bp-medium, bp-large, bp-huge. Sizes are defined in _variables.scss
+//  $query1: select min or max width
+//
+//
+//  Example;
+// ------------------------------------
+//
+//  .hello {
+//    color: red;
+//      @include breakpoint(bp-huge, min) {
+//      color:blue;
+//    }
+//  }
+//
+//
+//  Returns:
+// ------------------------------------
+//
+//  .hello { color: red; }
+//  @media (min-width: 1200px) { .hello { color:blue; } }
+//
+//  Enjoy!
+
+
+@mixin breakpoint($breakpoint, $query1: min) {
+
+  @if $breakpoint == bp-small {
+    @media (#{$query1}-width: $screen-xs-min) { @content; }
+  }@else if
+    $breakpoint == bp-medium {
+    @media (#{$query1}-width: $screen-sm-min) { @content; }
+  }@else if
+    $breakpoint == bp-large {
+    @media (#{$query1}-width: $screen-md-min) { @content; }
+  }@else if
+    $breakpoint == bp-huge {
+    @media (#{$query1}-width: $screen-lg-min) { @content; }
+  }
+
+}
+
+// Responsive visibility
+// More easily include all the states for Responsive visibility helpers.
+// [converter] $parent hack
+
+@mixin responsive-visibility($parent) {
+  #{$parent} {
+    display: block !important;
+  }
+  table#{$parent}  { display: table; }
+  tr#{$parent}     { display: table-row !important; }
+  th#{$parent},
+  td#{$parent}     { display: table-cell !important; }
+}
+
+// [converter] $parent hack
+@mixin responsive-invisibility($parent) {
+  #{$parent} {
+    display: none !important;
+  }
+}
+
+
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: ''; // 1
+    display: table; // 2
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+//   ellipsis
+//  Usage:
+//------------------------------------
+//
+//  @include ellipsis(block);
+//  or
+//  @include ellipsis();
+//
+
+@mixin ellipsis($display: inline-block) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: #{$display};
+}
+
+.ellipsis {
+  @include ellipsis();
+}
+
+@mixin scroll-list() {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin no-scroll {
+  margin-right: 0;
+  overflow: visible;
+  overflow-x: auto;
+  white-space: normal;
+}
+
+// gradients
+@mixin horizontal($startcolor : $white, $endcolor : $lightergrey) {
+  background-color: $endcolor;
+  background-image: linear-gradient(left, $startcolor, $endcolor);                           // W3C
+  background-repeat: repeat-x;
+}
+
+@mixin vertical($startcolor : $white, $endcolor:  $lightergrey) {                   // Autoprefixer no funciona aquí. Deprecated.
+  background-color: $endcolor;
+  background: linear-gradient(to bottom, $startcolor 0%, $endcolor 100%);
+}
+
+@mixin directional($startcolor : $white, $endcolor : $lightergrey, $deg : 45deg) {
+  background-color: $endcolor;
+  background-image: linear-gradient($deg, $startcolor, $endcolor);                          // W3C
+  background-repeat: repeat-x;
+}
+
+
+//  Add bottom white gradient
+//
+//   `@include bottom-gradient($height);`
+//
+//
+@mixin bottom-gradient($height: 30px) {
+  position: relative;
+&
+&  &::before {
+    background-image: -webkit-gradient (linear, right bottom, right top, from(rgba(255,255,255,1)), to(rgba(255,255,255,.2)));
+    bottom: 0;
+    content: '';
+    height: $height;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+// .bordered(COLOR, COLOR, COLOR, COLOR);
+@mixin bordered($top-color: #eee, $right-color: #eee, $bottom-color: #eee, $left-color: #eee) {
+  border-bottom: solid 1px $bottom-color;
+  border-left: solid 1px $left-color;
+  border-right: solid 1px $right-color;
+  border-top: solid 1px $top-color;
+}
+
+// .border-radius(VALUE,VALUE,VALUE,VALUE);
+@mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+  background-clip: padding-box;
+  border-bottom-left-radius: $bottomleft;
+  border-bottom-right-radius: $bottomright;
+  border-top-left-radius: $topleft;
+  border-top-right-radius: $topright;
+}
+
+// .box-shadow(HORIZONTAL VERTICAL BLUR COLOR))
+@mixin box-shadow ($h: 10px , $v: 10px , $b: 0 , $s: 0 , $c: #000000) {
+  box-shadow: $h $v $b $s $c;
+}
+
+
+// .drop-shadow(HORIZONTAL, VERTICAL, BLUR, ALPHA);
+@mixin drop-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: .1) {
+  box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+}
+
+// .opacity(VALUE);
+@mixin opacity($opacity : .5) {
+  opacity: $opacity;
+}
+
+// .rotate(VALUEdeg);
+@mixin rotate($deg) {
+  transform: rotate($deg);
+}
+
+// .scale(VALUE);
+@mixin scale($ratio) {
+  transform: scale($ratio);
+}
+
+// .skew(VALUE, VALUE);
+@mixin skew($x: 0, $y: 0) {
+  transform: skew($x, $y);
+}
+
+// .transition(PROPERTY DURATION DELAY(OPTIONAL) TIMING-FINCTION);
+@mixin transition($transition) {
+  transition: $transition;
+}
+
+// .translate(VALUE, VALUE)
+@mixin translate($x: 0, $y: 0) {
+  transform: translate($x, $y);
+}
+
+@mixin translate3d($x: 0, $y: 0, $z: 0) {
+  transform: translate($x, $y, $z);
+}
+
+// .background-alpha(VALUE VALUE);
+@mixin background-alpha($color: $white, $alpha: 1) {
+  background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
+}
+
+// .background-size(VALUE VALUE);
+@mixin background-size($size) {
+  background-size: $size;
+}
+
+// .background-clip(VALUE); (border-box, padding-box, content-box)
+@mixin background-clip($clip) {
+  background-clip: $clip;
+}
+
+// .box-sizing(VALUE); (border-box, padding-box, content-box)
+@mixin box-sizing($boxsize: border-box) {
+  box-sizing: $boxsize;
+}
+
+// .resize(VALUE) (none, both, horizontal, vertical, inherit)
+
+@mixin resize($direction: both) {
+  resize: $direction;
+  overflow: auto;
+}
+
+// .userselect(VALUE) (all, element, none, text)
+
+@mixin user-select($select) {
+  user-select: $select;
+}
+
+//  Ribbon color mixin (used in Appszoom app widget)
+//
+//   `@include ribbon-color($rating1);`
+//
+//
+@mixin ribbon-color($color) {
+  background-color: $color;
+  color: $white;
+
+  ::after,
+  ::before {
+    border-left-color: $color;
+  }
+}
+
+
+//  Circle color mixin (used in $CIRCLE RATING)
+//
+//   `@include circle-color($rating1);`
+//
+//
+@mixin circle-color($color) {
+  color: $color;
+
+  .circle-fill {
+    background-color: $color;
+  }
+}
+
+
+
+
+
+//  Small app widget mixin
+//
+//   `@include small-app-widget($rating1);`
+//
+//
+
+// App widget small
+@mixin small-app-widget() {
+  &.app-widget {
+    // reset
+    background: none;
+    border: 0;
+    border-radius: 0;
+    min-width: 0;
+    width: 100%;
+
+    // set
+    padding: $grid-gutter-width / 2;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 80px;
+    transition: background-color .25s ease-in-out;
+    position: relative;
+    margin-bottom: 14px;
+    margin-top: 6px;
+
+    &:hover .app-ico {
+      opacity: .8;
+    }
+
+    &,
+    & a {
+      color: $text-dark;
+    }
+
+    .app-name {
+
+      @extend %ellipsis;
+
+      font-size: $font-size-base;
+      font-weight: normal;
+      line-height: 25px;
+      margin-bottom: 2px;
+      margin-top: 7px;
+
+      @include breakpoint(bp-medium) {
+        font-size: $font-size-base-medium;
+      }
+    }
+
+    .app-ico {
+      border-radius: 10px;
+      float: left;
+      height: 62px;
+      margin-bottom: 0;
+      margin-left: -80px;
+      width: 62px;
+    }
+
+    .app-desc {
+      display: none;
+    }
+
+    .app-data {
+      margin-bottom: 0;
+
+      i {
+        float: left;
+        margin-bottom: -4px;
+        margin-right: 3px;
+      }
+
+      .item {
+        float: left;
+        margin-right: 1em;
+      }
+    }
+
+    .app-likes {
+      display: none;
+    }
+
+    .app-widget-ribbon {
+      display: none;
+    }
+  }
+
+  .app-rating-numeric {
+    display: inline-block;
+    font-weight: bold;
+  }
+  .rating-color-1 {  color:$rating1; }
+  .rating-color-2 {  color:$rating2; }
+  .rating-color-3 {  color:$rating3; }
+  .rating-color-4 {  color:$rating4; }
+  .rating-color-5 {  color:$rating5; }
+  .rating-color-6 {  color:$rating6; }
+  .rating-color-7 {  color:$rating7; }
+  .rating-color-8 {  color:$rating8; }
+  .rating-color-9 {  color:$rating9; }
+  .rating-color-10 {  color:$rating10; }
+}

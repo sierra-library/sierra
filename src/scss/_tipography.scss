@@ -1,0 +1,218 @@
+/**
+ * Tipography
+ */
+
+body {
+  color: $text-color;
+  font-family: $basefont;
+  font-size: $font-size-base;
+  line-height: 1.5em;
+
+  @include breakpoint(bp-medium) {
+    font-size: $font-size-base-medium;
+  }
+
+  @include breakpoint(bp-large) {
+    font-size: $font-size-base-large;
+  }
+}
+
+img {
+  font-size: 12px;
+  line-height: 1.3em;
+}
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: $brand-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba($brand-primary, .8);
+  }
+
+  &:focus {
+    color: $brand-primary;
+  }
+}
+
+
+// titles commons
+
+.text-huge,
+.text-big,
+.text-medium {
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+}
+
+
+// titles in sections
+
+
+.text-huge:first-child,
+.text-big:first-child,
+.text-medium:first-child {
+  margin-top: .5em;
+}
+
+
+
+// titles
+.text-huge {
+  font-family: $heading-font;
+  font-size: 30px;
+  font-weight: $heading-weight;
+  text-transform: $heading-case;
+
+  @include breakpoint(bp-large) {
+    font-size: 40px;
+  }
+
+  @include breakpoint(bp-huge) {
+    font-size: 48px;
+  }
+}
+
+.text-big {
+  font-family: $heading-font;
+  font-size: 24px;
+  font-weight: $heading-weight;
+  text-transform: $heading-case;
+
+  @include breakpoint(bp-large) {
+    font-size: 28px;
+  }
+}
+
+.text-medium {
+  font-family: $heading-font;
+  font-size: 20px;
+  font-weight: $heading-weight;
+  text-transform: $heading-case;
+}
+
+.text-small {
+  font-size: 12px;
+
+  @include breakpoint(bp-medium) {
+    font-size: 14px;
+  }
+}
+
+// Deprecated? 30/11/2015
+.text-body {
+  font-size: $font-size-base;
+  line-height: 1.5em;
+
+  @include breakpoint(bp-large) {
+    font-size: $font-size-base-large;
+  }
+}
+
+// Colors
+.text-primary {
+  color: $brand-primary;
+}
+
+.text-secondary {
+  color: $brand-secondary;
+}
+
+.text-dark {
+  color: $text-dark;
+}
+
+.text-grey {
+  color: $text-grey;
+}
+
+.text-green {
+  color: $color-success;
+}
+
+.text-red {
+  color: $color-error;
+}
+
+.text-success {
+  color: $color-success;
+}
+
+.text-error {
+  color: $color-error;
+}
+
+.text-warning {
+  color: $color-warning;
+}
+
+.text-grey,
+a.text-grey,
+button.text-grey,
+a.text-grey {
+  color: $text-grey;
+}
+
+.text-white {
+  color: $white;
+}
+
+// Styles
+.text-light {
+  font-weight: 300;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+
+// titles after titles
+
+.text-with-subtitle {
+  margin-bottom: 0!important; 
+
+  + .text-huge,
+  + .text-big,
+  + .text-medium,
+  + .text-small, {
+    margin-top: .5em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: $heading-weight;
+}

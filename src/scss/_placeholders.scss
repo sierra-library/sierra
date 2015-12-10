@@ -1,0 +1,118 @@
+/**
+ * Placeholders
+ */
+
+
+// Centrar y dar un ancho máximo igual a $pagemaxwidth.
+%max-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $pagemaxwidth;
+}
+
+// The ghost, nudged to maintain perfect centering
+%vcenter {
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+	}
+}
+
+// Center vertical with flexbox
+%center-vertical {
+  align-items: center;
+  display: flex;
+}
+
+// Space between with flexbox
+%space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Vertical alignment to the bottom
+%flex-end {
+  align-content: flex-end;
+}
+
+// Escondemos el texto solo VISUALMENTE
+%hide-text {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+// Escondemos el texto de VISUALMENTE y SCREENREADERS
+%hidden {
+  display: none!important;
+  visibility: hidden;
+}
+
+
+// Escondemos pero mantenemos layout.
+%invisible {
+  visibility: hidden;
+}
+
+
+// Visualmente escondido, pero se puede detectar con teclado (focus).
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+
+//  Clear floats.
+//	http://bit.ly/1e3YaBH
+%clearfix {
+
+  ::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+// Ellipsis
+%ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+%ellipsis-block {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// overflow-ellipsis (deprecated, don't use it)
+%text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// Anchura a 100% dentro de row o contenedor
+%full-width {
+  margin-left: -$grid-gutter-width / 2;
+  margin-right: -$grid-gutter-width / 2;
+  width: auto;
+
+  @include breakpoint(bp-medium) {
+    margin-left: -$grid-gutter-width;
+    margin-right: -$grid-gutter-width;
+  }
+}
+
+
