@@ -26,9 +26,9 @@ This is a tiny SCSS library to help you build websites faster than ever, whithou
 ### Included files
 
     src/
-     ├── penguin.scss                     /* Import library modules from scss folder */
-     ├── styles.scss                      /* Import main library scss file and configuration variables */
-     ├── variables.scss                   /* Configure grid system, colors, font family, font size, borders... */
+     ├── penguin.scss                      /* Import library modules from scss folder */
+     ├── styles.scss                       /* Import main library scss file and configuration variables */
+     ├── variables.scss                    /* Configure grid system, colors, font family, font size, borders... */
      └── scss/
            ├── background-colors.scss
            ├── bootstrapgrid/               /* Bootstrap grid system */
