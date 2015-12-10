@@ -16,9 +16,10 @@ The smallest and lightest scss library.
 
 This is a tiny SCSS library to help you build websites faster than ever, whithout hundreds of (never used) selectors.
 
+* Only 39 KB
 * Modular ready
 * 2 grid systems (bootstrap and flexboxgrid)
-* Adjust colors, borders & sizes in the variables.scss file.
+* Adjust colors, borders & sizes in the variables.scss file
 * Responsive
 
 
