@@ -106,24 +106,10 @@
   }
 }
 
-//   ellipsis
-//  Usage:
-//------------------------------------
-//
-//  @include ellipsis(block);
-//  or
-//  @include ellipsis();
-//
-
-@mixin ellipsis($display: inline-block) {
+@mixin ellipsis {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  display: #{$display};
-}
-
-.ellipsis {
-  @include ellipsis();
 }
 
 @mixin scroll-list() {

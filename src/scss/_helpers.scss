@@ -88,13 +88,20 @@
   vertical-align: middle;
 }
 
+
+/**
+ *  Text utilities
+ */
+
 .ellipsis {
   @include ellipsis();
 }
 
 .ellipsis-block {
-  @include ellipsis(block);
+  @include ellipsis();
+  display: block;
 }
+
 
 
 /**
