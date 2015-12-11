@@ -60,7 +60,7 @@
 
     .circle-mask,
     .circle-fill {
-      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
 
       &.reanimate {
         transition: transform 0s;

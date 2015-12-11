@@ -6,7 +6,7 @@
 // prevent input default appearence on webkit
 input,
 textarea {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 label {
@@ -21,7 +21,7 @@ label {
 
 // Disable webkit background color
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px $form-bg-color inset;
+    box-shadow: 0 0 0 1000px $form-bg-color inset;
 }
 
 // radius
@@ -99,11 +99,11 @@ label.error {
 }
 
 input[type=checkbox] {
-  -webkit-appearance: checkbox;
+  appearance: checkbox;
 }
 
 input[type=radio] {
-  -webkit-appearance: radio;
+  appearance: radio;
 }
 
 
@@ -162,10 +162,7 @@ input[type=radio] {
     position: relative;
     width: 100%;
     z-index: 2;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
+    appearance: none;
 
     @include breakpoint(bp-medium) {
       padding: 8px 15px;
