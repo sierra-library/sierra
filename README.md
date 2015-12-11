@@ -18,7 +18,7 @@ This is a tiny SCSS library to help you build websites faster than ever, whithou
 
 * Only 39 KB
 * Modular ready
-* 2 grid systems (bootstrap and flexboxgrid)
+* 2 grid systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/) )
 * Adjust colors, borders & sizes in the variables.scss file
 * Responsive
 
