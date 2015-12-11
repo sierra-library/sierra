@@ -22,7 +22,7 @@
 //  }
 //
 //  $breakpoint: select the device type: bp-small, bp-medium, bp-large, bp-huge. Sizes are defined in _variables.scss
-//  $query1: select min or max width
+//  $query1: select max-width, min-width, max-height, min-height
 //
 //
 //  Example;
@@ -30,7 +30,7 @@
 //
 //  .hello {
 //    color: red;
-//      @include breakpoint(bp-huge, min) {
+//      @include breakpoint(bp-huge, max-width) {
 //      color:blue;
 //    }
 //  }
@@ -40,26 +40,24 @@
 // ------------------------------------
 //
 //  .hello { color: red; }
-//  @media (min-width: 1200px) { .hello { color:blue; } }
+//  @media (max-width: 1200px) { .hello { color:blue; } }
 //
 //  Enjoy!
 
 
-@mixin breakpoint($breakpoint, $query1: min) {
+@mixin breakpoint($breakpoint, $query: 'min-width') {
+  $breakpoints: (
+    'bp-small': $screen-xs-min,
+    'bp-medium': $screen-sm-min,
+    'bp-large': $screen-md-min,
+    'bp-huge': $screen-lg-min,
+  );
 
-  @if $breakpoint == bp-small {
-    @media (#{$query1}-width: $screen-xs-min) { @content; }
-  }@else if
-    $breakpoint == bp-medium {
-    @media (#{$query1}-width: $screen-sm-min) { @content; }
-  }@else if
-    $breakpoint == bp-large {
-    @media (#{$query1}-width: $screen-md-min) { @content; }
-  }@else if
-    $breakpoint == bp-huge {
-    @media (#{$query1}-width: $screen-lg-min) { @content; }
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (#{$query}: map-get($breakpoints, $breakpoint)) { @content; }
+  } @else {
+    @warn 'No breakpoint found for `#{$breakpoint}`. Allowed values are: #{map-keys($breakpoints)}.';
   }
-
 }
 
 // Responsive visibility
