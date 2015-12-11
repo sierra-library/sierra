@@ -77,6 +77,10 @@ This is a tiny SCSS library to help you build websites faster than ever, whithou
 Use GitHub Issues for suggesting enhancements and reporting bugs.
 Fork this repo and help us improving this library! 
 
+### Thanks
+Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/)  for collaborating in the design process and [Joan Leon](https://twitter.com/nucliweb) for all the advices and linting files.
+
+
 ### License
 
     The MIT License (MIT)
