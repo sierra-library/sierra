@@ -150,8 +150,8 @@
 //
 @mixin bottom-gradient($height: 30px) {
   position: relative;
-&
-&  &::before {
+
+  &::before {
     background-image: -webkit-gradient (linear, right bottom, right top, from(rgba(255,255,255,1)), to(rgba(255,255,255,.2)));
     bottom: 0;
     content: '';
