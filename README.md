@@ -74,7 +74,7 @@ This is a tiny SCSS library to help you build websites faster than ever, whithou
 
 
 ###  Contributing & reporting issues
-Use GitHub Issues for suggesting enhancements and reporting bugs.
+Use [GitHub Issues](https://github.com/Penguin-Library/penguin/issues) for suggesting enhancements and reporting bugs.
 Fork this repo and help us improving this library! 
 
 ### Thanks
