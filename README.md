@@ -5,7 +5,7 @@
 Sierra library
 ========================================
 
-The smallest and lightest scss library.
+The smallest and lightest scss library (before known as penguin library)
 
 
 ### Online demo
