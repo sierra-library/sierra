@@ -1,18 +1,16 @@
 
 
-![Penguin cover](http://penguin-library.github.io/demo/img/github/github-cover.png)
+![Sierra cover](http://sierra-library.github.io/demo/img/github/github-cover.png)
 
-Penguin library
+Sierra library
 ========================================
 
 The smallest and lightest scss library.
 
-[![Join the chat at https://gitter.im/Penguin-Library/penguin](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Penguin-Library/penguin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 
 ### Online demo
 
-[Visit demo website](http://penguin-library.github.io/).
+[Visit demo website](http://sierra-library.github.io/).
 
 
 ### What's the difference with other SCSS libraries?
@@ -30,9 +28,9 @@ This is a tiny SCSS library to help you build websites faster than ever, whithou
 ### Included files
 
     src/
-     ├── penguin.scss                      /* Import library modules from scss folder */
-     ├── styles.scss                       /* Import main library scss file and configuration variables */
-     ├── variables.scss                    /* Configure grid system, colors, font family, font size, borders... */
+     ├── sierra.scss                        /* Import library modules from scss folder */
+     ├── styles.scss                        /* Import main library scss file and configuration variables */
+     ├── variables.scss                     /* Configure grid system, colors, font family, font size, borders... */
      └── scss/
            ├── background-colors.scss
            ├── bootstrapgrid/               /* Bootstrap grid system */
@@ -63,21 +61,21 @@ This is a tiny SCSS library to help you build websites faster than ever, whithou
 [![appszoom.com][1]][2] [![appszoom.com/developers][3]][4] [![mobonaut.com][5]][6]
 
 
-[1]: http://penguin-library.github.io/demo/img/github/logo-appszoom-s.png 
+[1]: http://sierra-library.github.io/demo/img/github/logo-appszoom-s.png 
 [2]: http://www.appszoom.com
 
 
-[3]: http://penguin-library.github.io/demo/img/github/logo-appszoom-developers-s.png
+[3]: http://sierra-library.github.io/demo/img/github/logo-appszoom-developers-s.png
 [4]: http://www.appszoom.com/developers
 
 
-[5]: http://penguin-library.github.io/demo/img/github/logo-mobonaut-s.png
+[5]: http://sierra-library.github.io/demo/img/github/logo-mobonaut-s.png
 [6]: http://www.mobonaut.com
 
 
 
 ###  Contributing & reporting issues
-Use [GitHub Issues](https://github.com/Penguin-Library/penguin/issues) for suggesting enhancements and reporting bugs.
+Use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggesting enhancements and reporting bugs.
 Fork this repo and help us improving this library! 
 
 ### Thanks

@@ -38,7 +38,7 @@ gulp.task('sass', function () {
             cascade: false
         }))
         .pipe(minifyCSS({keepBreaks: false}))
-        .pipe(rename("penguin.css"))
+        .pipe(rename("sierra.css"))
         .pipe(gulp.dest('dist'))
         .pipe(livereload());
         
