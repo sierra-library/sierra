@@ -7,6 +7,8 @@ Sierra library
 
 The smallest and lightest scss library (before known as penguin library)
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 
 ### Online demo
 
