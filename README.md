@@ -21,7 +21,7 @@ This is a tiny SCSS library to help you build websites faster than ever, without
 
 * Only 39 KB
 * Modular ready
-* 2 grid systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/) )
+* 2 grid systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/))
 * Adjust colors, borders & sizes in the variables.scss file
 * Responsive
 
@@ -86,5 +86,5 @@ Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/)  for collab
 
 ### License
 
-This site is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md)
+This site is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
 
