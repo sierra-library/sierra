@@ -17,7 +17,7 @@ The smallest and lightest scss library (formerly known as penguin library)
 
 ### What's the difference with other SCSS libraries?
 
-This is a tiny SCSS library to help you build websites faster than ever, whithout hundreds of (never used) selectors.
+This is a tiny SCSS library to help you build websites faster than ever, without hundreds of (never used) selectors.
 
 * Only 39 KB
 * Modular ready
@@ -63,7 +63,7 @@ This is a tiny SCSS library to help you build websites faster than ever, whithou
 [![appszoom.com][1]][2] [![appszoom.com/developers][3]][4] [![mobonaut.com][5]][6]
 
 
-[1]: http://sierra-library.github.io/demo/img/github/logo-appszoom-s.png 
+[1]: http://sierra-library.github.io/demo/img/github/logo-appszoom-s.png
 [2]: http://www.appszoom.com
 
 
@@ -78,7 +78,7 @@ This is a tiny SCSS library to help you build websites faster than ever, whithou
 
 ###  Contributing & reporting issues
 Use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggesting enhancements and reporting bugs.
-Fork this repo and help us improving this library! 
+Fork this repo and help us improving this library!
 
 ### Thanks
 Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/)  for collaborating in the design process and [Joan Leon](https://twitter.com/nucliweb) for all the advices and linting files.
