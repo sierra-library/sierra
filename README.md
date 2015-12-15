@@ -86,5 +86,5 @@ Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/)  for collab
 
 ### License
 
-This site is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
+This library is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
 
