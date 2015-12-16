@@ -90,58 +90,48 @@
   text-overflow: ellipsis;
 }
 
+// Responsive visibility
+// More easily include all the states for Responsive visibility helpers.
+// [converter] $parent hack
 
-// Specific for Appszoom. Deprecated. Must be removed.
-@mixin scroll-list() {
-  white-space: nowrap;
-  overflow: hidden;
+@mixin responsive-visibility($parent) {
+  #{$parent} {
+    display: block !important;
+  }
+  table#{$parent}  { display: table; }
+  tr#{$parent}     { display: table-row !important; }
+  th#{$parent},
+  td#{$parent}     { display: table-cell !important; }
 }
 
-// Specific for Appszoom. Deprecated. Must be removed.
-@mixin no-scroll {
-  margin-right: 0;
-  overflow: visible;
-  overflow-x: auto;
-  white-space: normal;
-}
-
-//  Add bottom white gradient
-//
-//   `@include bottom-gradient($height);`
-//
-//
-@mixin bottom-gradient($height: 30px) {
-  position: relative;
-
-  &::before {
-    background-image: -webkit-gradient (linear, right bottom, right top, from(rgba(255,255,255,1)), to(rgba(255,255,255,.2)));
-    bottom: 0;
-    content: '';
-    height: $height;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: 1;
+// [converter] $parent hack
+@mixin responsive-invisibility($parent) {
+  #{$parent} {
+    display: none !important;
   }
 }
 
-
-//  Ribbon color mixin (used in Appszoom app widget)
-//
-//   `@include ribbon-color($rating1);`
-//
-//  Specific for Appszoom. Deprecated. Must be removed.
-//
-@mixin ribbon-color($color) {
-  background-color: $color;
-  color: $white;
-
-  ::after,
-  ::before {
-    border-left-color: $color;
-  }
+// .box-sizing(VALUE); (border-box, padding-box, content-box)
+@mixin box-sizing($boxsize: border-box) {
+  box-sizing: $boxsize;
 }
 
+// .bordered(COLOR, COLOR, COLOR, COLOR);
+@mixin bordered($top-color: #eee, $right-color: #eee, $bottom-color: #eee, $left-color: #eee) {
+  border-bottom: solid 1px $bottom-color;
+  border-left: solid 1px $left-color;
+  border-right: solid 1px $right-color;
+  border-top: solid 1px $top-color;
+}
+
+// .border-radius(VALUE,VALUE,VALUE,VALUE);
+@mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+  background-clip: padding-box;
+  border-bottom-left-radius: $bottomleft;
+  border-bottom-right-radius: $bottomright;
+  border-top-left-radius: $topleft;
+  border-top-right-radius: $topright;
+}
 
 //  Circle color mixin (used in $CIRCLE RATING)
 //
@@ -155,4 +145,3 @@
     background-color: $color;
   }
 }
-
