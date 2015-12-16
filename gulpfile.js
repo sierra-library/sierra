@@ -1,49 +1,73 @@
-var gulp          = require('gulp');
-var rename        = require('gulp-rename');
-var concat        = require('gulp-concat');
-var sass          = require('gulp-sass');           // SASS compiler
-var minifyCSS     = require('gulp-minify-css');     // CSS minify
-var gutil         = require('gulp-util');           // Utility functions for gulp plugins (for example beep on errors)
-var notify        = require('gulp-notify');         // Sweet notifications on your desktop
-var plumber       = require('gulp-plumber');        // Prevent pipe breaking caused by errors from gulp plugins
-var autoprefixer  = require('gulp-autoprefixer');   // Prefixes for old browsers
+var gulp          = require('gulp'),
+$ = require('gulp-load-plugins')({pattern: ['gulp-*', 'chalk']});
 
 
 /**
- *  Error handling
- */
+*  Error handling
+*/
 
 var onError = function (err) {
-  notify.onError({
-    title: "Gulp",
-    subtitle: "Failure!",
-    message: "Error: <%= error.message %>",
-    sound: "Beep"
-  })(err);
-  this.emit('end');
+	$.notify.onError({
+		title: "Gulp",
+		subtitle: "Failure!",
+		message: "Error: <%= error.message %>",
+		sound: "Beep"
+	})(err);
+	this.emit('end');
 };
 
 
 /**
- *  Build production files
- */
+*  Build development files
+*/
 
 gulp.task('sass', function () {
-  return gulp.src('src/styles.scss')
-  .pipe(plumber({errorHandler: onError}))
-  .pipe(sass({compress: false}).on('error', gutil.log))
-  .pipe(autoprefixer({
-    browsers: ['last 3 versions'],
-    cascade: false
-  }))
-  .pipe(minifyCSS({keepBreaks: false}))
-  .pipe(rename("sierra.min.css"))
-  .pipe(gulp.dest('dist'));
+	return gulp.src('src/styles.scss')
+	.pipe($.plumber({errorHandler: onError}))
+	.pipe($.sourcemaps.init())
+	.pipe($.sass({compress: false}).on('error', $.util.log))
+	.pipe($.autoprefixer({
+		browsers: ['last 3 versions'],
+		cascade: false
+	}))
+	.pipe($.rename({
+		basename: 'sierra'
+	}))
+	.pipe($.sourcemaps.write())
+	.pipe(gulp.dest('dev'));
 });
 
 
 /**
- *  Default tasks
- */
+*  Build development files
+*/
+
+gulp.task('build:sass', function () {
+	return gulp.src('src/styles.scss')
+	.pipe($.plumber({errorHandler: onError}))
+	.pipe($.sass({compress: false}).on('error', $.util.log))
+	.pipe($.autoprefixer({
+		browsers: ['last 3 versions'],
+		cascade: false
+	}))
+	.pipe($.combineMq({beautify: false}))
+	.pipe($.csso())
+	.pipe($.csscomb())
+	.pipe($.minifyCss({keepSpecialComments: false, mediaMerging: true, roundingPrecision: 4, advanced: true, aggressiveMerging: true}))
+	.pipe($.rename({
+		basename: 'sierra',
+		suffix: '.min'
+	}))
+	.pipe(gulp.dest('dist'));
+});
+
+/**
+*  Default tasks
+*/
 
 gulp.task('default', ['sass']);
+
+/**
+*  Build production ready sass
+*/
+gulp.task('build', ['build:sass']);
