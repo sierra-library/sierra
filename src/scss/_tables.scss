@@ -7,7 +7,6 @@
   border-collapse: collapse;
   border-radius: $radius;
   color: $table-text-color;
-  //font-size: 14px;
   margin-bottom: 20px;
   max-width: 100%;
   width: 100%;
@@ -31,13 +30,12 @@
     border-bottom: 1px solid $border-color;
   }
 
-
   &.table-vertical-center td {
     vertical-align: middle;
   }
 
   thead {
-    //background-color: #f2f2f2;
+    border-bottom: 1px solid $border-color;
   }
 
   th {
@@ -46,117 +44,6 @@
     font-weight: normal;
     padding: 5px 14px;
     white-space: nowrap;
-  }
-
-  thead {
-    border-bottom: 1px solid $border-color;
-  }
-
-  // rows with colors
-  tr.bg-primary {
-    td {
-      background-color: #ffeaef;
-    }
-    &:hover td {
-      background-color: #ffdde5!important;
-    }
-  }
-  tr.bg-secondary {
-      td {
-        background-color: #e5f9f6;
-      }
-      &:hover td {
-        background-color: #d1fef7!important;
-      }
-  }
-  // rows with clikable primary action
-  tr.row-with-primary-action {
-      cursor:pointer;
-      &:hover td {
-        background-color:#f4f8fa;
-      }
-  }
-  // row with premium info (used in mobonaut app profile)
-  tr.row-premium-info {
-      background-color: #0f243b;
-      color: $text-grey;
-
-      a {
-        color: $brand-primary;
-      }
-  }
-
-  // selectable rows in table (used in keyword and category trends)
-  tr.selectable-row {
-      cursor: pointer;
-
-      &:hover td {
-        background-color: #f4f8fa;
-      }
-
-      td:first-child {
-        padding-left: 50px;
-        position: relative;
-
-        ::after {
-          border: 1px solid #cce3e8;
-          border-radius: 2px;
-          content: '';
-          display: block;
-          height: 16px;
-          left: 20px;
-          margin-top: -8px;
-          position: absolute;
-          top: 50%;
-          width: 16px;
-        }
-    }
-
-    &.selected {
-      td {
-        background-color: $brand-primary;
-        color: $white;
-
-        a {
-          color: $white;
-        }
-
-        &:first-child {
-          ::after {
-            font-family: FontAwesome;
-            content: '\f06e';
-            border: 0;
-            line-height: 16px;
-          }
-        }
-      }
-    }
-  }
-
-  &.table-transparent-header {
-    background-color: transparent;
-    border: 0;
-
-    td {
-      background-color: $table-bg-color;
-    }
-
-    tr {
-      border: 1px solid $border-color;
-    }
-
-    thead {
-      background-color: transparent;
-
-      th {
-        background-color: transparent;
-        border: 0;
-      }
-
-      tr {
-        border: 0;
-      }
-    }
   }
 }
 
@@ -192,7 +79,7 @@
 .table-responsive {
 
   th {
-    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!
+    display: none;
   }
 
   td {
@@ -209,7 +96,7 @@
 
     &::before {
       @extend .text-grey;
-      content: attr(data-th)': '; // who knew you could do this? The internet, that's who.
+      content: attr(data-th)': ';
       display: block;
       font-weight: normal;
     }
