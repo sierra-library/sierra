@@ -1,5 +1,6 @@
-var gulp          = require('gulp'),
-$ = require('gulp-load-plugins')({pattern: ['gulp-*']});
+var gulp = require('gulp'),
+$ = require('gulp-load-plugins')({pattern: ['gulp-*']}),
+paths = {src: 'src/', entry: 'entry.scss'};
 
 
 /**
@@ -22,7 +23,7 @@ var onError = function (err) {
 */
 
 gulp.task('sass', function () {
-	return gulp.src('src/styles.scss')
+	return gulp.src(paths.src+paths.entry)
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sourcemaps.init())
 	.pipe($.sass({compress: false}).on('error', $.util.log))
@@ -43,7 +44,7 @@ gulp.task('sass', function () {
 */
 
 gulp.task('build:sass', function () {
-	return gulp.src('src/styles.scss')
+	return gulp.src(paths.src+paths.entry)
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sass({compress: false}).on('error', $.util.log))
 	.pipe($.autoprefixer({
