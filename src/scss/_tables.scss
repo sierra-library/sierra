@@ -134,11 +134,11 @@
   }
 
   &.table-transparent-header {
-    background-color: transparent; 
+    background-color: transparent;
     border: 0;
 
     td {
-      background-color: $table-bg-color; 
+      background-color: $table-bg-color;
     }
 
     tr {
@@ -226,7 +226,7 @@
     }
 
     td {
-      @include breakpoint(bp-medium, max) {
+      @include breakpoint(bp-medium, max-width) {
         border: 0;
         padding-bottom: 0;
       }
@@ -259,7 +259,7 @@
 
     td {
 
-      @include breakpoint(bp-small, max) {
+      @include breakpoint(bp-small, max-width) {
         border: 0;
         padding-bottom: 0;
       }
