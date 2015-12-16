@@ -1,5 +1,5 @@
 var gulp          = require('gulp'),
-$ = require('gulp-load-plugins')({pattern: ['gulp-*', 'chalk']});
+$ = require('gulp-load-plugins')({pattern: ['gulp-*']});
 
 
 /**
@@ -39,7 +39,7 @@ gulp.task('sass', function () {
 
 
 /**
-*  Build development files
+*  Build production files
 */
 
 gulp.task('build:sass', function () {
