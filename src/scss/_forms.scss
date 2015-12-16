@@ -74,7 +74,7 @@ textarea {
   }
 }
 
-/* Error handling (deprecated?)*/
+// Error handling (deprecated?)
 .has-error {
   .textarea,
   .input,
@@ -83,12 +83,12 @@ textarea {
   }
 }
 
-/* temporally used in mobonaut checkout*/
+// temporally used in mobonaut checkout
 .has-error .control-label {
     color:$brand-primary;
 }
 
-/* Error handling in mobonaut checkout */
+// Error handling in mobonaut checkout
 label.error {
   color: $color-error;
   font-size: 13px;
@@ -138,7 +138,7 @@ input[type=radio] {
     z-index:  1;
   }
 
-  // Az angle
+  // Specific selector for Appszoom. Must delete ASAP.
   .icon-angle-down {
     color: $brand-primary;
     font-size: 1.2em;
@@ -298,8 +298,8 @@ input[type=radio] + label {
 }
 
 
-input[type=checkbox] { display: none; } /* hide the checkbox itself */
-input[type=radio] { display: none; } /* hide the checkbox itself */
+input[type=checkbox] { display: none; } // hide the checkbox itself
+input[type=radio] { display: none; } // hide the checkbox itself
 
 input[type=checkbox] + label:after,
 input[type=checkbox] + label:before,
@@ -316,21 +316,21 @@ input[type=radio] + label:before {
   left:0;
 }
 
-/* unchecked checkbox and radio icon */
+// unchecked checkbox and radio icon
 input[type=checkbox] + label:after,
-input[type=radio] + label:after {  
+input[type=radio] + label:after {
   background-color: $form-bg-color;
   border: 1px solid $border-color;
   border-radius: $radius;
   content: '';
 }
 
-/* radio icon */
-input[type=radio] + label:after { 
+// radio icon
+input[type=radio] + label:after {
   border-radius: 99px;
 }
 
-/* icon */
+// icon
 input[type=checkbox] + label:before{
   content: "\f00c";
   font-family: FontAwesome;
@@ -338,9 +338,9 @@ input[type=checkbox] + label:before{
   top: 11px;
   transform: scale(0);
   z-index: 1;
-  
+
 }
-input[type=radio] + label:before { 
+input[type=radio] + label:before {
   background-color: $brand-primary;
   border-radius: 99px;
   content: '';
@@ -375,13 +375,10 @@ input[type=radio]:checked + label:before{
   }
   100% {
     transform: scale(1);
-  }   
+  }
 }
 
-
-
 // inputs
-
 .input {
   background-color: $form-bg-color;
   display: inline-block;
@@ -420,9 +417,7 @@ input[type=radio]:checked + label:before{
   }
 }
 
-
 // input with icon
-
 .input-with-icon {
   position: relative;
 
@@ -453,7 +448,6 @@ input[type=radio]:checked + label:before{
 }
 
 // input icon
-
 .input-icon {
   input {
     padding: 0;
@@ -505,10 +499,9 @@ input[type=radio]:checked + label:before{
   </div>
 **/
 
-
 .form-group {
   background-color: $form-bg-color;
-  border: 1px solid #ddd;
+  border: 1px solid $border-color;
   border-radius: $radius;
   display: inline-block;
   margin-bottom: 20px;
@@ -522,7 +515,6 @@ input[type=radio]:checked + label:before{
   .form-group-item {
     border: 0;
     border-radius: 0;
-    //border-right: 1px solid #ddd;
     margin-right: 0;
 
     &:last-child {
@@ -562,7 +554,7 @@ input[type=radio]:checked + label:before{
 
 .form-collapse {
   display: flex;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 
   .item-main {
     flex: 1;
