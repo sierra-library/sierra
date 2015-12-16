@@ -2,28 +2,27 @@
  * Library
  */
 
-@import 'scss/mixins.scss';
-@import 'scss/placeholders.scss';
-@import 'scss/reset.scss';
+@import 'scss/mixins';
+@import 'scss/placeholders';
+@import 'scss/reset';
 
-@import 'scss/main.scss';
+@import 'scss/main';
 
-@import 'scss/background-colors.scss';
-@import 'scss/buttons.scss';
-@import 'scss/forms.scss';
-@import 'scss/helpers.scss';
-@import 'scss/layout.scss';
-@import 'scss/loading-bar.scss';
-@import 'scss/loading-spinner.scss';
-@import 'scss/rating-circle.scss';
-@import 'scss/tables.scss';
-@import 'scss/tabs.scss';
-@import 'scss/tags.scss';
-@import 'scss/tipography.scss';
+@import 'scss/background-colors';
+@import 'scss/buttons';
+@import 'scss/forms';
+@import 'scss/helpers';
+@import 'scss/layout';
+@import 'scss/loading-bar';
+@import 'scss/loading-spinner';
+@import 'scss/rating-circle';
+@import 'scss/tables';
+@import 'scss/tabs';
+@import 'scss/tags';
+@import 'scss/tipography';
 
 @if $flexboxgrid {
-	@import 'scss/flexboxgrid.scss';
+	@import 'scss/flexboxgrid';
 }@else {
-	@import 'scss/bootstrapgrid.scss';
+	@import 'scss/bootstrapgrid';
 }
-
