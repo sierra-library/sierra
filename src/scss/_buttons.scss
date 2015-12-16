@@ -9,8 +9,6 @@ button {
   cursor: pointer;
 }
 
-
-// BUTTONS
 .button {
   background-color: $button-color;
   border: 1px solid $button-border-color;
@@ -135,7 +133,7 @@ button {
     color: $white;
   }
 
-  // Types
+  // types
   &.button-outlined {
     background-color: transparent;
     border: 1px solid $brand-primary;
@@ -155,18 +153,6 @@ button {
     i {
       margin: 0;
     }
-  }
-
-  &.button-selected {
-    background-color:  $brand-primary;
-    border: 1px solid $brand-primary;
-    color: $white;
-  }
-
-  &.button-google {
-    background-color: $googleplus;
-    border-color: transparent;
-    color: $white;
   }
 
   // icons on buttons
@@ -189,8 +175,6 @@ button {
     &::before {
       float: left;
     }
-
-
   }
 }
 
@@ -221,7 +205,7 @@ button {
   }
 }
 
-// BUTTON GROUP
+// button group
 .button-group {
   white-space: nowrap;
 
@@ -243,34 +227,5 @@ button {
   .button:last-child {
     border-bottom-right-radius: 99px;
     border-top-right-radius: 99px;
-  }
-}
-
-// Buttons in tables
-table .button {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-// dashed horizontal button
-.add-new-horizontal {
-  border: 1px dashed $brand-primary;
-  color: $brand-primary;
-  display: block;
-  padding: 10px;
-  text-align: center;
-}
-// circle buttons
-a.button-circle {
-  color: $text-grey;
-
-  .fa {
-    border: 1px dashed $text-grey;
-    border-radius: 999px;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    width: 40px;
   }
 }
