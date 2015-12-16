@@ -39,8 +39,6 @@
   justify-content: flex-end;
 }
 
-
-
 // item
 .aligner-item-top {
   align-self: flex-start;
@@ -53,6 +51,7 @@
 .flex-grow {
   flex-grow: 1;
 }
+
 
 /**
  *  Alignments
@@ -124,6 +123,15 @@
   display: block;
 }
 
+.block-mobile {
+  @include breakpoint(bp-small, max-width) {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; // useful for buttons
+  }
+}
+
 .display-inline {
   display: inline;
 }
@@ -149,7 +157,7 @@
 }
 
 
-// icon-rounded deprecated.
+// deprecated ".icon-rounded"
 .icon-rounded,
 .rounded-corners {
   border-radius: 15%;
