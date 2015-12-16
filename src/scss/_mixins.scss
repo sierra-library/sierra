@@ -60,28 +60,6 @@
   }
 }
 
-// Responsive visibility
-// More easily include all the states for Responsive visibility helpers.
-// [converter] $parent hack
-
-@mixin responsive-visibility($parent) {
-  #{$parent} {
-    display: block !important;
-  }
-  table#{$parent}  { display: table; }
-  tr#{$parent}     { display: table-row !important; }
-  th#{$parent},
-  td#{$parent}     { display: table-cell !important; }
-}
-
-// [converter] $parent hack
-@mixin responsive-invisibility($parent) {
-  #{$parent} {
-    display: none !important;
-  }
-}
-
-
 // Clearfix
 //
 // For modern browsers
@@ -112,36 +90,20 @@
   text-overflow: ellipsis;
 }
 
+
+// Specific for Appszoom. Deprecated. Must be removed.
 @mixin scroll-list() {
   white-space: nowrap;
   overflow: hidden;
 }
 
+// Specific for Appszoom. Deprecated. Must be removed.
 @mixin no-scroll {
   margin-right: 0;
   overflow: visible;
   overflow-x: auto;
   white-space: normal;
 }
-
-// gradients
-@mixin horizontal($startcolor : $white, $endcolor : $lightergrey) {
-  background-color: $endcolor;
-  background-image: linear-gradient(left, $startcolor, $endcolor);                           // W3C
-  background-repeat: repeat-x;
-}
-
-@mixin vertical($startcolor : $white, $endcolor:  $lightergrey) {                   // Autoprefixer no funciona aquí. Deprecated.
-  background-color: $endcolor;
-  background: linear-gradient(to bottom, $startcolor 0%, $endcolor 100%);
-}
-
-@mixin directional($startcolor : $white, $endcolor : $lightergrey, $deg : 45deg) {
-  background-color: $endcolor;
-  background-image: linear-gradient($deg, $startcolor, $endcolor);                          // W3C
-  background-repeat: repeat-x;
-}
-
 
 //  Add bottom white gradient
 //
@@ -163,105 +125,12 @@
   }
 }
 
-// .bordered(COLOR, COLOR, COLOR, COLOR);
-@mixin bordered($top-color: #eee, $right-color: #eee, $bottom-color: #eee, $left-color: #eee) {
-  border-bottom: solid 1px $bottom-color;
-  border-left: solid 1px $left-color;
-  border-right: solid 1px $right-color;
-  border-top: solid 1px $top-color;
-}
-
-// .border-radius(VALUE,VALUE,VALUE,VALUE);
-@mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
-  background-clip: padding-box;
-  border-bottom-left-radius: $bottomleft;
-  border-bottom-right-radius: $bottomright;
-  border-top-left-radius: $topleft;
-  border-top-right-radius: $topright;
-}
-
-// .box-shadow(HORIZONTAL VERTICAL BLUR COLOR))
-@mixin box-shadow ($h: 10px , $v: 10px , $b: 0 , $s: 0 , $c: #000000) {
-  box-shadow: $h $v $b $s $c;
-}
-
-
-// .drop-shadow(HORIZONTAL, VERTICAL, BLUR, ALPHA);
-@mixin drop-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: .1) {
-  box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
-}
-
-// .opacity(VALUE);
-@mixin opacity($opacity : .5) {
-  opacity: $opacity;
-}
-
-// .rotate(VALUEdeg);
-@mixin rotate($deg) {
-  transform: rotate($deg);
-}
-
-// .scale(VALUE);
-@mixin scale($ratio) {
-  transform: scale($ratio);
-}
-
-// .skew(VALUE, VALUE);
-@mixin skew($x: 0, $y: 0) {
-  transform: skew($x, $y);
-}
-
-// .transition(PROPERTY DURATION DELAY(OPTIONAL) TIMING-FINCTION);
-@mixin transition($transition) {
-  transition: $transition;
-}
-
-// .translate(VALUE, VALUE)
-@mixin translate($x: 0, $y: 0) {
-  transform: translate($x, $y);
-}
-
-@mixin translate3d($x: 0, $y: 0, $z: 0) {
-  transform: translate($x, $y, $z);
-}
-
-// .background-alpha(VALUE VALUE);
-@mixin background-alpha($color: $white, $alpha: 1) {
-  background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
-}
-
-// .background-size(VALUE VALUE);
-@mixin background-size($size) {
-  background-size: $size;
-}
-
-// .background-clip(VALUE); (border-box, padding-box, content-box)
-@mixin background-clip($clip) {
-  background-clip: $clip;
-}
-
-// .box-sizing(VALUE); (border-box, padding-box, content-box)
-@mixin box-sizing($boxsize: border-box) {
-  box-sizing: $boxsize;
-}
-
-// .resize(VALUE) (none, both, horizontal, vertical, inherit)
-
-@mixin resize($direction: both) {
-  resize: $direction;
-  overflow: auto;
-}
-
-// .userselect(VALUE) (all, element, none, text)
-
-@mixin user-select($select) {
-  user-select: $select;
-}
 
 //  Ribbon color mixin (used in Appszoom app widget)
 //
 //   `@include ribbon-color($rating1);`
 //
+//  Specific for Appszoom. Deprecated. Must be removed.
 //
 @mixin ribbon-color($color) {
   background-color: $color;
