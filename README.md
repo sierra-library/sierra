@@ -25,14 +25,12 @@ This is a tiny SCSS library to help you build websites faster than ever, without
 * Adjust colors, borders & sizes in the variables.scss file
 * Responsive
 
-
-
 ### Included files
 
     src/
-     ├── sierra.scss                        /* Import library modules from scss folder */
-     ├── styles.scss                        /* Import main library scss file and configuration variables */
-     ├── variables.scss                     /* Configure grid system, colors, font family, font size, borders... */
+	 ├── entry.scss                         /* Import main library scss file and configuration variables */
+     ├── _sierra.scss                       /* Import library modules from scss folder */
+     ├── _variables.scss                    /* Configure grid system, colors, font family, font size, borders... */
      └── scss/
            ├── background-colors.scss
            ├── bootstrapgrid/               /* Bootstrap grid system */
@@ -58,23 +56,16 @@ This is a tiny SCSS library to help you build websites faster than ever, without
 
 ### Tested in production environments
 
-
-
 [![appszoom.com][1]][2] [![appszoom.com/developers][3]][4] [![mobonaut.com][5]][6]
-
 
 [1]: http://sierra-library.github.io/demo/img/github/logo-appszoom-s.png
 [2]: http://www.appszoom.com
 
-
 [3]: http://sierra-library.github.io/demo/img/github/logo-appszoom-developers-s.png
 [4]: http://www.appszoom.com/developers
 
-
 [5]: http://sierra-library.github.io/demo/img/github/logo-mobonaut-s.png
 [6]: http://www.mobonaut.com
-
-
 
 ###  Contributing & reporting issues
 Use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggesting enhancements and reporting bugs.
@@ -82,7 +73,6 @@ Fork this repo and help us improving this library!
 
 ### Thanks
 Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/)  for collaborating in the design process and [Joan Leon](https://twitter.com/nucliweb) for all the advices and linting files.
-
 
 ### License
 
