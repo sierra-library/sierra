@@ -4,54 +4,54 @@
 * Markdown:
 * ---------
 *
-*	<div class="c-tabs">
-*		<a href="link" title="#" data-targetclass="js-tab1" class="c-tab js-tab">[...]</a>
-*		<a href="link" title="#" data-targetclass="js-tab2" class="c-tab js-tab active">[...]</a>
-*	</div>
-*	<div class="js-tab1 c-tab-content">
-*		[...]
-*	</div>
-*	<div class="js-tab2 c-tab-content selected">
-*		[...]
-*	</div>
+*  <div class="c-tabs">
+*    <a href="link" title="#" data-targetclass="js-tab1" class="c-tab js-tab">[...]</a>
+*    <a href="link" title="#" data-targetclass="js-tab2" class="c-tab js-tab active">[...]</a>
+*  </div>
+*  <div class="js-tab1 c-tab-content">
+*    [...]
+*  </div>
+*  <div class="js-tab2 c-tab-content selected">
+*    [...]
+*  </div>
 */
 
 .tabs {
-	border-top: 1px solid $border-color;
-	margin-bottom: 30px;
-	text-align: center;
+  border-top: 1px solid $border-color;
+  margin-bottom: 30px;
+  text-align: center;
 
-	.tab {
-		bottom: 1px;
-		color: $text-grey;
-		display: inline-block;
-		line-height: 50px;
-		margin: 0;
-		margin-right: 30px;
-		min-width: 70px;
-		position: relative;
+  .tab {
+    bottom: 1px;
+    color: $text-grey;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+    margin-right: 30px;
+    min-width: 70px;
+    position: relative;
 
-		&:hover {
-			color: $brand-primary;
-			text-decoration: none;
-		}
+    &:hover {
+      color: $brand-primary;
+      text-decoration: none;
+    }
 
-		&.active {
-			border-top: 3px solid $brand-primary;
-			color: $brand-primary;
+    &.active {
+      border-top: 3px solid $brand-primary;
+      color: $brand-primary;
 
-			&.alone {
-				border-top: 0;
-				cursor: default;
-			}
-		}
-	}
+      &.alone {
+        border-top: 0;
+        cursor: default;
+      }
+    }
+  }
 }
 
 .tab-content {
-	display: none;
+  display: none;
 
-	&.selected {
-		display: block;
-	}
+  &.selected {
+    display: block;
+  }
 }

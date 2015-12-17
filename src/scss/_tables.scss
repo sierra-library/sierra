@@ -2,49 +2,49 @@
 * Tables
 */
 .table {
-	background-color: $table-bg-color;
-	border: 1px solid $border-color;
-	border-collapse: collapse;
-	border-radius: $radius;
-	color: $table-text-color;
-	margin-bottom: 20px;
-	max-width: 100%;
-	width: 100%;
+  background-color: $table-bg-color;
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+  border-radius: $radius;
+  color: $table-text-color;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
 
-	th,
-	td {
-		border-bottom: 1px solid $border-color;
-		padding: 10px;
+  th,
+  td {
+    border-bottom: 1px solid $border-color;
+    padding: 10px;
 
-		@include breakpoint(bp-large) {
-			padding: 10px 20px;
-		}
-	}
+    @include breakpoint(bp-large) {
+      padding: 10px 20px;
+    }
+  }
 
-	td {
-		padding: 14px;
-		position: relative;
-	}
+  td {
+    padding: 14px;
+    position: relative;
+  }
 
-	tr {
-		border-bottom: 1px solid $border-color;
-	}
+  tr {
+    border-bottom: 1px solid $border-color;
+  }
 
-	&.table-vertical-center td {
-		vertical-align: middle;
-	}
+  &.table-vertical-center td {
+    vertical-align: middle;
+  }
 
-	thead {
-		border-bottom: 1px solid $border-color;
-	}
+  thead {
+    border-bottom: 1px solid $border-color;
+  }
 
-	th {
-		background-color: $table-header-bg-color;
-		color: $text-grey;
-		font-weight: normal;
-		padding: 5px 14px;
-		white-space: nowrap;
-	}
+  th {
+    background-color: $table-header-bg-color;
+    color: $text-grey;
+    font-weight: normal;
+    padding: 5px 14px;
+    white-space: nowrap;
+  }
 }
 
 /**
@@ -52,121 +52,121 @@
 *
 * Markup:
 *
-*	<table class="table-responsive table-break-small">
-*		<tr>
-*			<th>First column</th>
-*			<th>Second column</th>
-*			<th>Third column</th>
-*		</tr>
-*		<tr>
-*			<td data-th="First column">Blue</td>
-*			<td data-th="Second column">One</td>
-*			<td data-th="Third column">My life fades</td>
-*		</tr>
-*		<tr>
-*			<td data-th="First column">Green</td>
-*			<td data-th="Second column">Two</td>
-*			<td data-th="Third column">when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. </td>
-*		</tr>
-*		<tr>
-*			<td data-th="First column">Yellow</td>
-*			<td data-th="Second column">Three</td>
-*			<td data-th="Third column">A whirlwind of looting, a firestorm of fear. Men began to feed on men. </td>
-*		</tr>
-*	</table>
+*  <table class="table-responsive table-break-small">
+*    <tr>
+*      <th>First column</th>
+*      <th>Second column</th>
+*      <th>Third column</th>
+*    </tr>
+*    <tr>
+*      <td data-th="First column">Blue</td>
+*      <td data-th="Second column">One</td>
+*      <td data-th="Third column">My life fades</td>
+*    </tr>
+*    <tr>
+*      <td data-th="First column">Green</td>
+*      <td data-th="Second column">Two</td>
+*      <td data-th="Third column">when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. </td>
+*    </tr>
+*    <tr>
+*      <td data-th="First column">Yellow</td>
+*      <td data-th="Second column">Three</td>
+*      <td data-th="Third column">A whirlwind of looting, a firestorm of fear. Men began to feed on men. </td>
+*    </tr>
+*  </table>
 */
 
 .table-responsive {
 
-	th {
-		display: none;
-	}
+  th {
+    display: none;
+  }
 
-	td {
-		display: block;
+  td {
+    display: block;
 
-		&:first-child {
-			border-top: 1px solid $border-color;
-			padding-top: 14px;
-		}
+    &:first-child {
+      border-top: 1px solid $border-color;
+      padding-top: 14px;
+    }
 
-		&:last-child {
-			padding-bottom: 14px;
-		}
+    &:last-child {
+      padding-bottom: 14px;
+    }
 
-		&::before {
-			@extend .text-grey;
-			content: attr(data-th)': ';
-			display: block;
-			font-weight: normal;
-		}
-	}
+    &::before {
+      @extend .text-grey;
+      content: attr(data-th)': ';
+      display: block;
+      font-weight: normal;
+    }
+  }
 
-	th,
-	td {
-		text-align: left;
-	}
+  th,
+  td {
+    text-align: left;
+  }
 
-	&.table-break-medium {
-		tr {
-			border-top: 1px solid $border-color;
-		}
+  &.table-break-medium {
+    tr {
+      border-top: 1px solid $border-color;
+    }
 
-		td {
-			@include breakpoint(bp-medium, max-width) {
-				border: 0;
-				padding-bottom: 0;
-			}
+    td {
+      @include breakpoint(bp-medium, max-width) {
+        border: 0;
+        padding-bottom: 0;
+      }
 
-			&::before {
-				@include breakpoint(bp-medium) {
-					display: none;
-				}
-			}
+      &::before {
+        @include breakpoint(bp-medium) {
+          display: none;
+        }
+      }
 
-			&:last-child {
-				padding-bottom: 14px;
-			}
-		}
+      &:last-child {
+        padding-bottom: 14px;
+      }
+    }
 
-		th,
-		td {
+    th,
+    td {
 
-			@include breakpoint(bp-medium) {
-				display: table-cell;
-			}
-		}
-	}
+      @include breakpoint(bp-medium) {
+        display: table-cell;
+      }
+    }
+  }
 
-	&.table-break-small {
+  &.table-break-small {
 
-		tr {
-			border-top: 1px solid $border-color;
-		}
+    tr {
+      border-top: 1px solid $border-color;
+    }
 
-		td {
+    td {
 
-			@include breakpoint(bp-small, max-width) {
-				border: 0;
-				padding-bottom: 0;
-			}
+      @include breakpoint(bp-small, max-width) {
+        border: 0;
+        padding-bottom: 0;
+      }
 
-			&::before {
-				@include breakpoint(bp-small) {
-					display: none;
-				}
-			}
+      &::before {
+        @include breakpoint(bp-small) {
+          display: none;
+        }
+      }
 
-			&:last-child {
-				padding-bottom: 14px;
-			}
-		}
+      &:last-child {
+        padding-bottom: 14px;
+      }
+    }
 
-		th,
-		td {
-			@include breakpoint(bp-small) {
-				display: table-cell;
-			}
-		}
-	}
+    th,
+    td {
+      @include breakpoint(bp-small) {
+        display: table-cell;
+      }
+    }
+  }
 }

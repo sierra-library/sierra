@@ -21,21 +21,21 @@ $font-size-base-medium: 15px;
 $font-size-base-large:  15px;
 
 $line-height-base:      1.5em;
-$font-weight-base:		400;
+$font-weight-base:    400;
 
 /**
 *  $COLOURS
 */
 
 // white
-$white:					#ffffff;
+$white:                 #ffffff;
 
 // Brand colours
 $brand-primary:         #1abc9c;
 $brand-secondary:       #9b59b6;
-$brand-dark:			#18232f;
+$brand-dark:            #18232f;
 
-$deep-blue:				#171722;
+$deep-blue:             #171722;
 $color-success:         #4caf50;
 $color-info:            #5bc0de;
 $color-warning:         #f0ad4e;
@@ -45,71 +45,71 @@ $color-error:           #e74c3c;
 $body-bg:               #2c3e50;
 
 // Button
-$button-color:			#64829f; // default color for buttons
-$button-border-color:	$body-bg;
+$button-color:          #64829f; // default color for buttons
+$button-border-color:  $body-bg;
 
 // Tags
-$tag-bg:				#34495e;
-$tag-bullet:			$body-bg;
+$tag-bg:                #34495e;
+$tag-bullet:            $body-bg;
 
 // Rating
-$rating-bg:				#34495e;
+$rating-bg:             #34495e;
 
-// Grey :              	#dee6ea;
-$grey-light:        	#edf3f6;
-$grey-soft:        		#edf3f6;
-$grey-dark:				#969da6;
-$background-grey:		$grey-soft;
-$border-color:			#465f78;
+// Grey :               #dee6ea;
+$grey-light:            #edf3f6;
+$grey-soft:             #edf3f6;
+$grey-dark:             #969da6;
+$background-grey:       $grey-soft;
+$border-color:          #465f78;
 
 // Tipography colors
-$text-dark:             #3e4145; 	// body text
+$text-dark:             #3e4145;   // body text
 $text-color:            $white;
-$text-grey:	            #969da6;
+$text-grey:             #969da6;
 
 // Headings
-$heading-font: 			$basefont;
-$heading-weight:		300;
-$heading-case:			none;
+$heading-font:          $basefont;
+$heading-weight:        300;
+$heading-case:          none;
 
 // Shadows
-$shadow-color:			rgba(0, 0, 0, .2);
-$box-shadow:			0 0 5px $shadow-color;
+$shadow-color:          rgba(0, 0, 0, .2);
+$box-shadow:            0 0 5px $shadow-color;
 
 // Forms
-$form-bg-color:			#34495e;
-$form-text-color:		$white;
+$form-bg-color:         #34495e;
+$form-text-color:       $white;
 
 // Tables
-$table-bg-color:		#34495e;
-$table-header-bg-color:	$body-bg;
-$table-text-color:		$white;
+$table-bg-color:        #34495e;
+$table-header-bg-color: $body-bg;
+$table-text-color:      $white;
 
 $textColourMap: (
-	primary: $brand-primary,
-	secondary:$brand-secondary,
-	dark:$text-dark,
-	grey: $text-grey,
-	green:  $color-success,
-	success:  $color-success,
-	red:  $color-error,
-	error: $color-error,
-	warning: $color-warning
+  primary:              $brand-primary,
+  secondary:            $brand-secondary,
+  dark:                 $text-dark,
+  grey:                 $text-grey,
+  green:                $color-success,
+  success:              $color-success,
+  red:                  $color-error,
+  error:                $color-error,
+  warning:              $color-warning
 );
 
 $backgroundColourMap: (
-	primary: $brand-primary,
-	dark: $brand-dark,
-	secondary: $brand-secondary,
-	white: $white,
-	success: $color-success,
-	info: $color-info,
-	warning: $color-warning,
-	error: $color-error,
-	grey: $background-grey,
-	grey-dark: $grey-dark,
-	grey-soft: $grey-soft,
-	grey-light: $grey-light
+  primary:              $brand-primary,
+  dark:                 $brand-dark,
+  secondary:            $brand-secondary,
+  white:                $white,
+  success:              $color-success,
+  info:                 $color-info,
+  warning:              $color-warning,
+  error:                $color-error,
+  grey:                 $background-grey,
+  grey-dark:            $grey-dark,
+  grey-soft:            $grey-soft,
+  grey-light:           $grey-light
 );
 
 
@@ -140,66 +140,66 @@ $foursquare: #8fd400;
 
 
 // Rating colors
-$rating1: 		#dd2c00;
-$rating2: 		#ff5722;
-$rating3: 		#ff9800;
-$rating4: 		#ffc107;
-$rating5: 		#f5dc00;
-$rating6: 		#cddc39;
-$rating7: 		#8bc34a;
-$rating8: 		#4caf50;
-$rating9: 		#43a047;
-$rating10: 		#388e3c;
+$rating1:     #dd2c00;
+$rating2:     #ff5722;
+$rating3:     #ff9800;
+$rating4:     #ffc107;
+$rating5:     #f5dc00;
+$rating6:     #cddc39;
+$rating7:     #8bc34a;
+$rating8:     #4caf50;
+$rating9:     #43a047;
+$rating10:    #388e3c;
 
 $backgroundColourMap: map-merge($backgroundColourMap, (
-	rating1: $rating1,
-	rating2: $rating2,
-	rating3: $rating3,
-	rating4: $rating4,
-	rating5: $rating5,
-	rating6: $rating6,
-	rating7: $rating7,
-	rating8: $rating8,
-	rating9: $rating9,
-	rating10: $rating10
+  rating1: $rating1,
+  rating2: $rating2,
+  rating3: $rating3,
+  rating4: $rating4,
+  rating5: $rating5,
+  rating6: $rating6,
+  rating7: $rating7,
+  rating8: $rating8,
+  rating9: $rating9,
+  rating10: $rating10
 ));
 
 /**
 *  $BUTTONS
 */
 
-$button-border-radius: 0.5; // 50% of the button's height
+$button-border-radius: .5; // 50% of the button's height
 $button-sizes: (
-	normal: (
-		fontSize: 12px,
-		lineHeight: 1.5,
-		paddingTB: 10px,
-		paddingLR: 20px
-	),
-	big: (
-		fontSize: 16px,
-		lineHeight: 1.5,
-		paddingTB: 10px,
-		paddingLR: 30px
-	),
-	small: (
-		fontSize: 11px,
-		lineHeight: 1.273,
-		paddingTB: 6px,
-		paddingLR: 20px
-	),
-	huge: (
-		fontSize: 16px,
-		lineHeight: 1.5,
-		paddingTB: 15px,
-		paddingLR: 30px
-	),
-	hugeLg: (
-		fontSize: 18px,
-		lineHeight: 1.5,
-		paddingTB: 18px,
-		paddingLR: 50px
-	)
+  normal: (
+    fontSize: 12px,
+    lineHeight: 1.5,
+    paddingTB: 10px,
+    paddingLR: 20px
+  ),
+  big: (
+    fontSize: 16px,
+    lineHeight: 1.5,
+    paddingTB: 10px,
+    paddingLR: 30px
+  ),
+  small: (
+    fontSize: 11px,
+    lineHeight: 1.273,
+    paddingTB: 6px,
+    paddingLR: 20px
+  ),
+  huge: (
+    fontSize: 16px,
+    lineHeight: 1.5,
+    paddingTB: 15px,
+    paddingLR: 30px
+  ),
+  hugeLg: (
+    fontSize: 18px,
+    lineHeight: 1.5,
+    paddingTB: 18px,
+    paddingLR: 50px
+  )
 );
 
 /**

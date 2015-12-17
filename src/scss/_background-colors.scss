@@ -2,9 +2,9 @@
  *  Background colors
  */
 .background {
-	@each $type, $colour in $backgroundColourMap {
-		&-#{$type} {
-			color: $colour;
-		}
-	}
+  @each $type, $colour in $backgroundColourMap {
+    &-#{$type} {
+      color: $colour;
+    }
+  }
 }

@@ -22,7 +22,7 @@
 @import 'scss/typography';
 
 @if $flexboxgrid {
-	@import 'scss/flexboxgrid';
+  @import 'scss/flexboxgrid';
 }@else {
-	@import 'scss/bootstrapgrid';
+  @import 'scss/bootstrapgrid';
 }
