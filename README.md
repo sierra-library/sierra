@@ -1,6 +1,6 @@
 
 
-![Sierra cover](http://sierra-library.github.io/demo/img/github/github-cover.png)
+![Sierra cover](http://sierra-library.github.io/img/github/github-cover.png)
 
 Sierra library
 ========================================
@@ -60,13 +60,13 @@ This is a tiny SCSS library to help you build websites faster than ever, without
 
 [![appszoom.com][1]][2] [![appszoom.com/developers][3]][4] [![mobonaut.com][5]][6]
 
-[1]: http://sierra-library.github.io/demo/img/github/logo-appszoom-s.png
+[1]: http://sierra-library.github.io/img/github/logo-appszoom-s.png
 [2]: http://www.appszoom.com
 
-[3]: http://sierra-library.github.io/demo/img/github/logo-appszoom-developers-s.png
+[3]: http://sierra-library.github.io/img/github/logo-appszoom-developers-s.png
 [4]: http://www.appszoom.com/developers
 
-[5]: http://sierra-library.github.io/demo/img/github/logo-mobonaut-s.png
+[5]: http://sierra-library.github.io/img/github/logo-mobonaut-s.png
 [6]: http://www.mobonaut.com
 
 ###  Contributing & reporting issues
