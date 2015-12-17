@@ -164,6 +164,43 @@ $backgroundColourMap: map-merge($backgroundColourMap, (
 	rating10: $rating10
 ));
 
+/**
+*  $BUTTONS
+*/
+
+$button-border-radius: 0.5; // 50% of the button's height
+$button-sizes: (
+	normal: (
+		fontSize: 12px,
+		lineHeight: 1.5,
+		paddingTB: 10px,
+		paddingLR: 20px
+	),
+	big: (
+		fontSize: 16px,
+		lineHeight: 1.5,
+		paddingTB: 10px,
+		paddingLR: 30px
+	),
+	small: (
+		fontSize: 11px,
+		lineHeight: 1.273,
+		paddingTB: 6px,
+		paddingLR: 20px
+	),
+	huge: (
+		fontSize: 16px,
+		lineHeight: 1.5,
+		paddingTB: 15px,
+		paddingLR: 30px
+	),
+	hugeLg: (
+		fontSize: 18px,
+		lineHeight: 1.5,
+		paddingTB: 18px,
+		paddingLR: 50px
+	)
+);
 
 /**
 *  $MEDIA QUERIES BREAKPOINTS
