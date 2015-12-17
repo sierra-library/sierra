@@ -41,18 +41,20 @@ This is a tiny SCSS library to help you build websites faster than ever, without
            ├── flexboxgrid/                 /* Flexboxgrid system */
            │      └── grid.scss
            ├── flexboxgrid.scss             /* Flexfox main grid file */
+		   ├── utils/
+		   │      └── mixins.scss
+		   ├── vendor/
+		   │      └── reset.scss
            ├── forms.scss
            ├── helpers.scss                 /* Utilities and modifiers */
            ├── layout.scss
            ├── loading-bar.scss
            ├── loading-spinner.scss
            ├── main.scss
-           ├── mixins.scss
            ├── placeholders.scss
-           ├── reset.scss
            ├── tables.scss
            ├── tabs.scss
-           └── tipography.scss
+           └── typography.scss
 
 ### Tested in production environments
 
