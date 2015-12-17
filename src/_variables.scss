@@ -1,7 +1,7 @@
 
 /**
- *  $LAYOUT
- */
+*  $LAYOUT
+*/
 
 $gutterwidth:             24px;
 $pagemaxwidth:            1380px;
@@ -10,8 +10,8 @@ $border-box:              true;
 
 
 /**
- *  $FONT
- */
+*  $FONT
+*/
 
 $basefont: 'Lato', sans-serif;
 $codefont: "Courier New", monospace;
@@ -21,11 +21,11 @@ $font-size-base-medium: 15px;
 $font-size-base-large:  15px;
 
 $line-height-base:      1.5em;
-
+$font-weight-base:		400;
 
 /**
- *  $COLOURS
- */
+*  $COLOURS
+*/
 
 // white
 $white:					#ffffff;
@@ -85,6 +85,33 @@ $table-bg-color:		#34495e;
 $table-header-bg-color:	$body-bg;
 $table-text-color:		$white;
 
+$textColourMap: (
+	primary: $brand-primary,
+	secondary:$brand-secondary,
+	dark:$text-dark,
+	grey: $text-grey,
+	green:  $color-success,
+	success:  $color-success,
+	red:  $color-error,
+	error: $color-error,
+	warning: $color-warning
+);
+
+$backgroundColourMap: (
+	primary: $brand-primary,
+	dark: $brand-dark,
+	secondary: $brand-secondary,
+	white: $white,
+	success: $color-success,
+	info: $color-info,
+	warning: $color-warning,
+	error: $color-error,
+	grey: $background-grey,
+	grey-dark: $grey-dark,
+	grey-soft: $grey-soft,
+	grey-light: $grey-light
+);
+
 
 // Links
 
@@ -124,12 +151,60 @@ $rating8: 		#4caf50;
 $rating9: 		#43a047;
 $rating10: 		#388e3c;
 
-
-
+$backgroundColourMap: map-merge($backgroundColourMap, (
+	rating1: $rating1,
+	rating2: $rating2,
+	rating3: $rating3,
+	rating4: $rating4,
+	rating5: $rating5,
+	rating6: $rating6,
+	rating7: $rating7,
+	rating8: $rating8,
+	rating9: $rating9,
+	rating10: $rating10
+));
 
 /**
- *  $MEDIA QUERIES BREAKPOINTS
- */
+*  $BUTTONS
+*/
+
+$button-border-radius: 0.5; // 50% of the button's height
+$button-sizes: (
+	normal: (
+		fontSize: 12px,
+		lineHeight: 1.5,
+		paddingTB: 10px,
+		paddingLR: 20px
+	),
+	big: (
+		fontSize: 16px,
+		lineHeight: 1.5,
+		paddingTB: 10px,
+		paddingLR: 30px
+	),
+	small: (
+		fontSize: 11px,
+		lineHeight: 1.273,
+		paddingTB: 6px,
+		paddingLR: 20px
+	),
+	huge: (
+		fontSize: 16px,
+		lineHeight: 1.5,
+		paddingTB: 15px,
+		paddingLR: 30px
+	),
+	hugeLg: (
+		fontSize: 18px,
+		lineHeight: 1.5,
+		paddingTB: 18px,
+		paddingLR: 50px
+	)
+);
+
+/**
+*  $MEDIA QUERIES BREAKPOINTS
+*/
 
 // Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
@@ -170,15 +245,15 @@ $screen-md-max:              ($screen-lg-min - 1);
 
 
 /**
- *  $GRID SYSTEM
- */
+*  $GRID SYSTEM
+*/
 
 $flexboxgrid: false; // https://github.com/kristoferjoseph/flexboxgrid
 
 
 /**
- *  $BOOTSTRAP GRID SYSTEM CONFIG
- */
+*  $BOOTSTRAP GRID SYSTEM CONFIG
+*/
 
 // Number of columns in the grid.
 $grid-columns:              12;
@@ -194,8 +269,8 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
 
 /**
- *  $CONTAINER SIZES
- */
+*  $CONTAINER SIZES
+*/
 
 //## Define the maximum width of `.container` for different screen sizes.
 
