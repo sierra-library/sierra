@@ -85,7 +85,7 @@ $table-bg-color:        #34495e;
 $table-header-bg-color: $body-bg;
 $table-text-color:      $white;
 
-$textColourMap: (
+$text-colour-map: (
   primary:              $brand-primary,
   secondary:            $brand-secondary,
   dark:                 $text-dark,
@@ -97,19 +97,19 @@ $textColourMap: (
   warning:              $color-warning
 );
 
-$backgroundColourMap: (
-  primary:              $brand-primary,
-  dark:                 $brand-dark,
-  secondary:            $brand-secondary,
-  white:                $white,
-  success:              $color-success,
-  info:                 $color-info,
-  warning:              $color-warning,
-  error:                $color-error,
-  grey:                 $background-grey,
-  grey-dark:            $grey-dark,
-  grey-soft:            $grey-soft,
-  grey-light:           $grey-light
+$background-colour-map: (
+  'primary':              $brand-primary,
+  'dark':                 $brand-dark,
+  'secondary':            $brand-secondary,
+  'white':                $white,
+  'success':              $color-success,
+  'info':                 $color-info,
+  'warning':              $color-warning,
+  'error':                $color-error,
+  'grey':                 $background-grey,
+  'grey-dark':            $grey-dark,
+  'grey-soft':            $grey-soft,
+  'grey-light':           $grey-light
 );
 
 
@@ -151,7 +151,7 @@ $rating8:     #4caf50;
 $rating9:     #43a047;
 $rating10:    #388e3c;
 
-$backgroundColourMap: map-merge($backgroundColourMap, (
+$background-colour-map: map-merge($background-colour-map, (
   rating1: $rating1,
   rating2: $rating2,
   rating3: $rating3,

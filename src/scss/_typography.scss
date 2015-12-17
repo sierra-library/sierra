@@ -104,7 +104,7 @@ a {
   }
 
   // Colours
-  @each $type, $colour in $textColourMap {
+  @each $type, $colour in $background-colour-map {
     &-#{$type} {
       color: $colour;
     }
