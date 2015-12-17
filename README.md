@@ -19,7 +19,7 @@ The smallest and lightest scss library (formerly known as penguin library)
 
 This is a tiny SCSS library to help you build websites faster than ever, without hundreds of (never used) selectors.
 
-* Only 39 KB
+* Only 36.46 kB
 * Modular ready
 * 2 grid systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/))
 * Adjust colors, borders & sizes in the variables.scss file
@@ -87,4 +87,3 @@ Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/)  for collab
 ### License
 
 This library is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
-

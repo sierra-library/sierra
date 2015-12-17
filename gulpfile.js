@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
 $ = require('gulp-load-plugins')({pattern: ['gulp-*']}),
-paths = {src: 'src/', entry: 'entry.scss'};
+paths = {src: 'src/', dist: 'dist/', dev: 'dev/', entry: 'entry.scss'};
 
 
 /**
@@ -17,12 +17,11 @@ var onError = function (err) {
 	this.emit('end');
 };
 
-
 /**
-*  Build development files
+*  Default tasks
 */
 
-gulp.task('sass', function () {
+gulp.task('default', function() {
 	return gulp.src(paths.src+paths.entry)
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sourcemaps.init())
@@ -35,15 +34,14 @@ gulp.task('sass', function () {
 		basename: 'sierra'
 	}))
 	.pipe($.sourcemaps.write())
-	.pipe(gulp.dest('dev'));
+	.pipe(gulp.dest(paths.dev))
+	.pipe($.size({title: 'Development', showFiles: true}));
 });
 
-
 /**
-*  Build production files
+*  Build production ready sass
 */
-
-gulp.task('build:sass', function () {
+gulp.task('build', function() {
 	return gulp.src(paths.src+paths.entry)
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sass({compress: true, outputStyle: 'compressed'}).on('error', $.util.log))
@@ -59,16 +57,6 @@ gulp.task('build:sass', function () {
 		basename: 'sierra',
 		suffix: '.min'
 	}))
-	.pipe(gulp.dest('dist'));
+	.pipe(gulp.dest(paths.dist))
+	.pipe($.size({title: 'Production', showFiles: true}));
 });
-
-/**
-*  Default tasks
-*/
-
-gulp.task('default', ['sass']);
-
-/**
-*  Build production ready sass
-*/
-gulp.task('build', ['build:sass']);
