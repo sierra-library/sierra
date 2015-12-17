@@ -10,6 +10,7 @@ The smallest and lightest scss library (formerly known as penguin library)
 ### Installation
 
 `$ bower install sierra --save`
+
 `$ npm install sierra-library --save-dev`
 
 ### Online demo
