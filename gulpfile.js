@@ -26,7 +26,7 @@ gulp.task('sass', function () {
 	return gulp.src(paths.src+paths.entry)
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sourcemaps.init())
-	.pipe($.sass({compress: false}).on('error', $.util.log))
+	.pipe($.sass({compress: false, outputStyle: 'expanded'}).on('error', $.util.log))
 	.pipe($.autoprefixer({
 		browsers: ['last 3 versions'],
 		cascade: false
@@ -46,7 +46,7 @@ gulp.task('sass', function () {
 gulp.task('build:sass', function () {
 	return gulp.src(paths.src+paths.entry)
 	.pipe($.plumber({errorHandler: onError}))
-	.pipe($.sass({compress: false}).on('error', $.util.log))
+	.pipe($.sass({compress: true, outputStyle: 'compressed'}).on('error', $.util.log))
 	.pipe($.autoprefixer({
 		browsers: ['last 3 versions'],
 		cascade: false
