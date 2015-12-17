@@ -4,7 +4,7 @@
 .background {
   @each $type, $colour in $backgroundColourMap {
     &-#{$type} {
-      color: $colour;
+      background-color: $colour;
     }
   }
 }
