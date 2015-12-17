@@ -1,0 +1,24 @@
+{
+  "name": "sierra",
+  "description": "The smallest and lightest scss library.",
+  "main": "dist/sierra.min.css",
+  "authors": [
+    "Sierra"
+  ],
+  "license": "GNU",
+  "keywords": [
+    "sass",
+    "scss",
+    "library",
+    "framework",
+    "light",
+    "lightweight",
+    "micro"
+  ],
+  "homepage": "http://sierra-library.github.io/",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ]
+}
