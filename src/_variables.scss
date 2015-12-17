@@ -1,7 +1,7 @@
 
 /**
- *  $LAYOUT
- */
+*  $LAYOUT
+*/
 
 $gutterwidth:             24px;
 $pagemaxwidth:            1380px;
@@ -10,8 +10,8 @@ $border-box:              true;
 
 
 /**
- *  $FONT
- */
+*  $FONT
+*/
 
 $basefont: 'Lato', sans-serif;
 $codefont: "Courier New", monospace;
@@ -24,8 +24,8 @@ $line-height-base:      1.5em;
 
 
 /**
- *  $COLOURS
- */
+*  $COLOURS
+*/
 
 // white
 $white:					#ffffff;
@@ -85,6 +85,18 @@ $table-bg-color:		#34495e;
 $table-header-bg-color:	$body-bg;
 $table-text-color:		$white;
 
+$textColourMap: (
+	primary: $brand-primary,
+	secondary:$brand-secondary,
+	dark:$text-dark,
+	grey: $text-grey,
+	green:  $color-success,
+	success:  $color-success,
+	red:  $color-error,
+	error: $color-error,
+	warning: $color-warning
+);
+
 
 // Links
 
@@ -128,8 +140,8 @@ $rating10: 		#388e3c;
 
 
 /**
- *  $MEDIA QUERIES BREAKPOINTS
- */
+*  $MEDIA QUERIES BREAKPOINTS
+*/
 
 // Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
@@ -170,15 +182,15 @@ $screen-md-max:              ($screen-lg-min - 1);
 
 
 /**
- *  $GRID SYSTEM
- */
+*  $GRID SYSTEM
+*/
 
 $flexboxgrid: false; // https://github.com/kristoferjoseph/flexboxgrid
 
 
 /**
- *  $BOOTSTRAP GRID SYSTEM CONFIG
- */
+*  $BOOTSTRAP GRID SYSTEM CONFIG
+*/
 
 // Number of columns in the grid.
 $grid-columns:              12;
@@ -194,8 +206,8 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
 
 /**
- *  $CONTAINER SIZES
- */
+*  $CONTAINER SIZES
+*/
 
 //## Define the maximum width of `.container` for different screen sizes.
 
