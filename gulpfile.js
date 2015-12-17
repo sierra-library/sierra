@@ -2,7 +2,6 @@ var gulp = require('gulp'),
 $ = require('gulp-load-plugins')({pattern: ['gulp-*']}),
 paths = {src: 'src/', dist: 'dist/', dev: 'dev/', entry: 'entry.scss'};
 
-
 /**
 *  Error handling
 */

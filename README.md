@@ -19,7 +19,7 @@ The smallest and lightest scss library (formerly known as penguin library)
 
 This is a tiny SCSS library to help you build websites faster than ever, without hundreds of (never used) selectors.
 
-* Only 36.46 kB
+* Only 36.46 kB (7.02 kB gzipped)
 * Modular ready
 * 2 grid systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/))
 * Adjust colors, borders & sizes in the variables.scss file
