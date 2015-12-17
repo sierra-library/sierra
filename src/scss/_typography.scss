@@ -2,10 +2,8 @@
 * Tipography
 */
 body {
+	font: #{$font-weight-base} #{$font-size-base}/#{$line-height-base} $basefont;
 	color: $text-color;
-	font-family: $basefont;
-	font-size: $font-size-base;
-	line-height: 1.5em;
 
 	@include breakpoint(bp-medium) {
 		font-size: $font-size-base-medium;
