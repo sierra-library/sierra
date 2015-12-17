@@ -61,7 +61,7 @@ linters:
   ImportPath:
     enabled: true
     leading_underscore: false
-    filename_extension: true
+    filename_extension: false
 
   Indentation:
     enabled: true
