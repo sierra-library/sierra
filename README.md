@@ -1,5 +1,3 @@
-
-
 ![Sierra cover](http://sierra-library.github.io/img/github/github-cover.png)
 
 Sierra library
@@ -9,6 +7,9 @@ The smallest and lightest scss library (formerly known as penguin library)
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+### Installation
+
+`$ bower install sierra --save`
 
 ### Online demo
 
