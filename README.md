@@ -70,9 +70,20 @@ This is a tiny SCSS library to help you build websites faster than ever, without
 [5]: http://sierra-library.github.io/img/github/logo-mobonaut-s.png
 [6]: http://www.mobonaut.com
 
-###  Contributing & reporting issues
+###  Suggesting enhacements and reporting bugs
 Use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggesting enhancements and reporting bugs.
-Fork this repo and help us improving this library!
+
+###  Contributing rules
+
+- Open Pull Requests with your changes.
+- Do not include many different commits in the same PR.
+- Use editorconfig file located in the root folder.
+- Use the .scss-lint file located in the root folder.
+- In order to make this library easy to maintain you can use mixins, placeholders and even functions if necessary. The golden rule here is keeping it as simple as possible. Sometimes is better a simple solution that takes a few more lines of code, rather than one that adds complexity for the sake of one-liners. Just use common sense here. In case of doubt join our chat at [sierra-library gitter](https://gitter.im/sierra-library/sierra).
+- Many selector names can be improved, but try to avoid changing them (do it only if strictly necessary). We will change them in the V2 with BEM naming.
+- If you want to make a big change, suggest it in the [sierra-library gitter](https://gitter.im/sierra-library/sierra) chat. Just to be sure everybody feels confortable with that.
+
+- Happy contributing everyone!
 
 ### Thanks
 Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/)  for collaborating in the design process and [Joan Leon](https://twitter.com/nucliweb) for all the advices and linting files.
