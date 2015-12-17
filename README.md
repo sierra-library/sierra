@@ -77,7 +77,7 @@ Use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggest
 
 - Open Pull Requests with your changes.
 - Do not include many different commits in the same PR.
-- Use editorconfig file located in the root folder.
+- Use .editorconfig file located in the root folder.
 - Use the .scss-lint file located in the root folder.
 - In order to make this library easy to maintain you can use mixins, placeholders and even functions if necessary. The golden rule here is keeping it as simple as possible. Sometimes is better a simple solution that takes a few more lines of code, rather than one that adds complexity for the sake of one-liners. Just use common sense here. In case of doubt join our chat at [sierra-library gitter](https://gitter.im/sierra-library/sierra).
 - Many selector names can be improved, but try to avoid changing them (do it only if strictly necessary). We will change them in the V2 with BEM naming.
