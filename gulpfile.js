@@ -21,7 +21,7 @@ var onError = function (err) {
 */
 
 gulp.task('default', function() {
-	return $.rubySass(paths.src+paths.entry, {style: 'expanded', precision: 4, require: ['sass-globbing', 'breakpoint', 'susy']})
+	return $.rubySass(paths.src+paths.entry, {style: 'expanded', precision: 4, require: ['sass-globbing', 'breakpoint']})
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sourcemaps.init())
 	.pipe($.autoprefixer({
@@ -40,7 +40,7 @@ gulp.task('default', function() {
 *  Build production ready sass
 */
 gulp.task('build', function() {
-	return $.rubySass(paths.src+paths.entry, {style: 'compact', precision: 4, require: ['sass-globbing', 'breakpoint', 'susy']})
+	return $.rubySass(paths.src+paths.entry, {style: 'compact', precision: 4, require: ['sass-globbing', 'breakpoint']})
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.autoprefixer({
 		browsers: ['last 3 versions'],
