@@ -91,7 +91,7 @@
 	}
 
 	@if $button-border-radius-enabled == true {
-		& > .button, & > .dropdown-toggle {
+		& > .button {
 			&:last-child:not(:first-child) {
 				@include border-left-radius(0);
 			}
