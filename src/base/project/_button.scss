@@ -1,4 +1,6 @@
-$button-font-size-base: map-get($fs, s);
+$button-hover-multi: 13%;
+
+$button-font-size-base: map-get($fs, xs);
 $button-padding-base: map-get($padding, s);
 $button-font-weight: 700;
 $button-text-transform: uppercase;
@@ -11,5 +13,3 @@ $button-sizes: (
 	small: 0.6,
 	large: 1.3
 );
-
-$button-hover-multi: 11%;
