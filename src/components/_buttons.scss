@@ -37,9 +37,18 @@
 
 	border: $button-border-size solid $default;
 
+	&:not(.button--outline):hover {
+		background-color: darken($default, $button-hover-multi);
+		border-color: darken($default, $button-hover-multi);
+	}
+
 	&.button--outline {
 		background-color: transparent;
 		color: $default;
+
+		&:hover {
+			background-color: rgba($default, 0.3);
+		}
 	}
 
 	@each $type, $colour in $colours {
@@ -51,9 +60,18 @@
 				color: map-get($colours, primary);
 			}
 
+			&:not(.button--outline):hover {
+				background-color: darken($colour, $button-hover-multi);
+				border-color: darken($colour, $button-hover-multi);
+			}
+
 			&.button--outline {
 				background-color: transparent;
 				color: $colour;
+
+				&:hover {
+					background-color: rgba($colour, 0.3);
+				}
 			}
 		}
 	};
