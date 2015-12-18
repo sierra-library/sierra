@@ -65,8 +65,8 @@ linters:
 
   Indentation:
     enabled: true
-    character: space
-    width: 2
+    character: tab
+    width: 4
 
   LeadingZero:
     enabled: true

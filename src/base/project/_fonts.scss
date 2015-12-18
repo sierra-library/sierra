@@ -1,0 +1,28 @@
+$emBase: 16px;
+$lineHeightBase: 1.2;
+
+$fontfamilies: (
+		'aleo': (300, 400, 700),
+		'opensans': (300, 400, 700)
+);
+
+$primaryFont: 'opensans', 'Helvetica', 'Arial', sans-serif;
+$secondaryFont: 'aleo', 'Helvetica', 'Arial', sans-serif;
+
+$fs: (
+		xs: 11px,
+		s: 18px,
+		m: 28px,
+		xm: 36px,
+		l: 48px,
+		xl: 52px
+);
+
+@mixin fs($t) {
+	@if (strip-units($t) == 0) {
+		font-size: 0;
+	} @else {
+		font-size: $t;
+		font-size: rem($t);
+	}
+}

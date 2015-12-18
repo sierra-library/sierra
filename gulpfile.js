@@ -21,10 +21,9 @@ var onError = function (err) {
 */
 
 gulp.task('default', function() {
-	return gulp.src(paths.src+paths.entry)
+	return $.rubySass(paths.src+paths.entry, {style: 'expanded', precision: 4, require: ['sass-globbing', 'breakpoint', 'susy']})
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sourcemaps.init())
-	.pipe($.sass({compress: false, outputStyle: 'expanded'}).on('error', $.util.log))
 	.pipe($.autoprefixer({
 		browsers: ['last 3 versions'],
 		cascade: false
@@ -41,9 +40,8 @@ gulp.task('default', function() {
 *  Build production ready sass
 */
 gulp.task('build', function() {
-	return gulp.src(paths.src+paths.entry)
+	return $.rubySass(paths.src+paths.entry, {style: 'compact', precision: 4, require: ['sass-globbing', 'breakpoint', 'susy']})
 	.pipe($.plumber({errorHandler: onError}))
-	.pipe($.sass({compress: true, outputStyle: 'compressed'}).on('error', $.util.log))
 	.pipe($.autoprefixer({
 		browsers: ['last 3 versions'],
 		cascade: false
@@ -51,7 +49,7 @@ gulp.task('build', function() {
 	.pipe($.combineMq({beautify: false}))
 	.pipe($.csso())
 	.pipe($.csscomb())
-	.pipe($.minifyCss({keepSpecialComments: false, mediaMerging: true, roundingPrecision: 4, advanced: true, aggressiveMerging: true}))
+	.pipe($.cssmin({advanced: true, aggressiveMerging: true, keepSpecialComments: false, semanticMerging: true}))
 	.pipe($.rename({
 		basename: 'sierra',
 		suffix: '.min'

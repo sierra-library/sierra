@@ -1,47 +1,18 @@
 {
-  "name": "sierra-library",
-  "version": "1.1.6",
-  "description": "The smallest and lightest scss library",
-  "main": "dist/sierra.min.css",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sierra-library/sierra.git"
-  },
-  "keywords": [
-    "scss",
-    "library",
-    "framework",
-    "responsive",
-    "sass",
-    "sierra",
-    "micro",
-    "open source",
-    "lightweight",
-    "frontend"
-  ],
-  "author": {
-    "name": "Sierra-library",
-    "url": "https://github.com/sierra-library"
-  },
-  "licenses": [
-    {
-      "type": "GNU General Public License v2.0."
-    }
-  ],
-  "private": false,
-  "devDependencies":
-  {
+  "private": true,
+  "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-combine-mq": "^0.4.0",
     "gulp-csscomb": "^3.0.6",
+    "gulp-cssmin": "^0.1.7",
     "gulp-csso": "^1.0.1",
     "gulp-load-plugins": "^1.1.0",
     "gulp-minify-css": "^1.2.2",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "~1.2.2",
-    "gulp-sass": "^2.1.1",
+    "gulp-ruby-sass": "^2.0.6",
     "gulp-size": "^2.0.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7"

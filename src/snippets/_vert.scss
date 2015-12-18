@@ -1,0 +1,24 @@
+.vert-wrap {
+	&:before {
+		@include inblock(middle);
+		content: '';
+		height: 100%;
+
+		.content & {
+			height: auto;
+		}
+
+		@include media(xm, true) {
+			.contacts & {
+				height: auto;
+			}
+		}
+	}
+
+	.vert-this {
+		position: relative;
+
+		@include inblock(middle);
+		width: 100%;
+	}
+}

@@ -1,0 +1,5 @@
+@mixin cr($old, $new) {
+	@at-root #{selector-replace(&, $old, $new)} {
+		@content;
+	}
+}

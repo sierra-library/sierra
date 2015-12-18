@@ -1,0 +1,56 @@
+html {
+	font: 400 #{$emBase}/#{$lineHeightBase} $primaryFont;
+}
+
+body {
+	@include size(100%);
+
+	direction: ltr;
+	unicode-bidi: embed;
+
+	background: transparent;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	-webkit-tap-highlight-color: transparent;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+
+	display: block;
+
+	figcaption {
+		display: block;
+	}
+}
+
+img {
+	@include size(100% auto);
+
+	&.auto {
+		@include size(auto);
+	}
+
+	&[src$=".svg"] {
+		overflow: hidden;
+	}
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.visuallyhidden {
+	@include visuallyhidden();
+}

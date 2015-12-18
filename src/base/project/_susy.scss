@@ -1,0 +1,12 @@
+$susy: (
+		columns: 12,
+		gutters: map-get($padding, m)/($max-stage-width / 12),
+		gutter-position: after,
+		math: fluid,
+		output: float,
+		flow: LTR,
+		use-custom: (
+				box-sizing: false,
+				rem: true
+		)
+);

@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
-// Init variables
-@import 'variables';
-
-// Add library
-@import 'sierra';
+// Base
+@import 'base/base';
+// Global
+@import 'global/all';
+@import 'global/lists';
+@import 'global/typography';
+// Vendor
+@import 'vendor/animations';
+@import 'vendor/font';
+// Snippets
+@import 'snippets/vert';
+@import 'snippets/grid';

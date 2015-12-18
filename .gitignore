@@ -1,8 +1,2 @@
 node_modules/
-*.log
-*.sublime-project
-
-*.sublime-workspace
-.composer.phar
-
-*.sublime-gulp.cache
+.sass-cache/

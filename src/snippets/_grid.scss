@@ -1,0 +1,57 @@
+@import 'susy';
+
+.flex-oc {
+	$gap: map-get($padding, l);
+
+	display: flex;
+	flex-flow: row wrap;
+
+	&.padded {
+		margin: (-1 * (map-get($padding, xm) / 2));
+
+		@include media(l) {
+			margin: (-1 * ($gap / 2));
+
+			&.gap-2 {
+				margin: (-1 * ($gap * 2));
+			}
+		}
+	}
+
+	[class*='oc-'] {
+		width: 100%;
+		order: -1;
+
+		@include cr('.flex-oc', '.flex-oc.padded') {
+			padding: (map-get($padding, xm) / 2);
+
+			@include media(l) {
+				padding: ($gap / 2);
+			}
+
+			@include media(l) {
+				@include cr('.padded', '.padded.gap-2') {
+					padding: ($gap * 2);
+				}
+			}
+		}
+	}
+
+	.match-height {
+		display: flex;
+	}
+
+	.oc-0 {
+		flex-grow: 1;
+	}
+
+	@include with-layout(auto inside fluid no-gutters) {
+		@for $i from 1 through (map-get($susy, columns)) {
+			.oc-#{$i} {
+				@include media(m) {
+					width: span($i of map-get($susy, columns));
+				}
+			}
+		}
+	}
+}

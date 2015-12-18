@@ -1,0 +1,13 @@
+@import 'breakpoint';
+
+@mixin media($short, $doMin:false) {
+	@if $doMin == false {
+		@include breakpoint(map-get($bp, $short)) {
+			@content;
+		}
+	} @else {
+		@include breakpoint(max-width map-get($bp, $short)) {
+			@content;
+		}
+	}
+}

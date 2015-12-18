@@ -1,0 +1,4 @@
+@mixin inblock($vert: top) {
+	display: inline-block;
+	vertical-align: $vert;
+}

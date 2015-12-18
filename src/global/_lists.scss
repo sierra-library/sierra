@@ -1,0 +1,44 @@
+ul {
+	&.styled {
+		@extend ul%default-ul;
+	}
+}
+
+ol {
+	&.styled {
+		@extend ol%default-ol;
+	}
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	&%default-ul {
+		list-style: disc outside;
+
+		li {
+			line-height: 1.3;
+		}
+	}
+
+	&%default-ol {
+		list-style: decimal outside;
+
+		li {
+			line-height: 1.3;
+		}
+	}
+}
+
+dl {
+	padding: 0;
+	margin: 0;
+
+	dd {
+		padding: 0;
+		margin: 0;
+	}
+}

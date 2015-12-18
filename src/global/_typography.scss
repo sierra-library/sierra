@@ -1,0 +1,45 @@
+p {
+	display: block;
+
+	padding: 0;
+	margin: 0;
+
+	@include fs(map-get($fs, s) * 0.8);
+	font-weight: 300;
+
+	line-height: 1.5;
+
+	&:not(:last-of-type) {
+		margin-bottom: map-get($padding, s);
+	}
+
+	@include media(xm) {
+		@include fs(map-get($fs, s));
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: $secondaryFont;
+}
+
+h1, .styled-h1 {
+	@include fs(map-get($fs, xm));
+	font-weight: 300;
+
+	@include media(xm) {
+		@include fs(map-get($fs, l));
+	}
+}
+
+h3, .styled-h3 {
+	@include fs(map-get($fs, m) * 0.8);
+	font-weight: 700;
+}
+
+h4, .styled-h4 {
+	@include fs(map-get($fs, s));
+	font-weight: 700;
+}

@@ -1,0 +1,15 @@
+$header: (
+	height: 120px
+);
+
+$max-stage-width: 1240px;
+$bp: (
+		xs: 20em,
+		s: 40em,
+		m: 50em,
+		xm: 65em,
+		l: 80em,
+		xl: 100em
+);
+
+$gap: map-get($padding, l) * 1.3;
