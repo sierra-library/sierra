@@ -1,6 +1,6 @@
 $weightMap: (300: 'light', 400: 'reg', 500: 'med', 700: 'bold', 800: 'black');
 
-@each $font, $data in $fontfamilies {
+@each $font, $data in $fontFamilies {
 	@each $weight in $data {
 
 		$fontName: '#{$font}-#{map-get($weightMap, $weight)}';

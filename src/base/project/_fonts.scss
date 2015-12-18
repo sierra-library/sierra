@@ -1,10 +1,8 @@
 $emBase: 16px;
 $lineHeightBase: 1.2;
 
-$fontfamilies: (
-		'aleo': (300, 400, 700),
-		'opensans': (300, 400, 700)
-);
+// Load font files from local file
+$fontFamilies: ();
 
 $primaryFont: 'opensans', 'Helvetica', 'Arial', sans-serif;
 $secondaryFont: 'aleo', 'Helvetica', 'Arial', sans-serif;
