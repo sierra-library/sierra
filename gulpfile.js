@@ -57,3 +57,8 @@ gulp.task('build', function() {
 	.pipe(gulp.dest(paths.dist))
 	.pipe($.size({title: 'Production', showFiles: true}));
 });
+
+
+gulp.task('watch', ['default'], function() {
+	return gulp.watch('src/**/*', ['default']);
+});

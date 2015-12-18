@@ -2,3 +2,11 @@ $white: white;
 $black: black;
 
 $off-white: darken($white, 22%);
+
+$default: #64829f;
+
+$colours: (
+	'primary': #1abc9c,
+	'secondary': #9b59b6,
+	'white': $white
+);

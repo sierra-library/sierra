@@ -1,0 +1,69 @@
+@function buttonPadding($multi) {
+	@return ceil($button-padding-base * $multi);
+}
+
+@function buttonFontSize($multi) {
+	@return ceil($button-font-size-base * $multi);
+}
+
+@function buttonHeight($multi) {
+	@return ceil((((buttonFontSize($multi)) + (buttonPadding($multi) * 2))) + $button-border-size);
+}
+
+@mixin border-radius($multi) {
+	@if $button-border-radius-enabled == true {
+		border-radius: ceil(buttonHeight($multi) * $button-border-radius);
+	}
+}
+
+.button {
+	position: relative;
+	@include inblock(middle);
+	touch-action: manipulation;
+
+	padding: buttonPadding(1) (buttonPadding(1) * 4.2);
+
+	@include fs(buttonFontSize(1));
+	line-height: 1;
+
+	@include size(auto buttonHeight(1));
+	@include border-radius(1);
+
+	color: $white;
+	background-color: $default;
+
+	font-weight: $button-font-weight;
+	text-transform: $button-text-transform;
+
+	border: $button-border-size solid $default;
+
+	&.button--outline {
+		background-color: transparent;
+		color: $default;
+	}
+
+	@each $type, $colour in $colours {
+		&--#{$type} {
+			background-color: $colour;
+			border-color: $colour;
+
+			@if ($type == 'white') {
+				color: map-get($colours, primary);
+			}
+
+			&.button--outline {
+				background-color: transparent;
+				color: $colour;
+			}
+		}
+	};
+
+	@each $type, $multi in $button-sizes {
+		&--#{$type} {
+			padding: buttonPadding($multi) (buttonPadding($multi) * 4.2);
+			height: buttonHeight($multi);
+			@include fs(buttonFontSize($multi));
+			@include border-radius($multi);
+		}
+	}
+}

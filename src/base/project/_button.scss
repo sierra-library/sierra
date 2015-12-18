@@ -1,0 +1,13 @@
+$button-font-size-base: map-get($fs, s);
+$button-padding-base: map-get($padding, s);
+$button-font-weight: 700;
+$button-text-transform: uppercase;
+
+$button-border-radius-enabled: true;
+$button-border-radius: 0.5;
+$button-border-size: 1px;
+
+$button-sizes: (
+	small: 0.6,
+	large: 1.3
+);

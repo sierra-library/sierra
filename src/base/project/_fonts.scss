@@ -9,11 +9,11 @@ $secondaryFont: 'aleo', 'Helvetica', 'Arial', sans-serif;
 
 $fs: (
 		xs: 11px,
-		s: 18px,
-		m: 28px,
-		xm: 36px,
-		l: 48px,
-		xl: 52px
+		s: 16px,
+		m: 22px,
+		xm: 28px,
+		l: 32px,
+		xl: 48px
 );
 
 @mixin fs($t) {
