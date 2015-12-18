@@ -1,0 +1,21 @@
+@function buttonPadding($multi) {
+	@return ceil($button-padding-base * $multi);
+}
+
+@function buttonFontSize($multi) {
+	@return ceil($button-font-size-base * $multi);
+}
+
+@function buttonHeight($multi) {
+	@return ceil((((buttonFontSize($multi)) + (buttonPadding($multi) * 2))) + $button-border-size);
+}
+
+@function calcBorderRadius($multi) {
+	@return ceil(buttonHeight($multi) * $button-border-radius);
+}
+
+@mixin border-radius($multi) {
+	@if $button-border-radius-enabled == true {
+		border-radius: calcBorderRadius($multi);
+	}
+}
