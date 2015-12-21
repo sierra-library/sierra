@@ -7,12 +7,6 @@ The smallest and lightest scss library (formerly known as penguin library)
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-### Installation
-
-`$ bower install sierra --save`
-
-`$ npm install sierra-library --save-dev`
-
 ### Online demo
 
 [Visit demo website](http://sierra-library.github.io/).
@@ -22,11 +16,17 @@ The smallest and lightest scss library (formerly known as penguin library)
 
 This is a micro SCSS library to help you build websites in a matter of seconds, without all the arbitrary selectors.
 
-* Only 36.46 kB (7.02 kB gzipped)
+* Only 37.03 kB (8.9 kB gzipped)
 * Modular
-* 2 grid systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/))
-* Adjust colors, borders & sizes in the variables.scss file
+* 2 grid configurable systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/))
+* Adjust colors, borders, radius & sizes in the variables.scss file
 * Responsive
+
+### Installation
+
+`$ bower install sierra --save`
+
+`$ npm install sierra-library --save-dev`
 
 ### Tested in production environments
 
