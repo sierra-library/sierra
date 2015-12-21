@@ -88,18 +88,23 @@ Tested in production environments
 
 Suggesting enhancements and reporting bugs
 -----------
-Use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggesting enhancements and reporting bugs.
+Since we are a very small community, we will apreciate every contribution   however small it may be.
 
-Contributing rules
+We will be happy to discuss about new features and possible enhancements, so feel free to use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggesting enhancements and reporting bugs.
+
+Once your enhancement will be approved, you'll be ready to open a Pull Request.
+
+Contributing
 -----------
+Before creating a new Pull Request, open an issue at [GitHub Issues](https://github.com/Sierra-Library/sierra/issues). Just to make sure everybody feels confortable with the change. Remember to especify if you are able to develop this change.
 
-- Open Pull Requests with your changes.
-- Do not include many different commits in the same PR.
-- Use .editorconfig file located in the root folder.
+#### Contributing rules
+- Do not include many different commits in the same Pull Request.
+- Use .editorconfig file located in the root folder. [More info](http://editorconfig.org/)
 - Use the .scss-lint file located in the root folder.
 - In order to make this library easy to maintain you can use mixins, placeholders and even functions if necessary. The golden rule here is keeping it as simple as possible. Sometimes is better a simple solution that takes a few more lines of code, rather than one that adds complexity for the sake of one-liners. Just use common sense here. In case of doubt join our chat at [sierra-library gitter](https://gitter.im/sierra-library/sierra).
 - Many selector names can be improved, but try to avoid changing them (do it only if strictly necessary). We will change them in the V2 with BEM naming.
-- If you want to make a big change, suggest it in the [sierra-library gitter](https://gitter.im/sierra-library/sierra) chat. Just to be sure everybody feels confortable with that.
+
 
 - Happy contributing everyone!
 
