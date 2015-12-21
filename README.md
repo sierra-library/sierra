@@ -19,7 +19,7 @@ This is a micro SCSS library to help you build websites in a matter of seconds, 
 
 * Only 37.03 kB (8.9 kB gzipped)
 * Modular
-* 2 grid configurable systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/))
+* 2 configurable grid systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/))
 * Adjust colors, borders, radius & sizes in the variables.scss file
 * Responsive
 
