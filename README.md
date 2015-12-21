@@ -12,7 +12,8 @@ The smallest and lightest scss library (formerly known as penguin library)
 [Visit demo website](http://sierra-library.github.io/).
 
 
-### What's the difference with other SCSS libraries?
+What's the difference with other SCSS libraries?
+-----------
 
 This is a micro SCSS library to help you build websites in a matter of seconds, without all the arbitrary selectors.
 
@@ -22,13 +23,55 @@ This is a micro SCSS library to help you build websites in a matter of seconds, 
 * Adjust colors, borders, radius & sizes in the variables.scss file
 * Responsive
 
-### Installation
+Installation
+-----------
 
-`$ bower install sierra --save`
+### 1. Grab a copy of the library
 
-`$ npm install sierra-library --save-dev`
+Using bower
 
-### Tested in production environments
+```bash
+bower install sierra --save
+```
+
+
+Using npm
+
+```bash
+npm install sierra-library --save-dev
+```
+
+or manually [download the library](https://github.com/sierra-library/sierra/archive/master.zip).
+
+### 2. Load the css stylesheet in your html file
+
+```html
+<link rel="stylesheet" href="dist/sierra.min.css">
+```
+
+
+Customization
+-----------
+### 1. edit variables file
+This micro library is ready to be customized by editing the [variables.scss](https://github.com/sierra-library/sierra/blob/master/src/_variables.scss) file.
+
+Start changing:
+
+- Main font: `$basefont`.
+- Brand colors: `$brand-primary`,  `$brand-secondary`, `$brand-dark`.
+- Buttons border radius: `$button-border-radius`.
+[...]
+
+### 2. Install dependencies
+After editing, run `$ npm install` from the projects root folder to install all dependencies. (needs [nodejs](https://nodejs.org/) installed).
+
+### 3. Compile the files
+Run `$ gulp` to generate a new development file:  `dev/sierra.css`.
+
+Or run `$ gulp build` to generate a new production file:  `dist/sierra.min.css`.
+
+Tested in production environments
+-----------
 
 [![appszoom.com][1]][2] [![appszoom.com/developers][3]][4] [![mobonaut.com][5]][6]
 
@@ -41,10 +84,12 @@ This is a micro SCSS library to help you build websites in a matter of seconds, 
 [5]: http://sierra-library.github.io/img/github/logo-mobonaut-s.png
 [6]: http://www.mobonaut.com
 
-###  Suggesting enhancements and reporting bugs
+Suggesting enhancements and reporting bugs
+-----------
 Use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggesting enhancements and reporting bugs.
 
-###  Contributing rules
+Contributing rules
+-----------
 
 - Open Pull Requests with your changes.
 - Do not include many different commits in the same PR.
@@ -56,9 +101,11 @@ Use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggest
 
 - Happy contributing everyone!
 
-### Thanks
+Thanks
+-----------
 Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/) for collaborating in the design process and [Joan Leon](https://twitter.com/nucliweb) for all the advice on linting files.
 
-### License
+License
+-----------
 
 This library is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
