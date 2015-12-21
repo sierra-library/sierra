@@ -232,25 +232,7 @@ textarea {
   min-height: 120px;
 }
 
-// textarea with user
-.textarea-with-user {
-  padding-bottom: 45px;
-  position: relative;
-
-  .textarea-user-loged {
-    bottom: 0;
-    left: 10px;
-    opacity: .7;
-    position: absolute;
-    right: 0;
-    transition: opacity .25s ease-in-out;
-  }
-
-  & textarea:focus ~ .textarea-user-loged {
-    opacity: 1;
-  }
-}
-
+// Unused selector. Pending delete.
 .form-button-wrap {
   text-align: center;
 
@@ -518,7 +500,7 @@ input[type=radio]:checked + label:before{
   }
 }
 
-// forms in row (reduce space between bootstrap columns)
+// forms in row (reduce space between grid columns)
 .form-row {
   margin-left: -3px!important;
   margin-right: -3px!important;
@@ -528,8 +510,10 @@ input[type=radio]:checked + label:before{
   padding-left: 3px;
   padding-right: 3px;
 }
+
+
 /**
-* form collapse (items without gap between them)
+* form collapse (items in row without gap between them)
 *
 *  <div class="form-collapse">
 *    <div class="input item item-main">
