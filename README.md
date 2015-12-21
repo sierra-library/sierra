@@ -7,7 +7,7 @@ The smallest and lightest scss library (formerly known as penguin library)
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-### Online demo
+#### Online demo
 
 [Visit demo website](http://sierra-library.github.io/).
 
@@ -26,7 +26,7 @@ This is a micro SCSS library to help you build websites in a matter of seconds, 
 Installation
 -----------
 
-### 1. Grab a copy of the library
+#### 1. Grab a copy of the library
 
 Using bower
 
@@ -43,7 +43,7 @@ npm install sierra-library --save-dev
 
 or manually [download the library](https://github.com/sierra-library/sierra/archive/master.zip).
 
-### 2. Load the css stylesheet in your html file
+#### 2. Load the css stylesheet in your html file
 
 ```html
 <link rel="stylesheet" href="dist/sierra.min.css">
@@ -52,7 +52,7 @@ or manually [download the library](https://github.com/sierra-library/sierra/arch
 
 Customization
 -----------
-### 1. edit variables file
+#### 1. edit variables file
 This micro library is ready to be customized by editing the [variables.scss](https://github.com/sierra-library/sierra/blob/master/src/_variables.scss) file.
 
 Start changing:
@@ -60,12 +60,12 @@ Start changing:
 - Main font: `$basefont`.
 - Brand colors: `$brand-primary`,  `$brand-secondary`, `$brand-dark`.
 - Buttons border radius: `$button-border-radius`.
-[...]
+- [...]
 
-### 2. Install dependencies
+#### 2. Install dependencies
 After editing, run `$ npm install` from the projects root folder to install all dependencies. (needs [nodejs](https://nodejs.org/) installed).
 
-### 3. Compile the files
+#### 3. Compile the files
 Run `$ gulp` to generate a new development file:  `dev/sierra.css`.
 
 Or run `$ gulp build` to generate a new production file:  `dist/sierra.min.css`.
