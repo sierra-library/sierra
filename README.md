@@ -88,15 +88,17 @@ Tested in production environments
 
 Suggesting enhancements and reporting bugs
 -----------
-Since we are a very small community, we will apreciate every contribution   however small it may be.
+Since we're a very small community, we will appreciate every contribution   regardless of the size.
 
-We will be happy to discuss about new features and possible enhancements, so feel free to use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggesting enhancements and reporting bugs.
+We will be happy to discuss new features and possible enhancements, so feel free to use [GitHub Issues](https://github.com/Sierra-Library/sierra/issues) for suggesting enhancements, new features and reporting bugs.
 
-Once your enhancement will be approved, you'll be ready to open a Pull Request.
+Once your enhancement/new feature is approved, you can open a Pull Request.
 
 Contributing
 -----------
-Before creating a new Pull Request, open an issue at [GitHub Issues](https://github.com/Sierra-Library/sierra/issues). Just to make sure everybody feels confortable with the change. Remember to especify if you are able to develop this change.
+Before creating a new Pull Request, open an issue at [GitHub Issues](https://github.com/Sierra-Library/sierra/issues). Just to make sure everybody feels comfortable with the change.
+Remember to specify if you are able or unable, to develop the enhancement/feature.
+
 
 #### Contributing rules
 - Do not include many different commits in the same Pull Request.
