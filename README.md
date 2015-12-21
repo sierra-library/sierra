@@ -52,7 +52,7 @@ or manually [download the library](https://github.com/sierra-library/sierra/arch
 
 Customization
 -----------
-#### 1. edit variables file
+#### 1. Edit variables.scss file
 This micro library is ready to be customized by editing the [variables.scss](https://github.com/sierra-library/sierra/blob/master/src/_variables.scss) file.
 
 Start changing:
@@ -68,7 +68,9 @@ After editing, run `$ npm install` from the projects root folder to install all 
 #### 3. Compile the files
 Run `$ gulp` to generate a new development file:  `dev/sierra.css`.
 
-Or run `$ gulp build` to generate a new production file:  `dist/sierra.min.css`.
+or
+
+Run `$ gulp build` to generate a new production file:  `dist/sierra.min.css`.
 
 Tested in production environments
 -----------
