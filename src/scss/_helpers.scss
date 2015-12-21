@@ -111,12 +111,20 @@
   border: 1px solid $border-color;
 }
 
-.border-top {
-  border-top: 1px solid $border-color;
-}
-
 .border-bottom {
   border-bottom: 1px solid $border-color;
+}
+
+.border-left {
+  border-left: 1px solid $border-color;
+}
+
+.border-right {
+  border-right: 1px solid $border-color;
+}
+
+.border-top {
+  border-top: 1px solid $border-color;
 }
 
 .display-block {
