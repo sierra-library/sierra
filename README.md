@@ -63,7 +63,7 @@ Start changing:
 - [...]
 
 #### 2. Install dependencies
-After editing, run `$ npm install` from the projects root folder to install all dependencies. (needs [nodejs](https://nodejs.org/) installed).
+After editing, run `$ npm install` from the projects root folder to install all dependencies (needs [nodejs](https://nodejs.org/) installed).
 
 #### 3. Compile the files
 Run `$ gulp` to generate a new development file:  `dev/sierra.css`.
