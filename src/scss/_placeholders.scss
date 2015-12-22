@@ -3,7 +3,7 @@
 */
 
 
-// Centrar y dar un ancho máximo igual a $container-maxwidth.
+// Enter and set a maximum width equal to $container-maxwidth.
 %max-width {
   margin-left: auto;
   margin-right: auto;
@@ -37,27 +37,27 @@
   align-content: flex-end;
 }
 
-// Escondemos el texto solo VISUALMENTE
-%hide-text {
+// Hide text (only visually)
+%Hide-text {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
 }
 
-// Escondemos el texto de VISUALMENTE y SCREENREADERS
+// Hide text (visually and readers)
 %hidden {
   display: none!important;
   visibility: hidden;
 }
 
 
-// Escondemos pero mantenemos layout.
+// Hide text, but keep it inside the layout
 %invisible {
   visibility: hidden;
 }
 
 
-// Visualmente escondido, pero se puede detectar con teclado (focus).
+// Visually hidden, but accessible with keyboard(focus)
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -81,7 +81,6 @@
 }
 
 // Ellipsis
-
 // overflow-ellipsis (deprecated, don't use it)
 %text-overflow {
   @include ellipsis();
