@@ -81,7 +81,6 @@
 }
 
 // Ellipsis
-// overflow-ellipsis (deprecated, don't use it)
 %text-overflow {
   @include ellipsis();
 }
