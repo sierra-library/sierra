@@ -41,7 +41,7 @@
 // paddings on sides
 .container {
   margin: 0 auto;
-  max-width: $pagemaxwidth;
+  max-width: $container-maxwidth;
   padding-left: $grid-gutter-width / 2;
   padding-right: $grid-gutter-width / 2;
   width: 100%;
@@ -52,9 +52,9 @@
   }
 }
 
-.container-small {
+.container-medium {
   margin: 0 auto;
-  max-width: 944px;
+  max-width: $container-medium-maxwidth;
   padding-left: $grid-gutter-width / 2;
   padding-right: $grid-gutter-width / 2;
 
@@ -64,9 +64,9 @@
   }
 }
 
-.container-xs {
+.container-small {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: $container-small-maxwidth;
   padding-left: $grid-gutter-width / 2;
   padding-right: $grid-gutter-width / 2;
 
