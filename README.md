@@ -101,7 +101,7 @@ Remember to specify if you are able or unable, to develop the enhancement/featur
 
 
 #### Contributing rules
-- Do not include many different commits in the same Pull Request.
+- Do not include unrelated commits in the same Pull Request.
 - Use .editorconfig file located in the root folder. [More info](http://editorconfig.org/)
 - Use the .scss-lint file located in the root folder.
 - In order to make this library easy to maintain you can use mixins, placeholders and even functions if necessary. The golden rule here is keeping it as simple as possible. Sometimes is better a simple solution that takes a few more lines of code, rather than one that adds complexity for the sake of one-liners. Just use common sense here. In case of doubt join our chat at [sierra-library gitter](https://gitter.im/sierra-library/sierra).
