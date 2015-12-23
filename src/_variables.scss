@@ -165,12 +165,12 @@ $background-colour-map: map-merge($background-colour-map, (
 
 
 /**
-*  $BUTTONS SETUP
+*  $BUTTONS
 */
 
 $button-color:          #64829f; // default color for buttons
 $button-border-color:   $body-bg;
-$button-border-radius:  .5; // 50% of the button's height
+$button-border-radius:  2em;
 $button-sizes: (
   normal: (
     fontSize: 12px,

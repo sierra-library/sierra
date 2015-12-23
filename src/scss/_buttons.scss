@@ -2,9 +2,7 @@
 * Buttons
 */
 
-@function getButtonBorderRadius($meta) {
-  @return ((map-get($meta, fontSize) * map-get($meta, lineHeight))  + (map-get($meta, paddingTB) * 2)) * $button-border-radius;
-}
+
 
 // reset default buttons
 button {
@@ -14,19 +12,19 @@ button {
 }
 
 .button {
-  $buttonMeta: map-get($button-sizes, normal);
+  $button-meta: map-get($button-sizes, normal);
 
   background-color: $button-color;
   border: 1px solid $button-border-color;
-  border-radius: getButtonBorderRadius($buttonMeta);
+  border-radius: $button-border-radius;
   color: $text-color;
   display: inline-block;
   font-family: $basefont;
-  font-size: map-get($buttonMeta, fontSize);
+  font-size: map-get($button-meta, fontSize);
   font-weight: 700;
-  line-height: #{map-get($buttonMeta, lineHeight)}em;
+  line-height: #{map-get($button-meta, lineHeight)}em;
   margin: 10px;
-  padding: map-get($buttonMeta, paddingTB) map-get($buttonMeta, paddingLR);
+  padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -58,46 +56,46 @@ button {
   // Sizes
   &.button {
     &-big {
-      $buttonMeta: map-get($button-sizes, big);
+      $button-meta: map-get($button-sizes, big);
 
-      font-size: map-get($buttonMeta, fontSize);
-      line-height: #{map-get($buttonMeta, lineHeight)}em;
-      padding: map-get($buttonMeta, paddingTB) map-get($buttonMeta, paddingLR);
+      font-size: map-get($button-meta, fontSize);
+      line-height: #{map-get($button-meta, lineHeight)}em;
+      padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
 
-      border-radius: getButtonBorderRadius($buttonMeta);
+      border-radius: $button-border-radius;
 
       @include breakpoint(bp-large) {
-        padding: map-get($buttonMeta, paddingTB) (map-get($buttonMeta, paddingLR) + 10px);
+        padding: map-get($button-meta, paddingTB) (map-get($button-meta, paddingLR) + 10px);
       }
     }
 
     &-small {
-      $buttonMeta: map-get($button-sizes, small);
+      $button-meta: map-get($button-sizes, small);
 
-      font-size: map-get($buttonMeta, fontSize);
-      line-height: #{map-get($buttonMeta, lineHeight)}em;
-      padding: map-get($buttonMeta, paddingTB) map-get($buttonMeta, paddingLR);
+      font-size: map-get($button-meta, fontSize);
+      line-height: #{map-get($button-meta, lineHeight)}em;
+      padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
 
-      border-radius: getButtonBorderRadius($buttonMeta);
+      border-radius: $button-border-radius;
     }
 
     &-huge {
-      $buttonMeta: map-get($button-sizes, huge);
+      $button-meta: map-get($button-sizes, huge);
 
-      font-size: map-get($buttonMeta, fontSize);
-      line-height: #{map-get($buttonMeta, lineHeight)}em;
-      padding: map-get($buttonMeta, paddingTB) map-get($buttonMeta, paddingLR);
+      font-size: map-get($button-meta, fontSize);
+      line-height: #{map-get($button-meta, lineHeight)}em;
+      padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
 
-      border-radius: getButtonBorderRadius($buttonMeta);
+      border-radius: $button-border-radius;
 
       @include breakpoint(bp-large) {
-        $buttonMeta: map-get($button-sizes, hugeLg);
+        $button-meta: map-get($button-sizes, hugeLg);
 
-        font-size: map-get($buttonMeta, fontSize);
-        line-height: #{map-get($buttonMeta, lineHeight)}em;
-        padding: map-get($buttonMeta, paddingTB) map-get($buttonMeta, paddingLR);
+        font-size: map-get($button-meta, fontSize);
+        line-height: #{map-get($button-meta, lineHeight)}em;
+        padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
 
-        border-radius: getButtonBorderRadius($buttonMeta);
+        border-radius: $button-border-radius;
       }
 
       i {
@@ -235,7 +233,7 @@ button {
   white-space: nowrap;
 
   .button {
-    $buttonMeta: map-get($button-sizes, normal);
+    $button-meta: map-get($button-sizes, normal);
 
     border-radius: 0;
     border-right: 0;
@@ -243,55 +241,55 @@ button {
     margin: 0;
 
     &:first-child {
-      border-bottom-left-radius: getButtonBorderRadius($buttonMeta);
-      border-top-left-radius: getButtonBorderRadius($buttonMeta);
+      border-bottom-left-radius: $button-border-radius;
+      border-top-left-radius: $button-border-radius;
     }
 
     &:last-child {
-      border-bottom-right-radius: getButtonBorderRadius($buttonMeta);
-      border-top-right-radius: getButtonBorderRadius($buttonMeta);
+      border-bottom-right-radius: $button-border-radius;
+      border-top-right-radius: $button-border-radius;
     }
 
     @each $meta in (big, small) {
       &-#{$meta} {
-        $buttonMeta: map-get($button-sizes, $meta);
+        $button-meta: map-get($button-sizes, $meta);
 
         &:first-child {
-          border-bottom-left-radius: getButtonBorderRadius($buttonMeta);
-          border-top-left-radius: getButtonBorderRadius($buttonMeta);
+          border-bottom-left-radius: $button-border-radius;
+          border-top-left-radius: $button-border-radius;
         }
 
         &:last-child {
-          border-bottom-right-radius: getButtonBorderRadius($buttonMeta);
-          border-top-right-radius: getButtonBorderRadius($buttonMeta);
+          border-bottom-right-radius: $button-border-radius;
+          border-top-right-radius: $button-border-radius;
         }
       }
     }
 
     &-huge {
-      $buttonMeta: map-get($button-sizes, huge);
+      $button-meta: map-get($button-sizes, huge);
 
       &:first-child {
-        border-bottom-left-radius: getButtonBorderRadius($buttonMeta);
-        border-top-left-radius: getButtonBorderRadius($buttonMeta);
+        border-bottom-left-radius: $button-border-radius;
+        border-top-left-radius: $button-border-radius;
 
         @include breakpoint(bp-large) {
-          $buttonMeta: map-get($button-sizes, hugeLg);
+          $button-meta: map-get($button-sizes, hugeLg);
 
-          border-bottom-left-radius: getButtonBorderRadius($buttonMeta);
-          border-top-left-radius: getButtonBorderRadius($buttonMeta);
+          border-bottom-left-radius: $button-border-radius;
+          border-top-left-radius: $button-border-radius;
         }
       }
 
       &:last-child {
-        border-bottom-right-radius: getButtonBorderRadius($buttonMeta);
-        border-top-right-radius: getButtonBorderRadius($buttonMeta);
+        border-bottom-right-radius: $button-border-radius;
+        border-top-right-radius: $button-border-radius;
 
         @include breakpoint(bp-large) {
-          $buttonMeta: map-get($button-sizes, hugeLg);
+          $button-meta: map-get($button-sizes, hugeLg);
 
-          border-bottom-right-radius: getButtonBorderRadius($buttonMeta);
-          border-top-right-radius: getButtonBorderRadius($buttonMeta);
+          border-bottom-right-radius: $button-border-radius;
+          border-top-right-radius: $button-border-radius;
         }
       }
     }
