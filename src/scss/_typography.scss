@@ -93,7 +93,7 @@ a {
     text-transform: $heading-case;
   }
 
-  // Deprecated? 30/11/2015
+  // force element to default font state.
   &-body {
     font-size: $font-size-base;
     line-height: 1.5em;
