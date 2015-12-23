@@ -46,10 +46,6 @@ $color-error:           #e74c3c;
 // Body background
 $body-bg:               #2c3e50;
 
-// Button
-$button-color:          #64829f; // default color for buttons
-$button-border-color:  $body-bg;
-
 // Tags
 $tag-bg:                #34495e;
 $tag-bullet:            $body-bg;
@@ -87,6 +83,7 @@ $table-bg-color:        #34495e;
 $table-header-bg-color: $body-bg;
 $table-text-color:      $white;
 
+// text map
 $text-colour-map: (
   primary:              $brand-primary,
   secondary:            $brand-secondary,
@@ -99,6 +96,7 @@ $text-colour-map: (
   warning:              $color-warning
 );
 
+// background-colour-map
 $background-colour-map: (
   'primary':              $brand-primary,
   'dark':                 $brand-dark,
@@ -140,7 +138,6 @@ $linkedin: #4875b4;
 $flickr: #fe0883;
 $foursquare: #8fd400;
 
-
 // Rating colors
 $rating1:     #dd2c00;
 $rating2:     #ff5722;
@@ -166,11 +163,14 @@ $background-colour-map: map-merge($background-colour-map, (
   rating10: $rating10
 ));
 
+
 /**
-*  $BUTTONS
+*  $BUTTONS SETUP
 */
 
-$button-border-radius: .5; // 50% of the button's height
+$button-color:          #64829f; // default color for buttons
+$button-border-color:   $body-bg;
+$button-border-radius:  .5; // 50% of the button's height
 $button-sizes: (
   normal: (
     fontSize: 12px,
@@ -203,6 +203,20 @@ $button-sizes: (
     paddingLR: 50px
   )
 );
+
+
+/**
+*  $PAGINATOR SETUP
+*/
+
+$paginator-item-radius:       $radius;
+$paginator-item-bg:           #34495e;
+$paginator-item-color:        $white;
+
+$paginator-item-border:       $body-bg;         // only for compact paginator
+$paginator-item-active-bg:    $brand-primary;
+$paginator-item-active-color: $white;
+
 
 /**
 *  $MEDIA QUERIES BREAKPOINTS
