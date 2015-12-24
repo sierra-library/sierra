@@ -94,6 +94,8 @@ We will be happy to discuss new features and possible enhancements, so feel free
 
 Once your enhancement/new feature is approved, you can open a Pull Request.
 
+For small changes or misspellings, don't hesitate to open a pull request directly.
+
 Contributing
 -----------
 Before creating a new Pull Request, open an issue at [GitHub Issues](https://github.com/Sierra-Library/sierra/issues). Just to make sure everybody feels comfortable with the change.
