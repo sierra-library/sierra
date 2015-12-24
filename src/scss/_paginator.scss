@@ -27,6 +27,7 @@
       color: $paginator-item-color;
       display: block;
       padding: .5em 1em;
+      transition: background-color .2s ease-in-out;
 
       &:hover {
         background-color: lighten($paginator-item-bg, 10%);
