@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sierra: The smallest and lightest SCSS library</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+        <link rel="shortcut icon" href="ico.ico">
+
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+
+        <!-- Sierra library CSS stylesheets -->
+        <link rel="stylesheet" type="text/css" media="all" href="dev/sierra.css">
+
+        <!-- DEMO CSS stylesheets -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+
+        <!-- DEMO Font -->
+        <link rel="stylesheet" href='//fonts.googleapis.com/css?family=Lato:400,700,300' type='text/css'>
+
+        <!-- Font awesome icons-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <section class="section">
+                    <div class="align--center">
+                        <img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/logo.png" alt="Sierra logo" width="250"/>
+
+                        <div>
+                            <h1 class="text text--huge">Sierra <span class="text text--small colour--grey">v 1.1.4</span></h1>
+                            <h2 class="text">The smallest and lightest SCSS library <span class="text text--small colour--grey">(~36 KB)</span></h2>
+                            <p><a class="button" href="https://github.com/sierra-library/sierra/archive/master.zip">Download ZIP</a> or <a class="button button--primary" href="https://github.com/sierra-library/sierra">Visit github</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="background-dark">
+                <div class="container">
+                    <div class="row align-center">
+                        <div class="col-xs-12 col-sm-4 section">
+                            <h2 class="text-with-subtitle text-big text-white">
+                                <img width="118" src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/lightweight.png" alt="Lightweight" /> <br>
+                                Lightweight <br>
+                            <span class="text-medium text-grey">37 kB (8.9 kB gzipped).</span></h2>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 section">
+                            <h2 class="text-with-subtitle text-big text-white">
+                                <img width="118" src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/customizable.png" alt="Customizable" /> <br>
+                                Customizable <br>
+
+                            <span class="text-medium text-grey">Grid, fonts, colors, radius...</span></h2>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 section">
+                            <h2 class="text-with-subtitle text-big text-white">
+                                <img width="118" src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/opensource.png" alt="Open Source" /> <br>
+                                Open Source <br>
+
+                            <span class="text-medium text-grey">To nerds, by nerds.</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <section class="section">
+                    <h2 class="text-big">Estructure</h2>
+                    <pre><code class="language-css">    src/
+     ├── entry.scss                         /* Import main library scss file and configuration variables */
+     ├── _sierra.scss                       /* Import library modules from scss folder */
+     ├── _variables.scss                    /* Configure grid system, colors, font family, font size, borders... */
+     └── scss/
+           ├── background-colors.scss
+           ├── bootstrapgrid/               /* Bootstrap grid system */
+           │     ├── grid.scss
+           │     └── grid-frameworks.scss
+           ├── bootstrapgrid.scss           /* Bootstrap main grid file */
+           ├── buttons.scss
+           ├── flexboxgrid/                 /* Flexboxgrid system */
+           │      └── grid.scss
+           ├── flexboxgrid.scss             /* Flexfox main grid file */
+           ├── utils/
+           │      └── mixins.scss
+           ├── vendor/
+           │      └── reset.scss
+           ├── forms.scss
+           ├── helpers.scss                 /* Utilities and modifiers */
+           ├── layout.scss
+           ├── loading-bar.scss
+           ├── loading-spinner.scss
+           ├── main.scss
+           ├── message-bars.scss
+           ├── placeholders.scss
+           ├── rating-circle.scss
+           ├── tables.scss
+           ├── tabs.scss
+           ├── tags.scss
+           └── typography.scss </code></pre>
+                </section>
+
+                <section class="section">
+                    <h2 class="text-big">Text modifiers</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-medium text-grey">Default</h2>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor <a href="#" title="in reprehenderit">in reprehenderit</a> in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <!--  <p><button class="button button-only-icon button-outlined"><i class="fa fa-code"></i></button>
+                            <pre><code class="language-html"><p>[...]</p></code></pre></p> -->
+
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-medium text-grey">Grey</h2>
+                            <p class="text-grey"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p class="text-grey"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <!-- <p><button class="button button-only-icon button-outlined"><i class="fa fa-code"></i></button>
+                            <pre><code class="language-html"><p class="text-grey">[...]</p></code></pre></p> -->
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <h2 class="text-medium text-grey">Primary color</h2>
+                            <p class="text-primary"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h2 class="text-medium text-grey">Success color</h2>
+                            <p class="text-success"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h2 class="text-medium text-grey">Error color</h2>
+                            <p class="text-error"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-medium text-grey">Align center</h2>
+                            <p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-medium text-grey">Align right</h2>
+                            <p class="align-right"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <h2 class="text-medium text-grey">Uppercase</h2>
+                            <p class="text-uppercase"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h2 class="text-medium text-grey">Line through</h2>
+                            <p class="text-line-through"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h2 class="text-medium text-grey">Italic</h2>
+                            <p class="text-italic"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </section>
+
+
+                <section class="section">
+                    <h2 class="text-big">Buttons</h2>
+                    <h2 class="text-medium text-grey">Button colors</h2>
+                    <div>
+                        <button class="button block-mobile">default</button>
+                        <button class="button button--primary block-mobile">primary</button>
+                        <button class="button button--secondary button--outline block-mobile">outlined</button>
+                        <button class="button button--secondary block-mobile">secondary</button>
+                        <button class="button block-mobile" disabled>disabled</button>
+                        <button class="button button--white block-mobile">white</button>
+                        <button class="button button--green block-mobile">green</button>
+                        <button class="button button--red block-mobile">red</button>
+                        <button class="button button--transparent block-mobile">transparent</button>
+                    </div>
+
+                    <h2 class="text-medium text-grey">Buttons with icon</h2>
+                    <div>
+                        <button class="button block-mobile"><span>Button</span> <i class="fa fa-hand-spock-o"></i></button>
+                        <button class="button block-mobile"><i class="fa fa-hand-spock-o"></i> <span>Button</span></button>
+                        <span class="block-mobile text-center"><button class="button button-only-icon"><i class="fa fa-thumbs-o-up"></i></button></span>
+
+                    </div>
+
+                    <h2 class="text-medium text-grey">Buttons group</h2>
+                    <div class="button-group">
+                        <button class="button">Button</button><button class="button">Button</button><button class="button">Button</button>
+                    </div>
+
+                    <h2 class="text-medium text-grey">Button sizes</h2>
+                    <div>
+                        <button class="button button-huge block-mobile">Button huge</button>
+                        <button class="button button-big block-mobile">Button big</button>
+                        <button class="button block-mobile">Button default</button>
+                        <button class="button button-small block-mobile">Button small</button>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="text-big">Typography sizes</h2>
+
+                    <h3 class="text-medium text-grey text-with-subtitle">Text huge</h3>
+                    <p class="text-huge text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+                    <h3 class="text-medium text-grey text-with-subtitle">Text big</h3>
+                    <p class="text-big text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+                    <h3 class="text-medium text-grey text-with-subtitle">Text medium</h3>
+                    <p class="text-medium text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+                    <h3 class="text-medium text-grey text-with-subtitle">Text small</h3>
+                    <p class="text-small text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </section>
+
+                <section class="section">
+                    <h2 class="text-big"> Forms</h2>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <label class="label" for="name">Name</label>
+                            <div class="input">
+                                <input id="name" placeholder="Name" type="text" />
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <label class="label" for="name_error">Name</label>
+                            <div class="input error">
+                                <input id="name_error" placeholder="Name" type="text" />
+                            </div>
+                            <p class="text-error text-small">$error message</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <label class="label" for="address">Address</label>
+                            <div class="input full-width">
+                                <input id="address" placeholder="Address" type="text" />
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <label class="label" for="address_error">Address</label>
+                            <div class="input error full-width">
+                                <input id="address_error" placeholder="Address" type="text" />
+                            </div>
+                            <p class="text-error text-small">$error message</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-xs-12 col-md-6">
+                            <label class="label" for="country-code">Country</label>
+                            <div class="select full-width">
+                                <select name="country-code" id="country-code">
+                                        <option>Afghanistan</option>
+                                        <option>Albania</option>
+                                        <option>Algeria</option>
+                                        <option>American Samoa</option>
+                                        <option>Andorra</option>
+                                        <option>Angola</option>
+
+                                </select>
+                                <i class="fa fa-angle-down fa-2"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <label class="label" for="country-code-error">Country</label>
+                            <div class="select full-width error">
+                                <select name="country-code-error" id="country-code-error">
+                                        <option>Afghanistan</option>
+                                        <option>Albania</option>
+                                        <option>Algeria</option>
+                                        <option>American Samoa</option>
+                                        <option>Andorra</option>
+                                        <option>Angola</option>
+
+                                </select>
+                                <i class="fa fa-angle-down fa-2"></i>
+                            </div>
+                             <p class="text-error text-small">$error message</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-xs-12 col-md-6">
+                            <label class="label" for="message">Message</label>
+                             <div class="textarea">
+                                <textarea id="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <label class="label" for="message-error">Message</label>
+                             <div class="textarea error">
+                                <textarea id="message-error"></textarea>
+                            </div>
+                             <p class="text-error text-small">$error message</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3">
+                            <h3 class="text-medium text-grey">Radio buttons</h3>
+                            <div class="radio">
+                               <input id="radio1" name="radio" type="radio" value=""/>
+                               <label for="radio1" >Radio button 1</label>
+                            </div>
+                            <div class="radio">
+                               <input id="radio2" name="radio" type="radio" value=""/>
+                               <label for="radio2" >Radio button 2</label>
+                            </div>
+                            <div class="radio">
+                               <input id="radio3" name="radio" type="radio" value=""/>
+                               <label for="radio3" >Radio button 3</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <h3 class="text-medium text-grey">Checkboxes</h3>
+                            <div class="checkbox">
+                               <input id="checkbox1" name="keywords" type="checkbox" value=""/>
+                               <label for="checkbox1">Checkbox 1</label>
+                            </div>
+                            <div class="checkbox">
+                               <input id="checkbox2" name="keywords" type="checkbox" value=""/>
+                               <label for="checkbox2">Checkbox 2</label>
+                            </div>
+                            <div class="checkbox">
+                               <input id="checkbox3" name="keywords" type="checkbox" value=""/>
+                               <label for="checkbox3">Checkbox 3</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <h3 class="text-medium text-grey">Form row</h3>
+                    <div class="row">
+                       <div class="col-xs-12 col-md-6">
+                            <div class="row form-row">
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input input-with-icon full-width">
+                                        <input id="name" placeholder="Your name" type="text" />
+                                        <i class="input-icon fa fa-th fa-2"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input input-with-icon full-width">
+                                        <input id="search" placeholder="Search" type="text" />
+                                        <i class="input-icon fa fa-cog fa-spin"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input input-with-icon full-width">
+                                        <input id="search" placeholder="Search" type="text" />
+                                        <button class="input-icon fa fa-search fa-lg"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="row form-row">
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input input-with-icon full-width">
+                                        <input id="name" placeholder="Date" type="text" />
+                                        <i class="input-icon fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input input-with-icon full-width">
+                                        <input id="name" placeholder="Username" type="text" />
+                                        <i class="input-icon fa fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input input-with-icon full-width">
+                                        <input id="name" placeholder="Password" type="text" />
+                                        <i class="input-icon fa fa-lock"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <h3 class="text-medium text-grey">Form collapse</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="form-collapse">
+                                <div class="input item item-main">
+                                    <input id="name" placeholder="Klingon search" type="text" />
+                                </div>
+                                <div class="select item">
+                                    <select name="country-code" id="country-code">
+                                        <option>One</option>
+                                        <option>Two</option>
+                                        <option>Three</option>
+                                        <option>Four</option>
+                                    </select>
+                                    <i class="fa fa-angle-down fa-2"></i>
+                                </div>
+                                <button class="item button button-primary">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <div class="form-collapse">
+                                <div class="select item">
+                                    <select name="country-code" id="country-code">
+                                        <option>Vincent</option>
+                                        <option>Jules</option>
+                                        <option>Mia </option>
+                                        <option>Butch</option>
+                                        <option>Winston </option>
+                                    </select>
+                                    <i class="fa fa-angle-down fa-2"></i>
+                                </div>
+                                <div class="select item">
+                                    <select name="country-code" id="country-code">
+                                        <option>Mr. White</option>
+                                        <option>Mr. Orange</option>
+                                        <option>Mr. Pink</option>
+                                        <option>Mr. Blonde</option>
+                                        <option>Nice Guy</option>
+                                        <option>Mr. Brown</option>
+                                        <option>Marvin</option>
+                                        <option>Holdaway</option>
+                                        <option>Mr. Blue</option>
+                                    </select>
+                                    <i class="fa fa-angle-down fa-2"></i>
+                                </div>
+                                 <div class="select item">
+                                    <select name="country-code" id="country-code">
+                                        <option>Shaw </option>
+                                        <option>Kelly</option>
+                                        <option>Doyle </option>
+                                        <option>Lt. William</option>
+                                        <option>Singleton</option>
+                                        <option>Billie</option>
+                                    </select>
+                                    <i class="fa fa-angle-down fa-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="text-big">Tables</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-medium text-grey">Standard</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr class="text-small align-left">
+                                        <th>Header 1</th>
+                                        <th>Header 2</th>
+                                        <th>Header 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lemon</td>
+                                        <td>Orange</td>
+                                        <td>Kiwi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sugar</td>
+                                        <td>Salt</td>
+                                        <td>Pepper</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fork</td>
+                                        <td>Knife</td>
+                                        <td>Spoon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cup</td>
+                                        <td>Glass</td>
+                                        <td>Pitcher</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-medium text-grey">Responsive</h2>
+                            <table class="table table-responsive table-break-medium">
+                                <tr class="text-small">
+                                    <th>First column</th>
+                                    <th>Second column</th>
+                                    <th>Third column</th>
+                                </tr>
+                                <tr>
+                                    <td data-th="First column">Blue</td>
+                                    <td data-th="Second column">One</td>
+                                    <td data-th="Third column">My life fades</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="First column">Green</td>
+                                    <td data-th="Second column">Two</td>
+                                    <td data-th="Third column">When the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="First column">Yellow</td>
+                                    <td data-th="Second column">Three</td>
+                                    <td data-th="Third column">A whirlwind of looting, a firestorm of fear. Men began to feed on men. A whirlwind of looting, a firestorm of fear. Men began to feed on men. </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-big">Tabs</h2>
+                            <div class="tabs">
+                               <a href="#" title="Tab 1" class="tab">Tab 1</a>
+                               <a href="#" title="Tab 2" class="tab active">Tab 2</a>
+                               <a href="#" title="Tab 3" class="tab">Tab 3</a>
+                            </div>
+                            <!-- <div class="c-tab-content">
+                               Content tab 1
+                            </div>
+                            <div class="c-tab-content selected">
+                               Content tab 2
+                            </div> -->
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-big">Tags</h2>
+                            <ul class="tags">
+                                <li>
+                                    <a href="#" class="tag"> fantasy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag"> fiction </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag"> contemporary </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag"> horror </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag"> science-fiction </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag"> thriller  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                <h2 class="text-big">Paginator</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+
+                            <h2 class="text-medium text-grey">Default</h2>
+                            <ul class="paginator-list">
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link"><i class="fa fa-angle-left"></i> Prev </a>
+                                </li>
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link">1</a>
+                                </li>
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link active">2</a>
+                                </li>
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link">3</a>
+                                </li>
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link">Next <i class="fa fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-medium text-grey">Compact</h2>
+                            <ul class="paginator-list paginator-compact">
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link"><i class="fa fa-angle-left"></i> Prev </a>
+                                </li>
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link">1</a>
+                                </li>
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link active">2</a>
+                                </li>
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link">3</a>
+                                </li>
+                                <li class="paginator-list-item">
+                                    <a href="#" class="paginator-list-link">Next <i class="fa fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-big">Rating small</h2>
+
+                            <div class="rating-circle circle-small rating-color-1">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">1</span></div>
+                            </div>
+                            <div class="rating-circle circle-small rating-color-2">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">2</span></div>
+                            </div>
+                            <div class="rating-circle circle-small rating-color-3">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">3</span></div>
+                            </div>
+                            <div class="rating-circle circle-small rating-color-4">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">4</span></div>
+                            </div>
+                            <div class="rating-circle circle-small rating-color-5">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">5</span></div>
+                            </div>
+                            <div class="rating-circle circle-small rating-color-6">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">6</span></div>
+                            </div>
+                            <div class="rating-circle circle-small rating-color-7">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">7</span></div>
+                            </div>
+                            <div class="rating-circle circle-small rating-color-8">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">8</span></div>
+                            </div>
+                            <div class="rating-circle circle-small rating-color-9">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">9</span></div>
+                            </div>
+                            <div class="rating-circle circle-small rating-color-10">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">10</span></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-big">Rating big</h2>
+                             <div class="rating-circle rating-color-1">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">1</span></div>
+                            </div>
+                            <div class="rating-circle rating-color-5">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">5</span></div>
+                            </div>
+                            <div class="rating-circle rating-color-10">
+                                <div class="circle">
+                                    <div class="circle-mask circle-full">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                    <div class="circle-mask half">
+                                        <div class="circle-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="circle-inset"><span class="circle-rating-number">10</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section">
+                    <h2 class="text-big">Image modifiers</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-medium text-grey">Circle</h2>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img class="rounded" src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img1.jpg" alt="Image 1" width="100%"/>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img class="rounded" src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img2.jpg" alt="Image 2" width="100%"/>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img class="rounded" src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img3.jpg" alt="Image 3" width="100%"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h2 class="text-medium text-grey">Rounded corners</h2>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img class="rounded-corners" src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img4.jpg" alt="Image 4" width="100%"/>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img class="rounded-corners" src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img5.jpg" alt="Image 5" width="100%"/>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img class="rounded-corners" src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img6.jpg" alt="Image 6" width="100%"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="text-big">Aligners</h2>
+                    <div>
+                        <h3 class="text-medium text-grey">Space between</h3>
+                        <div class="container background-grey">
+                            <div class="section">
+                                <div class="aligner-space-between">
+                                    <div><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img4.jpg" alt="Image 4" width="150"/></div>
+                                    <div><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img5.jpg" alt="Image 5" width="150"/></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-medium text-grey">Space around</h3>
+                    <div class="container background-grey">
+                        <div class="section">
+                            <div class="aligner-space-around">
+                                <div><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img6.jpg" alt="Image 6" width="150"/></div>
+                                <div><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img5.jpg" alt="Image 5" width="150"/></div>
+                                <div><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img1.jpg" alt="Image 1" width="150"/></div>
+                                <div><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img2.jpg" alt="Image 2" width="150"/></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="section row">
+                        <div class="col-xs-12 col-md-6">
+                            <h3 class="text-medium text-grey">Align start</h3>
+                            <div class="container background-grey">
+                                <div class="section">
+                                    <div class="content-start">
+                                        <div><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img1.jpg" alt="Image 1" width="150"/></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h3 class="text-medium text-grey">Align end</h3>
+                            <div class="container background-grey">
+                                <div class="section">
+                                    <div class="content-end">
+                                        <div><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img3.jpg" alt="Image 3" width="150"/></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <h3 class="text-medium text-grey">Center vertical</h3>
+                            <div class="container background-grey" >
+                                <div class="section">
+                                    <div class="aligner-center-vertical" style="height:150px;">
+                                        <p class="text-dark no-margin">Lorem ipsum dolor sit amet</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h3 class="text-medium text-grey">Center vertical and horitzontal</h3>
+                            <div class="container background-grey" >
+                                <div class="section">
+                                    <div class="aligner-center-horitzontal aligner-center-vertical" style="height:150px;">
+                                        <p class="text-dark no-margin">Lorem ipsum dolor sit amet</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h3 class="text-medium text-grey">Align to bottom</h3>
+                            <div class="container background-grey" >
+                                <div class="section">
+                                    <div class="aligner" style="height:150px;">
+                                        <p class="text-dark no-margin aligner-item-bottom">Lorem ipsum dolor sit amet</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="text-big">Low opacity</h2>
+                    <div class="container background-grey opacity-low">
+                        <div class="section">
+                            <div class="aligner-center-horitzontal aligner-center-vertical" style="height:150px;">
+                                <img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/img1.jpg" alt="Image 1" width="150"/>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+                 <section class="section">
+                    <h2 class="text-big">Loaders</h2>
+                    <div>
+                        <a href="#" class="js-show-hide-loading-bar button block-mobile" title="Start / stop loader">Show loading bar</a>
+                        <a href="#" class="js-show-hide-loading-spinner button block-mobile" title="Start / stop loader">Show loading spinner</a>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="text-big">Customizable colors</h2>
+                    <h3 class="text-medium text-grey">Brand ( primary / secondary )</h3>
+                    <div class="aligner-space-around">
+                        <div class="flex-grow background-primary"><br><br></div>
+                        <div class="flex-grow background-secondary"><br><br></div>
+                    </div>
+
+                    <h3 class="text-medium text-grey">Success / info / error / warning</h3>
+                    <div class="aligner-space-around">
+                        <div class="flex-grow background-success"><br><br></div>
+                        <div class="flex-grow background-info"><br><br></div>
+                        <div class="flex-grow background-warning"><br><br></div>
+                        <div class="flex-grow background-error"><br><br></div>
+                    </div>
+
+                    <h3 class="text-medium text-grey">Rating</h3>
+                    <div class="aligner-space-around">
+                        <div class="flex-grow background-rating1"><br><br></div>
+                        <div class="flex-grow background-rating2"><br><br></div>
+                        <div class="flex-grow background-rating3"><br><br></div>
+                        <div class="flex-grow background-rating4"><br><br></div>
+                        <div class="flex-grow background-rating5"><br><br></div>
+                        <div class="flex-grow background-rating6"><br><br></div>
+                        <div class="flex-grow background-rating7"><br><br></div>
+                        <div class="flex-grow background-rating8"><br><br></div>
+                        <div class="flex-grow background-rating9"><br><br></div>
+                        <div class="flex-grow background-rating10"><br><br></div>
+                    </div>
+
+                    <h3 class="text-medium text-grey">Others</h3>
+                    <div class="aligner-space-around">
+                        <div class="flex-grow background-white"><br><br></div>
+                        <div class="flex-grow background-grey"><br><br></div>
+                        <div class="flex-grow background-grey-dark"><br><br></div>
+                        <div class="flex-grow background-dark"><br><br></div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <h2 class="text-big">Full width bars</h2>
+                </div>
+                <div class="section background-dark">
+                    <div class="container text-center">
+                        <h3 class="text-huge text-with-subtitle">Everything in its right place</h3>
+                        <h4 class="text-big text-grey">There are two colours in my head</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <section>
+                    <h2 class="text-big">Message bars</h2>
+                    <div class="message-bar background-success"><p>Success</p></div>
+                    <div class="message-bar background-info"><p>Info</p></div>
+                    <div class="message-bar background-warning"><p>Warning</p></div>
+                    <div class="message-bar background-error"><p>Error</p></div>
+                </section>
+            </div>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="text-big">Containers</h2>
+                    <h3 class="text-medium text-grey">Standard</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="container-medium">
+                    <h3 class="text-medium text-grey">Medium</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="container-small">
+                    <h3 class="text-medium text-grey">Small</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </section>
+            <div class="container">
+                <section class="section">
+                    <h2 class="text-big">Borders</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <h3 class="text-medium text-grey">Border top + border bottom</h3>
+                            <div class="container section border-top border-bottom"><br></div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h3 class="text-medium text-grey">Border right + border left</h3>
+                            <div class="container section border-right border-left"><br></div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h3 class="text-medium text-grey">Bordered</h3>
+                            <div class="container section bordered"><br></div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section">
+                    <h2 class="text-big">To be done in next releases</h2>
+                    <pre><code class="language-css">- Fix bootstrap library updates
+- Include code snippets on demo website (low prio)
+- BEM naming convention (V2)
+</code></pre>
+
+                    <h2 class="text-big">Latest changes</h2>
+                    <pre><code class="language-css">/* 23/12/2015 */ - Add paginator module
+/* 22/12/2015 */ - Renaming container selectors
+/* 21/12/2015 */ - Add left and right border helpers
+/* 21/12/2015 */ - Add message bars
+/* 17/12/2015 */ - Add npm install
+/* 16/12/2015 */ - Fix buttons visualitzation on mobile for this demo website
+/* 16/12/2015 */ - Add mobile-block helper class
+/* 16/12/2015 */ - Remove other projects selectors from tables.scss file
+/* 16/12/2015 */ - Remove other projects selectors from mixins.scss file
+/* 16/12/2015 */ - Remove other projects selectors from buttons.scss file
+</code></pre>
+                </section>
+            </div>
+
+        </main>
+        <footer class="container">
+            <div class="section text-center text-small border-top">
+                <p>
+                    <img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/logo.png" alt="sierra logo" width="100"/><br>
+                    Sierra SCSS library <br><span class="text-small text-grey">v 1.1.4</span>
+                </p>
+
+                <p class="text-grey"><a href="https://github.com/sierra-library/sierra">Sierra Github</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://joanclaret.github.io" title="Joan Claret">joanclaret.github.io</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://github.com/joanclaret" title="Joan Claret">github.com/joanclaret</a></p>
+
+                <p class="no-margin">
+                    <a href="http://www.appszoom.com" title="Appszoom.com"><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/logo-appszoom.png" alt="Appszoom" height="35"/></a>
+                    <a href="http://www.mobonaut.com" title="Mobonaut.com"><img src="//cdn.rawgit.com/maraisr/sierra-library.github.io/master/img/logo-mobonaut.png" alt="Appszoom" height="35"/></a>
+                </p>
+
+            </div>
+
+
+        </footer>
+
+		<!-- GitHub Corner -->
+	    <a href="https://github.com/sierra-library/sierra" target="_blank" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#1abc9c; color:#2c3e50; position: fixed; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    </body>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+	<script src="js/demo.js"></script>
+
+    <!-- Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-71275974-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+</html>
