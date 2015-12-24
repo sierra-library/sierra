@@ -24,22 +24,3 @@ h1, h2, h3, h4, h5 {
 	line-height: 1;
 	font-family: $secondaryFont;
 }
-
-h1, .styled-h1 {
-	@include fs(map-get($fs, xm));
-	font-weight: 300;
-
-	@include media(xm) {
-		@include fs(map-get($fs, l));
-	}
-}
-
-h3, .styled-h3 {
-	@include fs(map-get($fs, m) * 0.8);
-	font-weight: 700;
-}
-
-h4, .styled-h4 {
-	@include fs(map-get($fs, s));
-	font-weight: 700;
-}

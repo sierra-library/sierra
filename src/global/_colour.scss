@@ -1,0 +1,11 @@
+.colour {
+	&--default {
+		color: $default;
+	}
+
+	@each $type, $colour in $colours {
+		&--#{$type} {
+			color: $colour;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.text {
+	@include fs($fontSizeBase);
+	font-weight: 400;
+
+	@each $type, $map in $font-sizes {
+		&--#{$type} {
+			@include fs($fontSizeBase * map-get($map, multi));
+			font-weight: map-get($map, weight);
+		}
+	}
+}

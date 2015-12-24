@@ -1,0 +1,16 @@
+figure {
+	margin: 0;
+	padding: 0;
+
+	display: block;
+
+	figcaption {
+		display: block;
+	}
+}
+
+img {
+	&[src$=".svg"] {
+		overflow: hidden;
+	}
+}

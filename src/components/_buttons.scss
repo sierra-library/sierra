@@ -13,11 +13,16 @@
 
 	color: $white;
 	background-color: $default;
+	text-decoration: none;
 
 	font-weight: $button-font-weight;
 	text-transform: $button-text-transform;
 
 	border: $button-border-size solid $default;
+
+	&:hover {
+		text-decoration: none;
+	}
 
 	&:not([disabled]) {
 		&:not(.button--outline):hover {

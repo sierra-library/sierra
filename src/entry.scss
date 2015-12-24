@@ -6,10 +6,15 @@
 @import 'global/all';
 @import 'global/lists';
 @import 'global/typography';
+@import 'global/images';
+@import 'global/colour';
 // Vendor
 @import 'vendor/animations';
 @import 'vendor/font';
 // Snippets
 @import 'snippets/grid';
+@import 'snippets/block-element-align';
 // Components
 @import 'components/buttons';
+@import 'components/section';
+@import 'components/text';

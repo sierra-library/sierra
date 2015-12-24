@@ -1,12 +1,4 @@
-$emBase: 16px;
-$lineHeightBase: 1.2;
-
-// Load font files from local file
-$fontFamilies: ();
-
-$primaryFont: 'Lato', 'Helvetica', 'Arial', sans-serif;
-$secondaryFont: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
-
+// Misc.
 $fs: (
 		xs: 12px,
 		s: 16px,
@@ -24,3 +16,21 @@ $fs: (
 		font-size: rem($t);
 	}
 }
+
+// Config
+$emBase: 16px;
+$lineHeightBase: 1.2;
+$fontSizeBase: map-get($fs, m);
+
+// Load font files from local file
+$fontFamilies: ();
+
+$primaryFont: 'Lato', 'Helvetica', 'Arial', sans-serif;
+$secondaryFont: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+
+// Size Map
+$font-sizes: (
+	small: (multi: 0.8, weight: 300),
+	large: (multi: 1.5, weight: 400),
+	huge: (multi: 2, weight: 300)
+);
