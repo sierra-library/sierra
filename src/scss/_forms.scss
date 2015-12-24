@@ -31,6 +31,7 @@ textarea {
   border-radius: $radius;
   font-size: $font-size-base;
   line-height: 1.5em;
+  transition: background-color .2s ease-in-out;
 
   @include breakpoint(bp-medium) {
     font-size: $font-size-base-medium;
@@ -54,8 +55,10 @@ textarea {
   font-weight: normal;
   margin-bottom: 20px;
 
+
   :focus {
     outline: none;
+
   }
 
   &.error {

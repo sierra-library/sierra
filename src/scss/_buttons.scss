@@ -28,7 +28,7 @@ button {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: background-color .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
   white-space: nowrap;
 
   &:focus, &:hover, &:active {
