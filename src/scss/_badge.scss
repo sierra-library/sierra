@@ -1,0 +1,47 @@
+.badge{
+	background-color: $grey-dark;
+	border-radius: $radius;
+	color: $grey-soft;
+	padding: .2em .7em;
+}
+
+// Types and sizes
+.badge-rounded{
+	border-radius: 50px;
+}
+.badge-lg{
+	font-size: 1.3em;
+}
+.badge-xs{
+	font-size: .7em;
+}
+
+// Colors
+.badge-primary{
+	color: $grey-soft;
+	background-color: $brand-primary;
+}
+.badge-secondary{
+	color: $grey-soft;
+	background-color: $brand-secondary;
+}
+.badge-dark{
+	color: $grey-soft;
+	background-color: $brand-dark;
+}
+.badge-success{
+	color: $grey-soft;
+	background-color: $color-success;
+}
+.badge-info{
+	color: $grey-soft;
+	background-color: $color-info;
+}
+.badge-warning{
+	color: $grey-soft;
+	background-color: $color-warning;
+}
+.badge-error{
+	color: $grey-soft;
+	background-color: $color-error;
+}
