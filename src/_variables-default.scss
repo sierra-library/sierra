@@ -15,12 +15,12 @@ $border-box:                true;
 *  $FONT
 */
 
-$basefont: 'Lato', sans-serif;
+$basefont: 'Open Sans', sans-serif;
 $codefont: 'Courier New', monospace;
 
 $font-size-base:        14px;
-$font-size-base-medium: 15px;
-$font-size-base-large:  15px;
+$font-size-base-medium: 16px;
+$font-size-base-large:  16px;
 
 $line-height-base:      1.5em;
 $font-weight-base:      400;
@@ -44,7 +44,7 @@ $color-warning:         #f0ad4e;
 $color-error:           #e74c3c;
 
 // Body background
-$body-bg:               #2c3e50;
+$body-bg:               #ffffff;
 
 // Tags
 $tag-bg:                #34495e;
@@ -62,7 +62,7 @@ $border-color:          #465f78;
 
 // Tipography colors
 $text-dark:             #3e4145;   // body text
-$text-color:            $white;
+$text-color:            $text-dark;
 $text-grey:             #969da6;
 
 // Headings
@@ -170,7 +170,7 @@ $background-colour-map: map-merge($background-colour-map, (
 
 $button-color:          #64829f; // default color for buttons
 $button-border-color:   $body-bg;
-$button-border-radius:  2em;
+$button-border-radius:  3px;
 $button-sizes: (
   normal: (
     fontSize: 12px,
@@ -206,24 +206,6 @@ $button-sizes: (
 
 
 /**
-* BADGES
-*/
-
-$badge-color:           $white;
-$badge-bg:              #34495e;
-
-$badges-color-map: (
-  primary:              $brand-primary,
-  secondary:            $brand-secondary,
-  dark:                 $brand-dark,
-  grey:                 $text-grey,
-  success:              $color-success,
-  error:                $color-error,
-  warning:              $color-warning
-);
-
-
-/**
 *  $PAGINATOR SETUP
 */
 
@@ -239,6 +221,8 @@ $paginator-item-active-color: $white;
 /**
 *  $MEDIA QUERIES BREAKPOINTS
 */
+
+// Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
 // Extra small screen / phone
 //** Deprecated `@screen-xs` as of v3.0.1
