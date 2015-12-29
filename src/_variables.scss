@@ -43,15 +43,10 @@ $color-info:            #5bc0de;
 $color-warning:         #f0ad4e;
 $color-error:           #e74c3c;
 
+
+
 // Body background
 $body-bg:               #2c3e50;
-
-// Tags
-$tag-bg:                #34495e;
-$tag-bullet:            $body-bg;
-
-// Rating
-$rating-bg:             #34495e;
 
 // Grey :               #dee6ea;
 $grey-light:            #edf3f6;
@@ -65,6 +60,14 @@ $text-dark:             #3e4145;   // body text
 $text-color:            $white;
 $text-grey:             #969da6;
 
+// Tags
+$tag-text-color:        $text-color;
+$tag-bg-color:          #34495e;
+$tag-bullet:            $body-bg;
+
+// Rating
+$rating-bg:             #34495e;
+
 // Headings
 $heading-font:          $basefont;
 $heading-weight:        300;
@@ -76,12 +79,12 @@ $box-shadow:            0 0 5px $shadow-color;
 
 // Forms
 $form-bg-color:         #34495e;
-$form-text-color:       $white;
+$form-text-color:       $text-color;
 
 // Tables
 $table-bg-color:        #34495e;
 $table-header-bg-color: $body-bg;
-$table-text-color:      $white;
+$table-text-color:      $text-color;
 
 // text map
 $text-color-map: (
@@ -168,7 +171,8 @@ $background-color-map: map-merge($background-color-map, (
 *  $BUTTONS
 */
 
-$button-color:          #64829f; // default color for buttons
+$button-bg-color:       #64829f; // default color for buttons
+$button-text-color:     $text-color; // default color for buttons
 $button-border-color:   $body-bg;
 $button-border-radius:  2em;
 $button-sizes: (
@@ -209,7 +213,7 @@ $button-sizes: (
 * BADGES
 */
 
-$badge-color:           $white;
+$badge-color:           $text-color;
 $badge-bg:              #34495e;
 
 $badges-color-map: (
@@ -229,11 +233,11 @@ $badges-color-map: (
 
 $paginator-item-radius:       $radius;
 $paginator-item-bg:           #34495e;
-$paginator-item-color:        $white;
+$paginator-item-color:        $text-color;
 
 $paginator-item-border:       $body-bg;         // only for compact paginator
 $paginator-item-active-bg:    $brand-primary;
-$paginator-item-active-color: $white;
+$paginator-item-active-color: $text-color;
 
 
 /**

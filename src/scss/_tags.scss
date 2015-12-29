@@ -16,9 +16,9 @@
   }
 
   .tag {
-    background-color: $tag-bg;
+    background-color: $tag-bg-color;
     border-radius: $radius 0 0 $radius;
-    color: $white;
+    color: $tag-text-color;
     display: inline-block;
     float: left;
     line-height: 34px;
@@ -28,7 +28,7 @@
     //triangle arrow
     &::before {
       border-bottom: 17px solid transparent;
-      border-left: 10px solid $tag-bg;
+      border-left: 10px solid $tag-bg-color;
       border-top: 17px solid transparent;
       content: '';
       height: 0;
@@ -53,15 +53,15 @@
   }
 
   a.tag {
-    color: $white;
+    color: $tag-text-color;
     display: inline-block;
     text-decoration: none;
 
     &:hover {
-      background-color: lighten($tag-bg, 10%);
+      background-color: lighten($tag-bg-color, 10%);
       text-decoration: none;
       &::before {
-        border-left: 10px solid lighten($tag-bg, 10%);
+        border-left: 10px solid lighten($tag-bg-color, 10%);
       }
     }
   }

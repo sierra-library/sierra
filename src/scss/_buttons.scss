@@ -14,10 +14,10 @@ button {
 .button {
   $button-meta: map-get($button-sizes, normal);
 
-  background-color: $button-color;
+  background-color: $button-bg-color;
   border: 1px solid $button-border-color;
   border-radius: $button-border-radius;
-  color: $text-color;
+  color: $button-text-color;
   display: inline-block;
   font-family: $basefont;
   font-size: map-get($button-meta, fontSize);
