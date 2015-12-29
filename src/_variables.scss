@@ -26,13 +26,13 @@ $line-height-base:      1.5em;
 $font-weight-base:      400;
 
 /**
-*  $COLOURS
+*  $COLORS
 */
 
 // white
 $white:                 #ffffff;
 
-// Brand colours
+// Brand colors
 $brand-primary:         #1abc9c;
 $brand-secondary:       #9b59b6;
 $brand-dark:            #18232f;
@@ -84,7 +84,7 @@ $table-header-bg-color: $body-bg;
 $table-text-color:      $white;
 
 // text map
-$text-colour-map: (
+$text-color-map: (
   primary:              $brand-primary,
   secondary:            $brand-secondary,
   dark:                 $text-dark,
@@ -96,8 +96,8 @@ $text-colour-map: (
   warning:              $color-warning
 );
 
-// background-colour-map
-$background-colour-map: (
+// background-color-map
+$background-color-map: (
   'primary':              $brand-primary,
   'dark':                 $brand-dark,
   'secondary':            $brand-secondary,
@@ -150,7 +150,7 @@ $rating8:     #4caf50;
 $rating9:     #43a047;
 $rating10:    #388e3c;
 
-$background-colour-map: map-merge($background-colour-map, (
+$background-color-map: map-merge($background-color-map, (
   rating1: $rating1,
   rating2: $rating2,
   rating3: $rating3,
@@ -224,7 +224,7 @@ $badges-color-map: (
 
 
 /**
-*  $PAGINATOR SETUP
+*  $PAGINATOR
 */
 
 $paginator-item-radius:       $radius;
