@@ -15,7 +15,7 @@ The smallest and lightest scss library (formerly known as penguin library)
 What's the difference with other SCSS libraries?
 -----------
 
-This is a micro SCSS library to help you build websites in a matter of seconds, without all the arbitrary selectors.
+This is a micro SCSS library to help you build websites, without all the arbitrary selectors.
 
 * Only 37.03 kB (8.9 kB gzipped)
 * Modular
