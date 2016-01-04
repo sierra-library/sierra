@@ -24,7 +24,13 @@ input:-webkit-autofill {
   box-shadow: 0 0 0 1000px $form-bg-color inset;
 }
 
-// radius
+// Disable arrow on selects
+select {
+  -moz-appearance: window;
+  -webkit-appearance: none;
+}
+
+// styles
 select,
 input[type=text],
 textarea {
@@ -42,7 +48,6 @@ textarea {
   }
 }
 
-// styles
 .textarea,
 .input,
 .select {
