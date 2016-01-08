@@ -1,6 +1,17 @@
 /**
-* Loader spinner
-*/
+ *  LOADING SPINNER
+ *
+ *  Markdown:
+ *  ---------
+ *  <div class='loading-spinner'>
+ *    <span></span>
+ *    <span></span>
+ *    <span></span>
+ *    <span></span>
+ *  </div>
+ *
+ */
+
 .loading-spinner {
   animation: rotateLoader 4s infinite;
   animation-timing-function: ease-in-out;

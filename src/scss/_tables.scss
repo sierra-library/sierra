@@ -1,6 +1,7 @@
 /**
-* Tables
-*/
+ *  TABLES
+ */
+
 .table {
   background-color: $table-bg-color;
   border: 1px solid $border-color;
@@ -48,33 +49,35 @@
 }
 
 /**
-* Table responsive
-*
-* Markup:
-*
-*  <table class="table-responsive table-break-small">
-*    <tr>
-*      <th>First column</th>
-*      <th>Second column</th>
-*      <th>Third column</th>
-*    </tr>
-*    <tr>
-*      <td data-th="First column">Blue</td>
-*      <td data-th="Second column">One</td>
-*      <td data-th="Third column">My life fades</td>
-*    </tr>
-*    <tr>
-*      <td data-th="First column">Green</td>
-*      <td data-th="Second column">Two</td>
-*      <td data-th="Third column">when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. </td>
-*    </tr>
-*    <tr>
-*      <td data-th="First column">Yellow</td>
-*      <td data-th="Second column">Three</td>
-*      <td data-th="Third column">A whirlwind of looting, a firestorm of fear. Men began to feed on men. </td>
-*    </tr>
-*  </table>
-*/
+ *  TABLE RESPONSIVE
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <table class="table-responsive table-break-small">
+ *    <tr>
+ *      <th>First column</th>
+ *      <th>Second column</th>
+ *      <th>Third column</th>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Blue</td>
+ *      <td data-th="Second column">One</td>
+ *      <td data-th="Third column">My life fades</td>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Green</td>
+ *      <td data-th="Second column">Two</td>
+ *      <td data-th="Third column">when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. </td>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Yellow</td>
+ *      <td data-th="Second column">Three</td>
+ *      <td data-th="Third column">A whirlwind of looting, a firestorm of fear. Men began to feed on men. </td>
+ *    </tr>
+ *  </table>
+ *
+ */
 
 .table-responsive {
 

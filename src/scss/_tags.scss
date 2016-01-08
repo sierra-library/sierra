@@ -1,6 +1,22 @@
 /**
-* Tags
-*/
+ *  TAGS
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <ul class="tags">
+ *    <li>
+ *        <a href="#" class="tag"> fantasy</a>
+ *    </li>
+ *    <li>
+ *        <a href="#" class="tag"> fiction </a>
+ *    </li>
+ *    <li>
+ *        <a href="#" class="tag"> contemporary </a>
+ *    </li>
+ *  </ul>
+ *
+ */
 
 .tags {
   @extend %clearfix;

@@ -1,6 +1,7 @@
 /**
-* Tipography
-*/
+ *  TYPOGRAPHY
+ */
+
 body {
   font: #{$font-weight-base} #{$font-size-base}/#{$line-height-base} $basefont;
   color: $text-body;
@@ -156,7 +157,6 @@ button.text-gray {
 
 
 // titles after titles
-
 .text-with-subtitle {
   margin-bottom: 0!important;
 

@@ -1,6 +1,6 @@
 /**
-*  Flex alignments
-*/
+ *  FLEX ALIGNMENTS
+ */
 
 // container
 .aligner {
@@ -54,8 +54,8 @@
 
 
 /**
-*  Alignments
-*/
+ *  ALIGNMENTS
+ */
 
 .fleft {
   float: left;
@@ -89,8 +89,8 @@
 
 
 /**
-*  Text utilities
-*/
+ *  TEXT UTILITIES
+ */
 
 .ellipsis {
   @include ellipsis();
@@ -102,10 +102,9 @@
 }
 
 
-
 /**
-*  Modifiers
-*/
+ *  MODIFIERS
+ */
 
 .bordered {
   border: 1px solid $border-color;
@@ -177,8 +176,8 @@
 
 
 /**
-*  Visibility utilities
-*/
+ *  VISIBILITY UTILITIES
+ */
 
 .hidden-large {
 
@@ -237,9 +236,9 @@
 }
 
 /**
-*  Bootstrap Visibility utilities
-*  Note: Deprecated .visible-xs, .visible-sm, .visible-md, and .visible-lg as of v3.2.0
-*/
+ *  BOOTSTRAP VISIBILITY UTILITIES
+ *  Note: Deprecated .visible-xs, .visible-sm, .visible-md, and .visible-lg as of v3.2.0
+ */
 
 @include responsive-invisibility('.visible-xs');
 @include responsive-invisibility('.visible-sm');

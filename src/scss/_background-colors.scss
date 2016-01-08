@@ -1,6 +1,7 @@
 /**
- *  Background colors
+ *  BACKGROUND COLORS
  */
+
 .background {
   @each $type, $color in $background-color-map {
     &-#{$type} {

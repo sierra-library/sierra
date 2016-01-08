@@ -1,20 +1,21 @@
 /**
-* TABS
-*
-* Markdown:
-* ---------
-*
-*  <div class="c-tabs">
-*    <a href="link" title="#" data-targetclass="js-tab1" class="c-tab js-tab">[...]</a>
-*    <a href="link" title="#" data-targetclass="js-tab2" class="c-tab js-tab active">[...]</a>
-*  </div>
-*  <div class="js-tab1 c-tab-content">
-*    [...]
-*  </div>
-*  <div class="js-tab2 c-tab-content selected">
-*    [...]
-*  </div>
-*/
+ *  TABS
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="c-tabs">
+ *    <a href="link" title="#" data-targetclass="js-tab1" class="c-tab js-tab">[...]</a>
+ *    <a href="link" title="#" data-targetclass="js-tab2" class="c-tab js-tab active">[...]</a>
+ *  </div>
+ *  <div class="js-tab1 c-tab-content">
+ *    [...]
+ *  </div>
+ *  <div class="js-tab2 c-tab-content selected">
+ *    [...]
+ *  </div>
+ *
+ */
 
 .tabs {
   border-top: 1px solid $border-color;

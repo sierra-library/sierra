@@ -1,6 +1,6 @@
 /**
-* FORMS
-*/
+ *  FORMS
+ */
 
 // prevent input default appearence on webkit
 input,
@@ -245,19 +245,22 @@ textarea {
 }
 
 /**
-*   Checkbox and Radio buttons
-*
-*  <div class="radio">
-*    <input id="hello" name="hello" type="radio" value=""/>
-*    <label for="hello" >option 1</label>
-*  </div>
-*
-*  <div class="checkbox">
-*    <input id="goodbye" name="goodbye" type="checkbox" value=""/>
-*    <label for="goodbye">option {{$i}}</label>
-*  </div>
-*
-**/
+ *  CHECKBOXES AND RADIO BUTTONS
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="radio">
+ *    <input id="hello" name="hello" type="radio" value=""/>
+ *    <label for="hello" >option 1</label>
+ *  </div>
+ *
+ *  <div class="checkbox">
+ *    <input id="goodbye" name="goodbye" type="checkbox" value=""/>
+ *    <label for="goodbye">option {{$i}}</label>
+ *  </div>
+ *
+ */
 
 .checkbox,
 .radio {
@@ -443,16 +446,19 @@ input[type=radio]:checked + label:before {
 
 
 /**
-* Input group
-*
-* <div class="input-group {{ $errors->first('email', 'has-error') }}">
-*     <div class="input full-width ">
-*         <input type="email" class="form-control" name="email" placeholder="email address" value="{{{ Input::old('email') }}}">
-*     </div>
-*     <span class="help-block">{{ $errors->first('email', ':message') }}</span>
-* </div>
-*
-**/
+ *  Input group
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="input-group {{ $errors->first('email', 'has-error') }}">
+ *     <div class="input full-width ">
+ *         <input type="email" class="form-control" name="email" placeholder="email address" value="{{{ Input::old('email') }}}">
+ *     </div>
+ *     <span class="help-block">{{ $errors->first('email', ':message') }}</span>
+ *  </div>
+ *
+ */
 
 .input-group {
   margin-bottom: 20px;
@@ -465,21 +471,24 @@ input[type=radio]:checked + label:before {
 }
 
 /**
-* Form group
-*
-*  <div class="form-group">
-*    <div class="input form-group-item">
-*      <input type="text" name="" id="" placeholder="Search an app and start tracking...">
-*    </div>
-*    <div class="select form-group-item">
-*      <select class="class">
-*        <option value="asd">asd</option>
-*        <option value="asfdasd">asfdasd</option>
-*      </select>
-*      <i class="js-select-opener fa fa-angle-down fa-2"></i>
-*    </div>
-*  </div>
-**/
+ *  FORM GROUP
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="form-group">
+ *    <div class="input form-group-item">
+ *      <input type="text" name="" id="" placeholder="Search an app and start tracking...">
+ *    </div>
+ *    <div class="select form-group-item">
+ *      <select class="class">
+ *        <option value="asd">asd</option>
+ *        <option value="asfdasd">asfdasd</option>
+ *      </select>
+ *      <i class="js-select-opener fa fa-angle-down fa-2"></i>
+ *    </div>
+ *  </div>
+ */
 
 .form-group {
   background-color: $form-bg-color;
@@ -518,23 +527,26 @@ input[type=radio]:checked + label:before {
 
 
 /**
-* form collapse (items in row without gap between them)
-*
-*  <div class="form-collapse">
-*    <div class="input item item-main">
-*      <input id="name" placeholder="Klingon search" type="text" />
-*    </div>
-*    <div class="select item">
-*      <select name="country-code" id="country-code">
-*        <option value="AO"> Angola</option>
-*      </select>
-*      <i class="fa fa-angle-down fa-2"></i>
-*    </div>
-*    <button class="item button button-primary">
-*      Search
-*    </button>
-*  </div>
-**/
+ *  FORM COLLAPSE (items in row without gap between them)
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="form-collapse">
+ *    <div class="input item item-main">
+ *      <input id="name" placeholder="Klingon search" type="text" />
+ *    </div>
+ *    <div class="select item">
+ *      <select name="country-code" id="country-code">
+ *        <option value="AO"> Angola</option>
+ *      </select>
+ *      <i class="fa fa-angle-down fa-2"></i>
+ *    </div>
+ *    <button class="item button button-primary">
+ *      Search
+ *    </button>
+ *  </div>
+ **/
 
 .form-collapse {
   display: flex;
