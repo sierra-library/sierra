@@ -31,7 +31,9 @@ button {
   transition: opacity .2s ease-in-out;
   white-space: nowrap;
 
-  &:focus, &:hover, &:active {
+  &:focus,
+  &:hover,
+  &:active {
     color: $text-body;
   }
 
@@ -58,11 +60,10 @@ button {
     &-big {
       $button-meta: map-get($button-sizes, big);
 
+      border-radius: $button-border-radius;
       font-size: map-get($button-meta, fontSize);
       line-height: #{map-get($button-meta, lineHeight)}em;
       padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
-
-      border-radius: $button-border-radius;
 
       @include breakpoint(bp-large) {
         padding: map-get($button-meta, paddingTB) (map-get($button-meta, paddingLR) + 10px);
@@ -72,30 +73,30 @@ button {
     &-small {
       $button-meta: map-get($button-sizes, small);
 
+      border-radius: $button-border-radius;
       font-size: map-get($button-meta, fontSize);
       line-height: #{map-get($button-meta, lineHeight)}em;
       padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
 
-      border-radius: $button-border-radius;
     }
 
     &-huge {
       $button-meta: map-get($button-sizes, huge);
 
+      border-radius: $button-border-radius;
       font-size: map-get($button-meta, fontSize);
       line-height: #{map-get($button-meta, lineHeight)}em;
       padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
 
-      border-radius: $button-border-radius;
 
       @include breakpoint(bp-large) {
         $button-meta: map-get($button-sizes, hugeLg);
 
+        border-radius: $button-border-radius;
         font-size: map-get($button-meta, fontSize);
         line-height: #{map-get($button-meta, lineHeight)}em;
         padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
 
-        border-radius: $button-border-radius;
       }
 
       i {
