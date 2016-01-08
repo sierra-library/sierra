@@ -1,30 +1,7 @@
 /**
 * $LAYOUT
 */
-.main-wrap {
-  overflow: hidden;
-  position: relative;
-  transition: padding .25s ease-in-out;
 
-  @include breakpoint(bp-huge) {
-    padding-left: 250px;
-  }
-}
-
-.main-content {
-  float: right;
-  margin-left: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-
-  &::before,
-  &::after {
-    clear: none;
-  }
-}
-
-// paddings on top / bottom
 .section {
   @include clearfix();
 
@@ -38,7 +15,6 @@
 
 }
 
-// paddings on sides
 .container {
   margin: 0 auto;
   max-width: $container-maxwidth;
@@ -83,4 +59,30 @@
 // separator
 .separator {
   border-bottom: 1px solid $border-color;
+}
+
+
+// Specific selector for mobonaut. Must delete ASAP.
+.main-wrap {
+  overflow: hidden;
+  position: relative;
+  transition: padding .25s ease-in-out;
+
+  @include breakpoint(bp-huge) {
+    padding-left: 250px;
+  }
+}
+
+// Specific selector for mobonaut & appszoom. Must delete ASAP.
+.main-content {
+  float: right;
+  margin-left: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    clear: none;
+  }
 }
