@@ -55,12 +55,18 @@ Customization
 #### 1. Edit variables.scss file
 This micro library is ready to be customized by editing the [variables.scss](https://github.com/sierra-library/sierra/blob/master/src/_variables.scss) file.
 
-Start changing:
+Change these variables
 
 - Main font: `$basefont`.
 - Brand colors: `$brand-primary`,  `$brand-secondary`, `$brand-dark`.
 - Buttons border radius: `$button-border-radius`.
-- [...]
+- Body background: `$body-bg`.
+- Body text color: `$text-body`.
+- Tables, forms and other elements background color: `$brand-light`.
+- Border color: `$border-color`.
+
+and you will have a new customized look for your website.
+
 
 #### 2. Install dependencies
 After editing, run `$ npm install` from the projects root folder to install all dependencies (needs [nodejs](https://nodejs.org/) installed).
