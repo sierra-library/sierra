@@ -40,7 +40,7 @@
 
   th {
     background-color: $table-header-bg-color;
-    color: $text-grey;
+    color: $text-gray;
     font-weight: normal;
     padding: 5px 14px;
     white-space: nowrap;
@@ -95,7 +95,7 @@
     }
 
     &::before {
-      @extend .text-grey;
+      @extend .text-gray;
       content: attr(data-th)': ';
       display: block;
       font-weight: normal;

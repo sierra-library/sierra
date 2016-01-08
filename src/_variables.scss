@@ -18,8 +18,8 @@ $color-error:           #e74c3c;
 
 $body-bg:               #2c3e50;
 
-$grey:                  #dee6ea;
-$grey-light:            #edf3f6;
+$gray:                  #dee6ea;
+$gray-light:            #edf3f6;
 $deep-blue:             #171722; // Deprecated
 $white:                 #ffffff;
 
@@ -49,13 +49,13 @@ $foursquare: #8fd400;
 // Text colors
 $text-color:            $white;       // deprecated. Use $text-body instead.
 $text-body:             $text-color;
-$text-grey:             #969da6;
+$text-gray:             #969da6;
 
 $text-color-map: (
   primary:              $brand-primary,
   secondary:            $brand-secondary,
   body:                 $text-body,
-  grey:                 $text-grey,
+  gray:                 $text-gray,
   green:                $color-success,
   success:              $color-success,
   red:                  $color-error,
@@ -173,8 +173,8 @@ $background-color-map: (
   'info':                 $color-info,
   'warning':              $color-warning,
   'error':                $color-error,
-  'grey':                 $grey,
-  'grey-light':           $grey-light
+  'gray':                 $gray,
+  'gray-light':           $gray-light
 );
 
 // Badges
@@ -184,7 +184,7 @@ $badges-color-map: (
   primary:              $brand-primary,
   secondary:            $brand-secondary,
   dark:                 $brand-dark,
-  grey:                 $grey,
+  gray:                 $gray,
   success:              $color-success,
   error:                $color-error,
   warning:              $color-warning

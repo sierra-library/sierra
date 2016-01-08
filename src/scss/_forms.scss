@@ -14,7 +14,7 @@ label {
   font-weight: normal;
 
   &.label {
-    @extend .text-grey;
+    @extend .text-gray;
     @extend .text-small;
   }
 }
@@ -131,7 +131,7 @@ input[type=radio] {
 
   // font awesome angle
   .fa-angle-down {
-    color: $text-grey;
+    color: $text-gray;
     font-size:  25px;
     height: 30px;
     margin-top: -12px;
@@ -411,7 +411,7 @@ input[type=radio]:checked + label:before{
   }
 
   .input-icon {
-    color: $text-grey;
+    color: $text-gray;
     margin-top: -6px;
     position: absolute;
     right: 12px;
