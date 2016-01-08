@@ -178,7 +178,7 @@ $background-color-map: (
 );
 
 // Badges
-$badge-color:           $text-color;
+$badge-color:           $text-body;
 $badge-bg:              $brand-light;
 $badges-color-map: (
   primary:              $brand-primary,
@@ -192,7 +192,7 @@ $badges-color-map: (
 
 // Buttons
 $button-bg-color:       #64829f; // default color for buttons
-$button-text-color:     $text-color; // default color for buttons
+$button-text-color:     $text-body; // default color for buttons
 $button-border-color:   $body-bg;
 $button-border-radius:  2em;
 $button-sizes: (
@@ -230,7 +230,7 @@ $button-sizes: (
 
 // Forms
 $form-bg-color:               $brand-light;
-$form-text-color:             $text-color;
+$form-text-color:             $text-body;
 
 // Loading spinner
 $loading-spinner-bg:          $white;
@@ -238,10 +238,10 @@ $loading-spinner-bg:          $white;
 // Paginator
 $paginator-item-radius:       $radius;
 $paginator-item-bg:           $brand-light;
-$paginator-item-color:        $text-color;
+$paginator-item-color:        $text-body;
 $paginator-item-border:       $body-bg;         // only for compact paginator
 $paginator-item-active-bg:    $brand-primary;
-$paginator-item-active-color: $text-color;
+$paginator-item-active-color: $text-body;
 
 // Rating circle
 $rating-bg:                   $brand-light;
@@ -274,10 +274,10 @@ $background-color-map: map-merge($background-color-map, (
 // Tables
 $table-bg-color:        $brand-light;
 $table-header-bg-color: $body-bg;
-$table-text-color:      $text-color;
+$table-text-color:      $text-body;
 
 // Tags
-$tag-text-color:        $text-color;
+$tag-text-color:        $text-body;
 $tag-bg-color:          $brand-light;
 $tag-bullet:            $body-bg;
 
