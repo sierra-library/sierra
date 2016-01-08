@@ -32,7 +32,7 @@ button {
   white-space: nowrap;
 
   &:focus, &:hover, &:active {
-    color: $text-color;
+    color: $text-body;
   }
 
   &:hover {

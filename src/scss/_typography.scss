@@ -3,7 +3,7 @@
 */
 body {
   font: #{$font-weight-base} #{$font-size-base}/#{$line-height-base} $basefont;
-  color: $text-color;
+  color: $text-body;
 
   @include breakpoint(bp-medium) {
     font-size: $font-size-base-medium;
