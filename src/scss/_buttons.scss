@@ -234,8 +234,6 @@ button {
   white-space: nowrap;
 
   .button {
-    $button-meta: map-get($button-sizes, normal);
-
     border-radius: 0;
     border-right: 0;
     display: inline-block;
@@ -249,50 +247,6 @@ button {
     &:last-child {
       border-bottom-right-radius: $button-border-radius;
       border-top-right-radius: $button-border-radius;
-    }
-
-    @each $meta in (big, small) {
-      &-#{$meta} {
-        $button-meta: map-get($button-sizes, $meta);
-
-        &:first-child {
-          border-bottom-left-radius: $button-border-radius;
-          border-top-left-radius: $button-border-radius;
-        }
-
-        &:last-child {
-          border-bottom-right-radius: $button-border-radius;
-          border-top-right-radius: $button-border-radius;
-        }
-      }
-    }
-
-    &-huge {
-      $button-meta: map-get($button-sizes, huge);
-
-      &:first-child {
-        border-bottom-left-radius: $button-border-radius;
-        border-top-left-radius: $button-border-radius;
-
-        @include breakpoint(bp-large) {
-          $button-meta: map-get($button-sizes, hugeLg);
-
-          border-bottom-left-radius: $button-border-radius;
-          border-top-left-radius: $button-border-radius;
-        }
-      }
-
-      &:last-child {
-        border-bottom-right-radius: $button-border-radius;
-        border-top-right-radius: $button-border-radius;
-
-        @include breakpoint(bp-large) {
-          $button-meta: map-get($button-sizes, hugeLg);
-
-          border-bottom-right-radius: $button-border-radius;
-          border-top-right-radius: $button-border-radius;
-        }
-      }
     }
   }
 }
