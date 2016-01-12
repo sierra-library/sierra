@@ -174,12 +174,14 @@ button {
     width: 43px;
 
     i {
-      margin: 0;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
   // icons on buttons
   i {
+    margin-bottom: -2%;
     margin-left: .8em;
     margin-right: .8em;
     position: relative;
