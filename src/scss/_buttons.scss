@@ -169,6 +169,7 @@ button {
 
   &.button-only-icon {
     height: 43px;
+    line-height: 43px;
     padding: 0;
     width: 43px;
 
@@ -179,8 +180,6 @@ button {
 
   // icons on buttons
   i {
-    bottom: -2px;
-    font-size: 12px;
     margin-left: .8em;
     margin-right: .8em;
     position: relative;
