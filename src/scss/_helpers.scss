@@ -81,10 +81,15 @@
   text-align: left;
 }
 
-// Deprecated. Use flexbox instead.
+
+.align-bottom {
+  vertical-align: bottom;
+}
 .align-middle {
-  display: table-cell;
   vertical-align: middle;
+}
+.align-top {
+  vertical-align: top;
 }
 
 
