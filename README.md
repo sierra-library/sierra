@@ -61,9 +61,9 @@ Change these variables and you will have a new customized look for your website:
 | -------- | ----- | --- | --------- |
 | Base font | `$basefont` | `Lato` | `Arial` |
 | Brand primary color | `$brand-primary` | `#1abc9c` | `#3498db` |
-| Brand secondary color | `$brand-secondary` | #`9b59b6` | `#2ecc71` |
+| Brand secondary color | `$brand-secondary` | `#9b59b6` | `#2ecc71` |
 | Brand dark | `$brand-dark` | `#18232f` | `#18537a` |
-| Tables, forms and other elements bg color | `$brand-light` | `#34495e` | #f1f1f1 |
+| Tables, forms and other elements bg color | `$brand-light` | `#34495e` | `#f1f1f1` |
 | Buttons border radius | `$button-border-radius` | `2em` (rounded) | `3px` |
 | Body background | `$body-bg` | `#2c3e50` | `$white` |
 | Body text color | `$text-body` | `$white` | `#404040` |
