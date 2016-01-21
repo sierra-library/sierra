@@ -57,7 +57,7 @@ This micro library is ready to be customized by editing the [variables.scss](htt
 
 Change these variables and you will have a new customized look for your website:
 
-| Desc | Variable name | Original | Alternative example |
+| Variable description | Variable name | Original value | Alternative value |
 | -------- | ----- | --- | --------- |
 | Base font | `$basefont` | `Lato` | `Arial` |
 | Brand primary color | `$brand-primary` | `#1abc9c` | `#3498db` |
