@@ -55,17 +55,19 @@ Customization
 #### 1. Edit variables.scss file
 This micro library is ready to be customized by editing the [variables.scss](https://github.com/sierra-library/sierra/blob/master/src/_variables.scss) file.
 
-Change these variables
+Change these variables and you will have a new customized look for your website:
 
-- Main font: `$basefont`.
-- Brand colors: `$brand-primary`,  `$brand-secondary`, `$brand-dark`.
-- Buttons border radius: `$button-border-radius`.
-- Body background: `$body-bg`.
-- Body text color: `$text-body`.
-- Tables, forms and other elements background color: `$brand-light`.
-- Border color: `$border-color`.
-
-and you will have a new customized look for your website.
+| Desc | Variable name | Original | Alternative example |
+| -------- | ----- | --- | --------- |
+| Main font | `$basefont` | `Lato` | `Arial` |
+| Brand colors | `$brand-primary` | `#1abc9c` | `#3498db` |
+| Brand colors | `$brand-secondary` | #`9b59b6` | `#2ecc71` |
+| Brand colors | `$brand-dark` | `#18232f` | `#18537a` |
+| Tables, forms and other elements bg color | `$brand-light` | `#34495e` | #f1f1f1 |
+| Buttons border radius | `$button-border-radius` | `2em` (rounded) | `3px` |
+| Body background | `$body-bg` | `#2c3e50` | `$white` |
+| Body text color | `$text-body` | `$white` | `#404040` |
+| Border color | `$border-color` | `#465f78` | `#dddddd` |
 
 
 #### 2. Install dependencies
