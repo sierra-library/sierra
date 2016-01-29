@@ -198,6 +198,11 @@ button {
     &::before {
       float: left;
     }
+
+    // fix vertical position on large icons
+    &.fa-lg{
+      margin-bottom: 0;
+    }
   }
 }
 
