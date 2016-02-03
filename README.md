@@ -80,20 +80,6 @@ or
 
 Run `$ gulp build` to generate a new production file:  `dist/sierra.min.css`.
 
-Tested in production environments
------------
-
-[![appszoom.com][1]][2] [![appszoom.com/developers][3]][4] [![mobonaut.com][5]][6]
-
-[1]: http://sierra-library.github.io/img/github/logo-appszoom-s.png
-[2]: http://www.appszoom.com
-
-[3]: http://sierra-library.github.io/img/github/logo-appszoom-developers-s.png
-[4]: http://www.appszoom.com/developers
-
-[5]: http://sierra-library.github.io/img/github/logo-mobonaut-s.png
-[6]: http://www.mobonaut.com
-
 Suggesting enhancements and reporting bugs
 -----------
 Since we're a very small community, we will appreciate every contribution   regardless of the size.
@@ -119,6 +105,14 @@ Remember to specify if you are able or unable, to develop the enhancement/featur
 
 
 - Happy contributing everyone!
+
+Who's Using This?
+-----------
+- [Appszoom](http://www.appszoom.com)
+- [Appszoom developers](http://www.appszoom.com/developers)
+- [Mobonaut](http://www.mobonaut.com)
+
+Are you using Sierra Library in your awesome project too? Let us know in our  [Gitter chat](https://gitter.im/sierra-library/sierra) or simply [drop me](mailto:dpam23@gmail.com) an email.
 
 
 ---
