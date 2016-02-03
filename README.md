@@ -120,11 +120,10 @@ Remember to specify if you are able or unable, to develop the enhancement/featur
 
 - Happy contributing everyone!
 
-Thanks
------------
-Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/) for collaborating in the design process and [Joan Leon](https://twitter.com/nucliweb) for all the advice on linting files.
 
-License
------------
+---
+Made by [Joan Claret](http://joanclaret.github.io/) ([@dpam23](https://twitter.com/dpam23)) and [contributors](https://github.com/sierra-library/sierra/graphs/contributors) &nbsp;|&nbsp; This library is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
 
-This library is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
+Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/) for designing some modules and [Joan Leon](https://twitter.com/nucliweb) for all the advices and linting files.
+
+
