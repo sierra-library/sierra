@@ -17,11 +17,11 @@ What's the difference with other SCSS libraries?
 
 This is a micro SCSS library to help you build websites, without all the arbitrary selectors.
 
-* Only 37.03 kB (8.9 kB gzipped)
-* Modular
-* 2 configurable grid systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/))
-* Adjust colors, borders, radius & sizes in the variables.scss file
-* Responsive
+&nbsp; &nbsp; ✓ Only 37.03 kB (8.9 kB gzipped)
+&nbsp; &nbsp; ✓ Modular
+&nbsp; &nbsp; ✓ 2 configurable grid systems ([bootstrap](http://getbootstrap.com/) and [flexboxgrid](http://flexboxgrid.com/))
+&nbsp; &nbsp; ✓ Adjust colors, borders, radius & sizes in the variables.scss file
+&nbsp; &nbsp; ✓ Responsive
 
 Installation
 -----------
