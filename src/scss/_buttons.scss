@@ -238,19 +238,18 @@ button {
   white-space: nowrap;
 
   .button {
-    border-radius: 0;
-    border-right: 0;
     display: inline-block;
     margin: 0;
 
-    &:first-child {
-      border-bottom-left-radius: $button-border-radius;
-      border-top-left-radius: $button-border-radius;
+    &:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
     }
 
-    &:last-child {
-      border-bottom-right-radius: $button-border-radius;
-      border-top-right-radius: $button-border-radius;
+    &:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-right: 0;
+      border-top-right-radius: 0;
     }
   }
 }
