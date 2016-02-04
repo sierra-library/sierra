@@ -31,10 +31,6 @@
     border-bottom: 1px solid $border-color;
   }
 
-  &.table-vertical-center td {
-    vertical-align: middle;
-  }
-
   thead {
     border-bottom: 1px solid $border-color;
   }
@@ -46,6 +42,10 @@
     padding: 5px 14px;
     white-space: nowrap;
   }
+}
+
+.table-vertical-center td {
+  vertical-align: middle;
 }
 
 /**
