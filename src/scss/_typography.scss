@@ -41,7 +41,7 @@ a {
 
 // titles commons
 .text {
-  &-huge, &-big, &-medium {
+  &-huge, &-big, &-medium, &-small {
     line-height: 1.3em;
     margin-bottom: 1em;
     margin-top: 1.5em;
@@ -53,13 +53,6 @@ a {
   }
 
   // titles
-  &, &-small {
-    font-size: 12px;
-
-    @include breakpoint(bp-medium) {
-      font-size: 14px;
-    }
-  }
 
   &-huge {
     font-family: $heading-font;
@@ -92,6 +85,14 @@ a {
     font-size: 20px;
     font-weight: $heading-weight;
     text-transform: $heading-case;
+  }
+
+  &-small {
+    font-size: 12px;
+
+    @include breakpoint(bp-medium) {
+      font-size: 14px;
+    }
   }
 
   // force element to default font state.
@@ -154,7 +155,6 @@ button.text-gray {
 .text-lato {
   font-family: 'Lato', sans-serif;
 }
-
 
 // titles after titles
 .text-with-subtitle {
