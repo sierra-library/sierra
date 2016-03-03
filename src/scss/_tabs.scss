@@ -18,12 +18,12 @@
  */
 
 .tabs {
-  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
   margin-bottom: 30px;
   text-align: center;
 
   .tab {
-    bottom: 1px;
+    border-bottom: 3px solid transparent;
     color: $text-gray;
     display: inline-block;
     line-height: 50px;
@@ -38,13 +38,8 @@
     }
 
     &.active {
-      border-top: 3px solid $brand-primary;
+      border-bottom: 3px solid $brand-primary;
       color: $brand-primary;
-
-      &.alone {
-        border-top: 0;
-        cursor: default;
-      }
     }
   }
 }
