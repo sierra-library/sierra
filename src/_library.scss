@@ -24,8 +24,8 @@
 @import 'scss/tags';
 @import 'scss/typography';
 
-@if $flexboxgrid {
-  @import 'scss/flexboxgrid';
-}@else {
-  @import 'scss/bootstrapgrid';
-}
+// Flexbox based grid. More info: https://github.com/kristoferjoseph/flexboxgrid
+//@import 'scss/flexboxgrid';
+
+// Twitter bootstrap's grid. More info: https://getbootstrap.com/examples/grid/
+@import 'scss/bootstrapgrid';
