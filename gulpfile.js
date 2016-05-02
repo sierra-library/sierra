@@ -7,8 +7,8 @@ $css = require('gulp-load-plugins')({
 paths = {src: 'src/', dist: 'dist/', dev: 'dev/', entry: 'sierra.scss'};
 
 var autoprefixer = {
-  browsers: ['last 3 versions'],
-  cascade: false
+	browsers: ['last 3 versions'],
+	cascade: false
 }
 
 /**
@@ -34,12 +34,12 @@ gulp.task('default', function() {
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sourcemaps.init())
 	.pipe($.sass({compress: false, outputStyle: 'expanded'}).on('error', $.util.log))
-  .pipe($.postcss([
-    $css.cssnano({
-      discardComments: {removeAll: true},
-      autoprefixer: autoprefixer
-    })
-  ]))
+	.pipe($.postcss([
+		$css.cssnano({
+			discardComments: {removeAll: true},
+			autoprefixer: autoprefixer
+		})
+	]))
 	.pipe($.rename({
 		basename: 'sierra'
 	}))
@@ -56,13 +56,13 @@ gulp.task('build', function() {
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sass({compress: true, outputStyle: 'compressed'}).on('error', $.util.log))
 	.pipe($.postcss([
-    $css.cssMqpacker,
-    $css.csscomb,
-    $css.cssnano({
-      discardComments: {removeAll: true},
-      autoprefixer: autoprefixer
-    })
-  ]))
+		$css.cssMqpacker,
+		$css.csscomb,
+		$css.cssnano({
+			discardComments: {removeAll: true},
+			autoprefixer: autoprefixer
+		})
+	]))
 	.pipe($.rename({
 		basename: 'sierra',
 		suffix: '.min'
