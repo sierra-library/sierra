@@ -1,6 +1,15 @@
 var gulp = require('gulp'),
 $ = require('gulp-load-plugins')({pattern: ['gulp-*']}),
-paths = {src: 'src/', dist: 'dist/', dev: 'dev/', entry: 'entry.scss'};
+$css = require('gulp-load-plugins')({
+		pattern: ['postcss-*', 'autoprefixer', 'css-mqpacker', 'cssnano', 'csscomb'],
+		replaceString: /^postcss(-|\.)/
+	}),
+paths = {src: 'src/', dist: 'dist/', dev: 'dev/', entry: 'sierra.scss'};
+
+var autoprefixer = {
+  browsers: ['last 3 versions'],
+  cascade: false
+}
 
 /**
 *  Error handling
@@ -25,10 +34,12 @@ gulp.task('default', function() {
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sourcemaps.init())
 	.pipe($.sass({compress: false, outputStyle: 'expanded'}).on('error', $.util.log))
-	.pipe($.autoprefixer({
-		browsers: ['last 3 versions'],
-		cascade: false
-	}))
+  .pipe($.postcss([
+    $css.cssnano({
+      discardComments: {removeAll: true},
+      autoprefixer: autoprefixer
+    })
+  ]))
 	.pipe($.rename({
 		basename: 'sierra'
 	}))
@@ -44,14 +55,14 @@ gulp.task('build', function() {
 	return gulp.src(paths.src+paths.entry)
 	.pipe($.plumber({errorHandler: onError}))
 	.pipe($.sass({compress: true, outputStyle: 'compressed'}).on('error', $.util.log))
-	.pipe($.autoprefixer({
-		browsers: ['last 3 versions'],
-		cascade: false
-	}))
-	.pipe($.combineMq({beautify: false}))
-	.pipe($.csso())
-	.pipe($.csscomb())
-	.pipe($.minifyCss({keepSpecialComments: false, mediaMerging: true, roundingPrecision: 4, advanced: true, aggressiveMerging: true}))
+	.pipe($.postcss([
+    $css.cssMqpacker,
+    $css.csscomb,
+    $css.cssnano({
+      discardComments: {removeAll: true},
+      autoprefixer: autoprefixer
+    })
+  ]))
 	.pipe($.rename({
 		basename: 'sierra',
 		suffix: '.min'

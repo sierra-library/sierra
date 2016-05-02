@@ -29,10 +29,12 @@
     }
   ],
   "private": false,
-  "devDependencies":
-  {
+  "devDependencies": {
+    "autoprefixer": "^6.3.5",
+    "css-mqpacker": "^4.0.1",
+    "csscomb": "^3.1.8",
+    "cssnano": "^3.5.2",
     "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
     "gulp-combine-mq": "^0.4.0",
     "gulp-csscomb": "^3.0.6",
     "gulp-csso": "^1.0.1",
@@ -40,6 +42,7 @@
     "gulp-minify-css": "^1.2.2",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.1.0",
     "gulp-rename": "~1.2.2",
     "gulp-sass": "^2.1.1",
     "gulp-size": "^2.0.0",
