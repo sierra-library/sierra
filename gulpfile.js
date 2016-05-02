@@ -12,8 +12,8 @@ var autoprefixer = {
 }
 
 /**
-*  Error handling
-*/
+ *  Error handling
+ */
 
 var onError = function (err) {
 	$.notify.onError({
@@ -26,8 +26,8 @@ var onError = function (err) {
 };
 
 /**
-*  Default tasks
-*/
+ *  Default tasks
+ */
 
 gulp.task('default', function() {
 	return gulp.src(paths.src+paths.entry)
@@ -49,8 +49,8 @@ gulp.task('default', function() {
 });
 
 /**
-*  Build production ready sass
-*/
+ *  Build production ready sass
+ */
 gulp.task('build', function() {
 	return gulp.src(paths.src+paths.entry)
 	.pipe($.plumber({errorHandler: onError}))
