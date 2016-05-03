@@ -49,6 +49,11 @@ or manually [download the library](https://github.com/sierra-library/sierra/arch
 <link rel="stylesheet" href="dist/sierra.min.css">
 ```
 
+#### 3. Load [FontAwesome](https://fortawesome.github.io/Font-Awesome/) if applicable (requried when using forms)
+
+```html
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css">
+```
 
 Customization
 -----------
