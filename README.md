@@ -6,6 +6,7 @@ Sierra Library
 The smallest and lightest scss library (formerly known as penguin library)
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![npm version](https://badge.fury.io/js/sierra-library.svg)](https://badge.fury.io/js/sierra-library) [![Bower version](https://badge.fury.io/bo/sierra.svg)](https://badge.fury.io/bo/sierra)
+[![diamond](https://diamond.js.org/badge.svg)](https://diamond.js.org)
 
 #### Online demo
 
@@ -41,12 +42,23 @@ Using npm
 npm install sierra-library --save-dev
 ```
 
+
+Using diamond
+```bash
+diamond install sierra
+```
+
 or manually [download the library](https://github.com/sierra-library/sierra/archive/master.zip).
 
 #### 2. Load the css stylesheet in your html file
 
 ```html
 <link rel="stylesheet" href="dist/sierra.min.css">
+```
+
+Note: when using diamond, import it into your Sass like so:
+```scss
+@import '~sierra';
 ```
 
 #### 3. Load [FontAwesome](https://fortawesome.github.io/Font-Awesome/) if applicable (requried when using forms)
