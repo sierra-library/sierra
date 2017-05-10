@@ -1,0 +1,6 @@
+{
+  "name": "sierra",
+  "version": "2.0.0",
+  "description": "The smallest and lightest scss library",
+  "main": "src/sierra.scss"
+}

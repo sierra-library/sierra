@@ -41,12 +41,23 @@ Using npm
 npm install sierra-library --save-dev
 ```
 
+
+Using diamond
+```bash
+diamond install sierra
+```
+
 or manually [download the library](https://github.com/sierra-library/sierra/archive/master.zip).
 
 #### 2. Load the css stylesheet in your html file
 
 ```html
 <link rel="stylesheet" href="dist/sierra.min.css">
+```
+
+Note: when using diamond, import it into your Sass like so:
+```scss
+@import '~sierra';
 ```
 
 #### 3. Load [FontAwesome](https://fortawesome.github.io/Font-Awesome/) if applicable (requried when using forms)
