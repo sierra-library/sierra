@@ -5,6 +5,7 @@ Sierra Library
 
 The smallest and lightest scss library (formerly known as penguin library)
 
+[![Backers on Open Collective](https://opencollective.com/sierra/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/sierra/sponsors/badge.svg)](#sponsors)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![npm version](https://badge.fury.io/js/sierra-library.svg)](https://badge.fury.io/js/sierra-library) [![Bower version](https://badge.fury.io/bo/sierra.svg)](https://badge.fury.io/bo/sierra)
 [![diamond](https://diamond.js.org/badge.svg)](https://diamond.js.org)
 
@@ -132,9 +133,84 @@ Who's Using This?
 Are you using Sierra Library in your awesome project too? Let us know in our  [Gitter chat](https://gitter.im/sierra-library/sierra) or simply [drop me](mailto:dpam23@gmail.com) an email.
 
 
+
+## Backers
+
+Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/sierra#backer)]
+
+<a href="https://opencollective.com/sierra/backer/0/website" target="_blank"><img src="https://opencollective.com/sierra/backer/0/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/1/website" target="_blank"><img src="https://opencollective.com/sierra/backer/1/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/2/website" target="_blank"><img src="https://opencollective.com/sierra/backer/2/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/3/website" target="_blank"><img src="https://opencollective.com/sierra/backer/3/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/4/website" target="_blank"><img src="https://opencollective.com/sierra/backer/4/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/5/website" target="_blank"><img src="https://opencollective.com/sierra/backer/5/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/6/website" target="_blank"><img src="https://opencollective.com/sierra/backer/6/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/7/website" target="_blank"><img src="https://opencollective.com/sierra/backer/7/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/8/website" target="_blank"><img src="https://opencollective.com/sierra/backer/8/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/9/website" target="_blank"><img src="https://opencollective.com/sierra/backer/9/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/10/website" target="_blank"><img src="https://opencollective.com/sierra/backer/10/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/11/website" target="_blank"><img src="https://opencollective.com/sierra/backer/11/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/12/website" target="_blank"><img src="https://opencollective.com/sierra/backer/12/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/13/website" target="_blank"><img src="https://opencollective.com/sierra/backer/13/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/14/website" target="_blank"><img src="https://opencollective.com/sierra/backer/14/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/15/website" target="_blank"><img src="https://opencollective.com/sierra/backer/15/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/16/website" target="_blank"><img src="https://opencollective.com/sierra/backer/16/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/17/website" target="_blank"><img src="https://opencollective.com/sierra/backer/17/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/18/website" target="_blank"><img src="https://opencollective.com/sierra/backer/18/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/19/website" target="_blank"><img src="https://opencollective.com/sierra/backer/19/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/20/website" target="_blank"><img src="https://opencollective.com/sierra/backer/20/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/21/website" target="_blank"><img src="https://opencollective.com/sierra/backer/21/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/22/website" target="_blank"><img src="https://opencollective.com/sierra/backer/22/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/23/website" target="_blank"><img src="https://opencollective.com/sierra/backer/23/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/24/website" target="_blank"><img src="https://opencollective.com/sierra/backer/24/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/25/website" target="_blank"><img src="https://opencollective.com/sierra/backer/25/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/26/website" target="_blank"><img src="https://opencollective.com/sierra/backer/26/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/27/website" target="_blank"><img src="https://opencollective.com/sierra/backer/27/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/28/website" target="_blank"><img src="https://opencollective.com/sierra/backer/28/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/backer/29/website" target="_blank"><img src="https://opencollective.com/sierra/backer/29/avatar.svg"></a>
+
+
+## Sponsors
+
+Become a sponsor and get your logo on our README on Github with a link to your site. [[Become a sponsor](https://opencollective.com/sierra#sponsor)]
+
+<a href="https://opencollective.com/sierra/sponsor/0/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/1/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/2/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/3/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/4/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/5/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/6/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/7/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/8/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/9/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/9/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/10/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/10/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/11/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/11/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/12/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/12/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/13/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/13/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/14/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/14/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/15/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/15/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/16/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/16/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/17/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/17/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/18/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/18/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/19/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/19/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/20/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/20/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/21/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/21/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/22/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/22/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/23/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/23/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/24/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/24/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/25/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/25/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/26/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/26/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/27/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/27/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/28/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/28/avatar.svg"></a>
+<a href="https://opencollective.com/sierra/sponsor/29/website" target="_blank"><img src="https://opencollective.com/sierra/sponsor/29/avatar.svg"></a>
+
+
 ---
 Made by [Joan Claret](http://joanclaret.github.io/) ([@dpam23](https://twitter.com/dpam23)) and [contributors](https://github.com/sierra-library/sierra/graphs/contributors) &nbsp;|&nbsp; This library is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
 
 Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/) for designing some modules and [Joan Leon](https://twitter.com/nucliweb) for all the advices and linting files.
+
+
 
 
