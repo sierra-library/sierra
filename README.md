@@ -5,7 +5,7 @@ Sierra Library
 
 The smallest and lightest scss library
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![npm version](https://badge.fury.io/js/sierra-library.svg)](https://badge.fury.io/js/sierra-library)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![npm version](https://badge.fury.io/js/sierra-library.svg)](https://badge.fury.io/js/sierra-library) [![Bower version](https://badge.fury.io/bo/sierra.svg)](https://badge.fury.io/bo/sierra)
 
 #### Online demo
 
@@ -22,18 +22,29 @@ This is a micro SCSS library to help you build websites
 &nbsp; &nbsp; ✓ Adjust colors, borders, radius & sizes in the variables.scss file<br>
 &nbsp; &nbsp; ✓ Responsive
 
-Installation
+Quick install
 -----------
 
+Using npm
 ```bash
-npm install -D sierra-library
+npm install sierra-library --save-dev
+```
+
+Using bower
+```bash
+bower install sierra --save
 ```
 
 Import
 -----------
-
+In sass files (recommended)
 ```scss
-@import 'sierra-library/src/sierra';
+@import 'sierra-library/dist/sierra';
+```
+
+or directly in your html
+```html
+<link rel="stylesheet" href="dist/sierra.min.css">
 ```
 
 
