@@ -32,7 +32,7 @@ npm install -D sierra-library
 Import
 -----------
 
-```bash
+```scss
 @import 'sierra-library/src/sierra';
 ```
 
