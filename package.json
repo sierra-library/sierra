@@ -48,16 +48,5 @@
     "gulp-size": "^2.0.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7"
-  },
-  "dependencies": {
-    "opencollective": "^1.0.3"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/sierra",
-    "logo": "https://opencollective.com/opencollective/logo.txt"
-  },
-  "scripts": {
-    "postinstall": "opencollective postinstall"
   }
 }
