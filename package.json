@@ -30,11 +30,19 @@
   ],
   "private": false,
   "devDependencies": {
+    "autoprefixer": "8",
     "node-sass": "4",
-    "nodemon": "1"
+    "nodemon": "1",
+    "postcss-cli": "2"
   },
-  "scripts":{
-    "build": "node-sass --include-path scss src/sierra.scss dist/sierra.min.css  --output-style compressed",
+  "browserslist": [
+   "> 1%",
+   "last 2 versions"
+ ],
+  "scripts": {
+    "build": "npm run build:prod && npm run build:dev",
+    "build:prod": "node-sass --include-path scss src/sierra.scss dist/sierra.min.css  --output-style compressed && postcss --use autoprefixer dist/sierra.min.css -d dist/",
+    "build:dev": "node-sass --include-path scss src/sierra.scss dist/sierra.css && postcss --use autoprefixer dist/sierra.css -d dist/",
     "watch": "nodemon -e scss -x \"npm run build\""
   }
 }
