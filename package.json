@@ -2,7 +2,7 @@
   "name": "sierra-library",
   "version": "3.0.0",
   "description": "The smallest and lightest scss library",
-  "main": "dist/sierra.min.css",
+  "main": "src/sierra.scss",
   "repository": {
     "type": "git",
     "url": "https://github.com/sierra-library/sierra.git"
