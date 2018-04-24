@@ -102,7 +102,7 @@
   margin-right: -$grid-gutter-width / 2;
   width: auto;
 
-  @include breakpoint(bp-medium) {
+  @include media-breakpoint-up(bp-medium) {
     margin-left: -$grid-gutter-width;
     margin-right: -$grid-gutter-width;
   }

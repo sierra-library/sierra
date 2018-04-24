@@ -11,11 +11,6 @@ textarea {
 label {
   display: block;
   font-weight: normal;
-
-  &.label {
-    @extend .text-gray;
-    @extend .text-small;
-  }
 }
 
 // Disable webkit background color
@@ -38,11 +33,11 @@ textarea {
   line-height: 1.5em;
   transition: background-color .2s ease-in-out;
 
-  @include breakpoint(bp-medium) {
+  @include media-breakpoint-up(bp-medium) {
     font-size: $font-size-base-medium;
   }
 
-  @include breakpoint(bp-large) {
+  @include media-breakpoint-up(bp-large) {
     font-size: $font-size-base-large;
   }
 }
@@ -162,7 +157,7 @@ input[type=radio] {
     width: 100%;
     z-index: 2;
 
-    @include breakpoint(bp-medium) {
+    @include media-breakpoint-up(bp-medium) {
       padding: 8px 15px;
     }
 
@@ -239,7 +234,7 @@ textarea {
 .form-button-wrap {
   text-align: center;
 
-  @include breakpoint(bp-medium) {
+  @include media-breakpoint-up(bp-medium) {
     text-align: right;
   }
 }
@@ -396,7 +391,7 @@ input[type=radio]:checked + label:before {
     padding-right: 10px;
     width: 100%;
 
-    @include breakpoint(bp-medium) {
+    @include media-breakpoint-up(bp-medium) {
       padding: 8px 15px;
     }
   }

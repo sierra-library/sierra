@@ -6,11 +6,11 @@ body {
   font: #{$font-weight-base} #{$font-size-base}/#{$line-height-base} $basefont;
   color: $text-body;
 
-  @include breakpoint(bp-medium) {
+  @include media-breakpoint-up(md) {
     font-size: $font-size-base-medium;
   }
 
-  @include breakpoint(bp-large) {
+  @include media-breakpoint-up(lg) {
     font-size: $font-size-base-large;
   }
 }
@@ -60,11 +60,11 @@ a {
     font-weight: $heading-weight;
     text-transform: $heading-case;
 
-    @include breakpoint(bp-large) {
+    @include media-breakpoint-up(lg) {
       font-size: 40px;
     }
 
-    @include breakpoint(bp-huge) {
+    @include media-breakpoint-up(bp-huge) {
       font-size: 48px;
     }
   }
@@ -75,7 +75,7 @@ a {
     font-weight: $heading-weight;
     text-transform: $heading-case;
 
-    @include breakpoint(bp-large) {
+    @include media-breakpoint-up(lg) {
       font-size: 28px;
     }
   }
@@ -90,7 +90,7 @@ a {
   &-small {
     font-size: 12px;
 
-    @include breakpoint(bp-medium) {
+    @include media-breakpoint-up(md) {
       font-size: 14px;
     }
   }
@@ -100,7 +100,7 @@ a {
     font-size: $font-size-base;
     line-height: 1.5em;
 
-    @include breakpoint(bp-large) {
+    @include media-breakpoint-up(lg) {
       font-size: $font-size-base-large;
     }
   }

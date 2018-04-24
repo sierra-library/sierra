@@ -17,7 +17,7 @@
     border-bottom: 1px solid $border-color;
     padding: 10px;
 
-    @include breakpoint(bp-large) {
+    @include media-breakpoint-up(lg) {
       padding: 10px 20px;
     }
   }
@@ -98,7 +98,7 @@
     }
 
     &::before {
-      @extend .text-gray;
+      // @extend .text-gray; deprecated
       content: attr(data-th)': ';
       display: block;
       font-weight: normal;
@@ -116,13 +116,13 @@
     }
 
     td {
-      @include breakpoint(bp-medium, max-width) {
+      @include media-breakpoint-down(md) {
         border: 0;
         padding-bottom: 0;
       }
 
       &::before {
-        @include breakpoint(bp-medium) {
+        @include media-breakpoint-up(md) {
           display: none;
         }
       }
@@ -135,7 +135,7 @@
     th,
     td {
 
-      @include breakpoint(bp-medium) {
+      @include media-breakpoint-up(md) {
         display: table-cell;
       }
     }
@@ -149,13 +149,13 @@
 
     td {
 
-      @include breakpoint(bp-small, max-width) {
+      @include media-breakpoint-down(sm) {
         border: 0;
         padding-bottom: 0;
       }
 
       &::before {
-        @include breakpoint(bp-small) {
+        @include media-breakpoint-up(sm) {
           display: none;
         }
       }
@@ -167,7 +167,7 @@
 
     th,
     td {
-      @include breakpoint(bp-small) {
+      @include media-breakpoint-up(sm) {
         display: table-cell;
       }
     }

@@ -12,53 +12,6 @@
   @include clearfix();
 }
 
-//  Breakpoints and media queries:
-//
-//  Usage:
-//------------------------------------
-//
-//  @include breakpoint($breakpoint, $query1) {
-//   /* Styles */
-//  }
-//
-//  $breakpoint: select the device type: bp-small, bp-medium, bp-large, bp-huge. Sizes are defined in _variables.scss
-//  $query1: select max-width, min-width, max-height, min-height
-//
-//
-//  Example:
-// ------------------------------------
-//
-//  .hello {
-//    color: red;
-//      @include breakpoint(bp-huge, max-width) {
-//      color:blue;
-//    }
-//  }
-//
-//
-//  Returns:
-// ------------------------------------
-//
-//  .hello { color: red; }
-//  @media (max-width: 1200px) { .hello { color:blue; } }
-//
-//  Enjoy!
-
-
-@mixin breakpoint($breakpoint, $query: 'min-width') {
-  $breakpoints: (
-  'bp-small': $screen-xs-min,
-  'bp-medium': $screen-sm-min,
-  'bp-large': $screen-md-min,
-  'bp-huge': $screen-lg-min,
-  );
-
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (#{$query}: map-get($breakpoints, $breakpoint)) { @content; }
-  } @else {
-    @warn 'No breakpoint found for `#{$breakpoint}`. Allowed values are: #{map-keys($breakpoints)}.';
-  }
-}
 
 // Clearfix
 //

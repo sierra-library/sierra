@@ -5,6 +5,7 @@
 
 // Library
 @import 'scss/utils/mixins';
+@import 'scss/utils/breakpoints';
 @import 'scss/placeholders';
 @import 'scss/vendor/reset';
 
@@ -20,11 +21,13 @@
 @import 'scss/loading-spinner';
 @import 'scss/message-bars';
 @import 'scss/paginator';
-@import 'scss/rating-circle';
 @import 'scss/tables';
 @import 'scss/tabs';
 @import 'scss/tags';
 @import 'scss/typography';
 
-// Twitter bootstrap's grid. More info: https://getbootstrap.com/examples/grid/
-@import 'scss/bootstrapgrid';
+// Twitter bootstrap's grid v4.1.0
+// More info: https://getbootstrap.com/examples/grid/
+@import 'scss/grid/grid-framework';
+@import 'scss/grid/grid';
+@import 'scss/grid';

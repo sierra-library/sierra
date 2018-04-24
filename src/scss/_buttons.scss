@@ -62,10 +62,6 @@ button {
       font-size: map-get($button-meta, fontSize);
       line-height: #{map-get($button-meta, lineHeight)}em;
       padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
-
-      @include breakpoint(bp-large) {
-        padding: map-get($button-meta, paddingTB) (map-get($button-meta, paddingLR) + 10px);
-      }
     }
 
     &-small {
@@ -85,17 +81,6 @@ button {
       font-size: map-get($button-meta, fontSize);
       line-height: #{map-get($button-meta, lineHeight)}em;
       padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
-
-
-      @include breakpoint(bp-large) {
-        $button-meta: map-get($button-sizes, hugeLg);
-
-        border-radius: $button-border-radius;
-        font-size: map-get($button-meta, fontSize);
-        line-height: #{map-get($button-meta, lineHeight)}em;
-        padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
-
-      }
 
       i {
         font-size: 20px;

@@ -8,7 +8,7 @@
   padding-bottom: 20px;
   padding-top: 20px;
 
-  @include breakpoint(bp-medium) {
+  @include media-breakpoint-up(md) {
     padding-bottom: 40px;
     padding-top: 40px;
   }
@@ -22,7 +22,7 @@
   padding-right: $grid-gutter-width / 2;
   width: 100%;
 
-  @include breakpoint(bp-medium) {
+  @include media-breakpoint-up(md) {
     padding-left: $grid-gutter-width;
     padding-right: $grid-gutter-width;
   }
@@ -34,7 +34,7 @@
   padding-left: $grid-gutter-width / 2;
   padding-right: $grid-gutter-width / 2;
 
-  @include breakpoint(bp-medium) {
+  @include media-breakpoint-up(md) {
     padding-left: $grid-gutter-width;
     padding-right: $grid-gutter-width;
   }
@@ -46,7 +46,7 @@
   padding-left: $grid-gutter-width / 2;
   padding-right: $grid-gutter-width / 2;
 
-  @include breakpoint(bp-medium) {
+  @include media-breakpoint-up(md) {
     padding-left: $grid-gutter-width;
     padding-right: $grid-gutter-width;
   }
@@ -68,7 +68,7 @@
   position: relative;
   transition: padding .25s ease-in-out;
 
-  @include breakpoint(bp-huge) {
+  @include media-breakpoint-up(xl) {
     padding-left: 250px;
   }
 }
