@@ -1,8 +1,5 @@
 /**
  *  VARIABLES
- *
- *  Configure sierra SCSS library by adjusting this file
- *
  */
 
 $enable-grid-classes: true;
@@ -98,7 +95,7 @@ $grid-breakpoints: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           24px !default;
 
 
 
