@@ -59,15 +59,6 @@
       left: 0;
     }
   }
-
-  &.is-relative {
-    display: inline-block;
-    left: auto;
-    margin: 0;
-    position: relative;
-    top: auto;
-    z-index: 1;
-  }
 }
 
 @keyframes rotateLoader {
