@@ -4,7 +4,7 @@
 
 body {
   font: #{$font-weight-base} #{$font-size-base}/#{$line-height-base} $basefont;
-  color: $text-body;
+  color: $c-text;
 
   @include media-breakpoint-up(md) {
     font-size: $font-size-base-medium;
@@ -26,15 +26,15 @@ p {
 }
 
 a {
-  color: $brand-primary;
+  color: $c-primary;
   text-decoration: none;
 
   &:hover {
-    color: rgba($brand-primary, .8);
+    color: rgba($c-primary, .8);
   }
 
   &:focus {
-    color: $brand-primary;
+    color: $c-primary;
   }
 }
 
@@ -104,23 +104,6 @@ a {
       font-size: $font-size-base-large;
     }
   }
-
-  // Colours
-  @each $type, $color in $background-color-map {
-    &-#{$type} {
-      color: $color;
-    }
-  }
-
-  &-white {
-    color: $white;
-  }
-}
-
-.text-gray,
-a.text-gray,
-button.text-gray {
-  color: $text-gray;
 }
 
 // Styles

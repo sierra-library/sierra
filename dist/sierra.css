@@ -95,37 +95,82 @@ pre {
   margin-bottom: 2em !important; }
 
 /**
- *  BACKGROUND COLORS
+ *  COLORS
  */
-.background-primary {
+.bg-primary {
   background-color: #1abc9c; }
 
-.background-dark {
+.bg-dark {
   background-color: #18232f; }
 
-.background-secondary {
+.bg-secondary {
   background-color: #9b59b6; }
 
-.background-white {
+.bg-white {
   background-color: #fff; }
 
-.background-success {
+.bg-success {
   background-color: #4caf50; }
 
-.background-info {
+.bg-info {
   background-color: #5bc0de; }
 
-.background-warning {
+.bg-warning {
   background-color: #f0ad4e; }
 
-.background-error {
+.bg-error {
   background-color: #e74c3c; }
 
-.background-gray {
-  background-color: #dee6ea; }
+.bg-gray {
+  background-color: #969da6; }
 
-.background-gray-light {
+.bg-gray-light {
   background-color: #edf3f6; }
+
+.border {
+  border: 1px solid #465f78; }
+
+.border-bottom {
+  border-bottom: 1px solid #465f78; }
+
+.border-left {
+  border-left: 1px solid #465f78; }
+
+.border-right {
+  border-right: 1px solid #465f78; }
+
+.border-top {
+  border-top: 1px solid #465f78; }
+
+.text-primary {
+  color: #1abc9c; }
+
+.text-dark {
+  color: #18232f; }
+
+.text-secondary {
+  color: #9b59b6; }
+
+.text-white {
+  color: #fff; }
+
+.text-success {
+  color: #4caf50; }
+
+.text-info {
+  color: #5bc0de; }
+
+.text-warning {
+  color: #f0ad4e; }
+
+.text-error {
+  color: #e74c3c; }
+
+.text-gray {
+  color: #969da6; }
+
+.text-gray-light {
+  color: #edf3f6; }
 
 /**
  *  BUTTONS
@@ -870,21 +915,6 @@ input[type=radio]:checked + label:before {
 /**
  *  MODIFIERS
  */
-.bordered {
-  border: 1px solid #465f78; }
-
-.border-bottom {
-  border-bottom: 1px solid #465f78; }
-
-.border-left {
-  border-left: 1px solid #465f78; }
-
-.border-right {
-  border-right: 1px solid #465f78; }
-
-.border-top {
-  border-top: 1px solid #465f78; }
-
 .display-block {
   display: block; }
 
@@ -1251,44 +1281,6 @@ a {
     .text-body {
       font-size: 15px; } }
 
-.text-primary {
-  color: #1abc9c; }
-
-.text-dark {
-  color: #18232f; }
-
-.text-secondary {
-  color: #9b59b6; }
-
-.text-white {
-  color: #fff; }
-
-.text-success {
-  color: #4caf50; }
-
-.text-info {
-  color: #5bc0de; }
-
-.text-warning {
-  color: #f0ad4e; }
-
-.text-error {
-  color: #e74c3c; }
-
-.text-gray {
-  color: #dee6ea; }
-
-.text-gray-light {
-  color: #edf3f6; }
-
-.text-white {
-  color: #fff; }
-
-.text-gray,
-a.text-gray,
-button.text-gray {
-  color: #969da6; }
-
 .text-light {
   font-weight: 300; }
 
@@ -1357,7 +1349,7 @@ h4 {
   .badge--dark {
     background-color: #18232f; }
   .badge--light {
-    background-color: #dee6ea; }
+    background-color: #969da6; }
   .badge--success {
     background-color: #4caf50; }
   .badge--error {

@@ -19,7 +19,7 @@
 
   &::before {
     animation: loading 2s linear infinite;
-    background-color: $brand-primary;
+    background-color: $c-primary;
     content: '';
     display: block;
     height: $h-loading-bar;

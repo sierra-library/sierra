@@ -32,7 +32,7 @@ button {
   &:focus,
   &:hover,
   &:active {
-    color: $text-body;
+    color: $c-text;
   }
 
   &:hover {
@@ -98,22 +98,22 @@ button {
 
   // colors
   &.button-primary {
-    background-color: $brand-primary;
-    border: 1px solid $brand-primary;
-    color: $white;
+    background-color: $c-primary;
+    border: 1px solid $c-primary;
+    color: $c-white;
 
     &:hover {
-      color: $white;
+      color: $c-white;
     }
   }
 
   &.button-secondary {
-    background-color: $brand-secondary;
-    border: 1px solid $brand-secondary;
-    color: $white;
+    background-color: $c-secondary;
+    border: 1px solid $c-secondary;
+    color: $c-white;
 
     &:hover {
-      color: $white;
+      color: $c-white;
     }
   }
 
@@ -123,28 +123,28 @@ button {
   }
 
   &.button-white {
-    background-color: $white;
-    border: 1px solid $white;
-    color: $brand-primary;
+    background-color: $c-white;
+    border: 1px solid $c-white;
+    color: $c-primary;
   }
 
   &.button-green {
-    background-color: $color-success;
-    border-color: $color-success;
-    color: $white;
+    background-color: $c-success;
+    border-color: $c-success;
+    color: $c-white;
   }
 
   &.button-red {
-    background-color: $color-error;
-    border-color: $color-error;
-    color: $white;
+    background-color: $c-error;
+    border-color: $c-error;
+    color: $c-white;
   }
 
   // types
   &.button-outlined {
     background-color: transparent;
-    border: 1px solid $brand-primary;
-    color: $brand-primary;
+    border: 1px solid $c-primary;
+    color: $c-primary;
   }
 
   &.button-disabled {
@@ -192,7 +192,7 @@ button {
 }
 
 .button-link {
-  color: $brand-primary;
+  color: $c-primary;
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   font-weight: 700;

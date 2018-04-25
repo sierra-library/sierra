@@ -1,0 +1,42 @@
+/**
+ *  COLORS
+ */
+
+// Background colors
+.bg {
+  @each $type, $color in $c-map {
+    &-#{$type} {
+      background-color: $color;
+    }
+  }
+}
+
+// Borders
+.border {
+  border: $bd-m;
+}
+
+.border-bottom {
+  border-bottom: $bd-m;
+}
+
+.border-left {
+  border-left: $bd-m;
+}
+
+.border-right {
+  border-right: $bd-m;
+}
+
+.border-top {
+  border-top: $bd-m;
+}
+
+// Text
+.text {
+  @each $type, $color in $c-map {
+    &-#{$type} {
+      color: $color;
+    }
+  }
+}

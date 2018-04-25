@@ -4,9 +4,9 @@
 
 .table {
   background-color: $table-bg-color;
-  border: 1px solid $border-color;
+  border: $bd-m;
   border-collapse: collapse;
-  border-radius: $radius;
+  border-radius: $bdr-m;
   color: $table-text-color;
   margin-bottom: 20px;
   max-width: 100%;
@@ -14,7 +14,7 @@
 
   th,
   td {
-    border-bottom: 1px solid $border-color;
+    border-bottom: $bd-m;
     padding: 10px;
 
     @include media-breakpoint-up(lg) {
@@ -28,16 +28,16 @@
   }
 
   tr {
-    border-bottom: 1px solid $border-color;
+    border-bottom: $bd-m;
   }
 
   thead {
-    border-bottom: 1px solid $border-color;
+    border-bottom: $bd-m;
   }
 
   th {
     background-color: $table-header-bg-color;
-    color: $text-gray;
+    color: $c-gray;
     font-weight: normal;
     padding: 5px 14px;
     white-space: nowrap;
@@ -89,7 +89,7 @@
     display: block;
 
     &:first-child {
-      border-top: 1px solid $border-color;
+      border-top: $bd-m;
       padding-top: 14px;
     }
 
@@ -112,7 +112,7 @@
 
   &.table-break-medium {
     tr {
-      border-top: 1px solid $border-color;
+      border-top: $bd-m;
     }
 
     td {
@@ -144,7 +144,7 @@
   &.table-break-small {
 
     tr {
-      border-top: 1px solid $border-color;
+      border-top: $bd-m;
     }
 
     td {

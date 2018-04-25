@@ -28,7 +28,7 @@ select {
 select,
 input[type=text],
 textarea {
-  border-radius: $radius;
+  border-radius: $bdr-m;
   font-size: $font-size-base;
   line-height: 1.5em;
   transition: background-color .2s ease-in-out;
@@ -47,8 +47,8 @@ textarea {
 .select {
   //border:1px solid $blue-light;
   border: 0;
-  border: 1px solid $border-color;
-  border-radius: $radius;
+  border: $bd-m;
+  border-radius: $bdr-m;
   box-shadow: none;
   display: block;
   font-weight: normal;
@@ -59,7 +59,7 @@ textarea {
   }
 
   &.error {
-    border: 1px solid $color-error;
+    border: 1px solid $c-error;
     margin-bottom: 0; // we will display an error message
   }
 
@@ -74,18 +74,18 @@ textarea {
   .textarea,
   .input,
   .select {
-    border: 1px solid $brand-primary;
+    border: 1px solid $c-primary;
   }
 }
 
 // Specific selector for mobonaut checkout. Must delete ASAP.
 .has-error .control-label {
-  color:$brand-primary;
+  color:$c-primary;
 }
 
 // Specific selector for error handling in mobonaut checkout. Must delete ASAP.
 label.error {
-  color: $color-error;
+  color: $c-error;
   font-size: 13px;
   line-height: 13px;
   position: absolute;
@@ -122,7 +122,7 @@ input[type=radio] {
 
   // font awesome angle
   .fa-angle-down {
-    color: $text-gray;
+    color: $c-gray;
     font-size:  25px;
     height: 30px;
     margin-top: -12px;
@@ -134,7 +134,7 @@ input[type=radio] {
 
   // Specific selector for Appszoom. Must delete ASAP.
   .icon-angle-down {
-    color: $brand-primary;
+    color: $c-primary;
     font-size: 1.2em;
     height: 30px;
     margin-top: -10px;
@@ -199,7 +199,7 @@ select::-ms-expand {
 
 .select-link {
   border: 0;
-  color: $brand-primary;
+  color: $c-primary;
 }
 
 // textarea
@@ -298,8 +298,8 @@ input[type=radio] + label:before {
 input[type=checkbox] + label:after,
 input[type=radio] + label:after {
   background-color: $form-bg-color;
-  border: 1px solid $border-color;
-  border-radius: $radius;
+  border: $bd-m;
+  border-radius: $bdr-m;
   content: '';
 }
 
@@ -319,7 +319,7 @@ input[type=checkbox] + label:before{
 
 }
 input[type=radio] + label:before {
-  background-color: $brand-primary;
+  background-color: $c-primary;
   border-radius: 99px;
   content: '';
   display: block;
@@ -334,13 +334,13 @@ input[type=radio] + label:before {
 
 input[type=checkbox]:checked + label,
 input[type=radio]:checked + label {
-  color: $brand-primary;
+  color: $c-primary;
 }
 
 input[type=checkbox]:checked + label:before,
 input[type=radio]:checked + label:before {
   animation: radioAndCheckboxAnimation .25s;
-  color: $brand-primary;
+  color: $c-primary;
   transform: scale(1);
 }
 
@@ -406,14 +406,14 @@ input[type=radio]:checked + label:before {
   }
 
   .input-icon {
-    color: $text-gray;
+    color: $c-gray;
     margin-top: -6px;
     position: absolute;
     right: 12px;
     top: 50%;
 
     &.fa-search {
-      color: $brand-primary;
+      color: $c-primary;
       margin-top: -7px;
     }
   }
@@ -487,8 +487,8 @@ input[type=radio]:checked + label:before {
 
 .form-group {
   background-color: $form-bg-color;
-  border: 1px solid $border-color;
-  border-radius: $radius;
+  border: $bd-m;
+  border-radius: $bdr-m;
   display: inline-block;
   margin-bottom: 20px;
 
@@ -557,13 +557,13 @@ input[type=radio]:checked + label:before {
     margin: 0;
 
     &:first-child {
-      border-bottom-left-radius: $radius;
-      border-top-left-radius: $radius;
+      border-bottom-left-radius: $bdr-m;
+      border-top-left-radius: $bdr-m;
     }
 
     &:last-child {
-      border-bottom-right-radius: $radius;
-      border-top-right-radius: $radius;
+      border-bottom-right-radius: $bdr-m;
+      border-top-right-radius: $bdr-m;
     }
 
     &:not(:last-child) {
