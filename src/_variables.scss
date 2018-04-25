@@ -208,10 +208,16 @@ $m-tabs-item: 0 30px 0 0 !default;
 $miw-tabs-item: 70px !default;
 $p-tabs-item: 15px !default;
 
-// Tables
-$table-bg-color:        $c-light;
-$table-header-bg-color: $bgc-body;
-$table-text-color:      $c-text;
+// Table
+$bgc-table-header: $bgc-body !default;
+$bgc-table: $c-light !default;
+$c-table-heading: $c-gray !default;
+$c-table-text: $c-text !default;
+$fw-table-heading: normal !default;
+$mwi-table: 100% !default;
+$p-table-cell: 10px !default;
+$p-table-heading: 10px !default;
+$w-table: 100% !default;
 
 // Tags
 $bg-tag-dot: $bgc-body !default;
