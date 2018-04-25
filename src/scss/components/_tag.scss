@@ -1,0 +1,62 @@
+/**
+ *  TAG
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <ul>
+ *    <li class="tag">Fantasy</li>
+ *    <li class="tag">Fiction</li>
+ *    <li class="tag">Contemporary</li>
+ *  </ul>
+ *
+ *  <ul>
+ *    <li class="tag">
+ *      <a href="#">Fantasy</a>
+ *    </li>
+ *    <li class="tag">
+ *      <a href="#">Fiction</a>
+ *    </li>
+ *    <li class="tag">
+ *       <a href="#">Contemporary</a>
+ *    </li>
+ *  </ul>
+ *
+ */
+
+.tag {
+  background-color: $bg-tag;
+  border-radius: $bdr-tag;
+  color: $c-tag;
+  display: inline-block;
+  line-height: $lh-tag;
+  margin: $m-tag;
+  padding: $p-tag;
+  position: relative;
+
+  // triangle arrow
+  &::before {
+    border-bottom: ($lh-tag / 2) + $p-tag solid transparent;
+    border-left: $p-tag solid $bg-tag;
+    border-top: ($lh-tag / 2) + $p-tag solid transparent;
+    content: '';
+    height: 0;
+    position: absolute;
+    right: -$p-tag;
+    top: 0;
+    width: 0;
+  }
+
+  // dot
+  &::after {
+    background: $bg-tag-dot;
+    border-radius: 100%;
+    content: '';
+    height: $size-tag-dot;
+    margin-top: -$size-tag-dot / 2;
+    position: absolute;
+    right: -$size-tag-dot / 2;
+    top: 50%;
+    width: $size-tag-dot;
+  }
+}

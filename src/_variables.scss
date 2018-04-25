@@ -71,7 +71,8 @@ $gutterwidth:               24px;
 $container-maxwidth:        1380px;
 $container-medium-maxwidth: 944px;
 $container-small-maxwidth:  400px;
-$radius:                    3px;
+$radius:                    3px; // Deprecated
+$bdr-m:                     3px;
 $border-box:                true;
 
 
@@ -230,9 +231,14 @@ $table-header-bg-color: $body-bg;
 $table-text-color:      $text-body;
 
 // Tags
-$tag-text-color:        $text-body;
-$tag-bg-color:          $brand-light;
-$tag-bullet:            $body-bg;
+$bg-tag-dot: $body-bg !default;
+$bg-tag: $brand-light !default;
+$bdr-tag: $bdr-m 0 0 $bdr-m !default;
+$c-tag: $text-body !default;
+$lh-tag: 14px !default;
+$m-tag: 0 25px 10px 0 !default;
+$p-tag: 10px !default;
+$size-tag-dot: 5px !default;
 
 // Typography
 $basefont: 'Lato', sans-serif;
