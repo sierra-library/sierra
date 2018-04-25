@@ -76,7 +76,8 @@ body {
   position: relative; }
 
 p {
-  font-weight: normal; }
+  font-weight: normal;
+  margin-bottom: 1em; }
 
 img {
   max-width: 100%; }
@@ -1063,25 +1064,6 @@ input[type=radio]:checked + label:before {
     clear: none; }
 
 /**
- *  MESSAGE BARS
- *
- *  Markup:
- *  -------
- *
- *  <div class="message-bar background-sucess">Success message</div>
- *  <div class="message-bar background-info">Success info</div>
- *  <div class="message-bar background-error">Success error</div>
- *  <div class="message-bar background-warning">Success warning</div>
- *
- */
-.message-bar {
-  border-radius: 3px;
-  margin-bottom: 1em;
-  padding: 1em; }
-  .message-bar p:last-child {
-    margin-bottom: 0; }
-
-/**
  *  TABLES
  */
 .table {
@@ -1595,6 +1577,45 @@ h4 {
   100% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); } }
+
+/**
+ *  NOTIFICATION
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="notification notification--sucess">Success notification</div>
+ *  <div class="notification notification--info">Success info</div>
+ *  <div class="notification notification--error">Success error</div>
+ *  <div class="notification notification--warning">Success warning</div>
+ *
+ */
+.notification {
+  border-radius: 3px;
+  margin-bottom: 1em;
+  padding: 1em; }
+  .notification p:last-child {
+    margin-bottom: 0; }
+  .notification--primary {
+    background-color: #1abc9c; }
+  .notification--dark {
+    background-color: #18232f; }
+  .notification--secondary {
+    background-color: #9b59b6; }
+  .notification--white {
+    background-color: #fff; }
+  .notification--success {
+    background-color: #4caf50; }
+  .notification--info {
+    background-color: #5bc0de; }
+  .notification--warning {
+    background-color: #f0ad4e; }
+  .notification--error {
+    background-color: #e74c3c; }
+  .notification--gray {
+    background-color: #969da6; }
+  .notification--gray-light {
+    background-color: #edf3f6; }
 
 /**
  *  PAGINATOR
