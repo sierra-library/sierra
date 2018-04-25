@@ -8,30 +8,30 @@
  */
 
 .loading-bar {
-  height: 4px;
+  height: $h-loading-bar;
   left: 0;
   overflow: hidden;
   position: fixed;
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 1000;
-}
+  z-index: $z-loading-bar;
 
-.loading-bar::before {
-  animation: loading 2s linear infinite;
-  background-color: $brand-primary;
-  content: '';
-  display: block;
-  height: 4px;
-  left: -200px;
-  position: absolute;
-  width: 200px;
+  &::before {
+    animation: loading 2s linear infinite;
+    background-color: $brand-primary;
+    content: '';
+    display: block;
+    height: $h-loading-bar;
+    left: -$w-loading-bar;
+    position: absolute;
+    width: $w-loading-bar;
+  }
 }
 
 @keyframes loading {
   from {
-    left: -200px;
+    left: -$w-loading-bar;
     width: 30%;
   }
 

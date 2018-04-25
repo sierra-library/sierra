@@ -186,6 +186,11 @@ $button-sizes: (
 $form-bg-color:               $brand-light;
 $form-text-color:             $text-body;
 
+// Loading bar
+$h-loading-bar: 4px !default;
+$w-loading-bar: 300px !default;
+$z-loading-bar: 1000 !default;
+
 // Loading spinner
 $loading-spinner-bg:          $white;
 
