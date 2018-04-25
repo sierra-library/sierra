@@ -3,42 +3,42 @@
  *
  *  Markdown:
  *  ---------
- *  <div class='loading-spinner'>
- *    <span></span>
- *    <span></span>
- *    <span></span>
- *    <span></span>
+ *  <div class='loadingSpinner'>
+ *    <span class='loadingSpinner-inner'></span>
+ *    <span class='loadingSpinner-inner'></span>
+ *    <span class='loadingSpinner-inner'></span>
+ *    <span class='loadingSpinner-inner'></span>
  *  </div>
  *
  */
 
-.loading-spinner {
+.loadingSpinner {
   animation: rotateLoader 4s infinite;
   animation-timing-function: ease-in-out;
   display: block;
-  height: 30px;
+  height: $size-loading-spinner;
   left: 50%;
-  margin-left: -15px;
-  margin-top: -15px;
+  margin-left: -$size-loading-spinner / 2;
+  margin-top: -$size-loading-spinner / 2;
   position: fixed;
   top: 50%;
-  width: 30px;
-  z-index: 1000;
+  width: $size-loading-spinner;
+  z-index: $z-loading-spinner;
 
-  span {
+  &-inner {
     animation-timing-function: ease-in-out;
-    background-color: $loading-spinner-bg;
+    background-color: $bg-loading-spinner;
     border-radius: 100%;
     display: block;
-    height: 9px;
+    height: $size-loading-spinner-inner;
     position: absolute;
-    width: 9px;
+    width: $size-loading-spinner-inner;
 
     &:nth-child(1) {
       animation: translateBall1 1s infinite;
       left: 0;
       top: 0;
-      transform: translate3d(5px, 5px, 0);
+      transform: translate3d($size-loading-spinner-inner / 2, $size-loading-spinner-inner / 2, 0);
     }
 
     &:nth-child(2) {
@@ -98,7 +98,7 @@
   }
 
   50% {
-    transform: translate3d(4px, 4px, 0);
+    transform: translate3d($size-loading-spinner-inner / 2, $size-loading-spinner-inner / 2, 0);
   }
 
   100% {
@@ -111,7 +111,7 @@
   }
 
   50% {
-    transform: translate3d(-4px, 4px, 0);
+    transform: translate3d(-$size-loading-spinner-inner / 2, $size-loading-spinner-inner / 2, 0);
   }
 
   100% {
@@ -125,7 +125,7 @@
   }
 
   50% {
-    transform: translate3d(-4px, -4px, 0);
+    transform: translate3d(-$size-loading-spinner-inner / 2, -$size-loading-spinner-inner / 2, 0);
   }
 
   100% {
@@ -139,7 +139,7 @@
   }
 
   50% {
-    transform: translate3d(4px, -4px, 0);
+    transform: translate3d($size-loading-spinner-inner / 2, -$size-loading-spinner-inner / 2, 0);
   }
 
   100% {

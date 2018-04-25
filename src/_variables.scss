@@ -20,7 +20,8 @@ $body-bg:               #2c3e50;
 $gray:                  #dee6ea;
 $gray-light:            #edf3f6;
 $deep-blue:             #171722; // Deprecated
-$white:                 #ffffff;
+$white:                 #fff; // deprecated
+$c-white:               #fff;
 
 // Borders
 $border-color:          #465f78;
@@ -192,7 +193,10 @@ $w-loading-bar: 300px !default;
 $z-loading-bar: 1000 !default;
 
 // Loading spinner
-$loading-spinner-bg:          $white;
+$bg-loading-spinner: $c-white !default;
+$size-loading-spinner-inner: 9px !default;
+$size-loading-spinner: 30px !default;
+$z-loading-spinner: 1000 !default;
 
 // Paginator
 $paginator-item-radius:       $radius;
