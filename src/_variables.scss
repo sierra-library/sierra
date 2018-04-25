@@ -204,12 +204,12 @@ $size-loading-spinner: 30px !default;
 $z-loading-spinner: 1000 !default;
 
 // Paginator
-$paginator-item-radius:       $radius;
-$paginator-item-bg:           $brand-light;
-$paginator-item-color:        $text-body;
-$paginator-item-border:       $body-bg;         // only for compact paginator
-$paginator-item-active-bg:    $brand-primary;
-$paginator-item-active-color: $text-body;
+$mr-paginator-item: 2px !default;
+$bdr-paginator-item: $bdr-m !default;
+$bg-paginator-item: $brand-light !default;
+$c-paginator-item: $text-body !default;
+$bg-paginator-item-active: $brand-primary !default;
+$c-paginator-item-active: $text-body !default;
 
 // Tabs
 $bdb-tabs-item-selected: 3px solid $brand-primary !default;

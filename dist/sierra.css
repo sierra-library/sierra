@@ -127,36 +127,6 @@ pre {
 .background-gray-light {
   background-color: #edf3f6; }
 
-.background-rating1 {
-  background-color: #dd2c00; }
-
-.background-rating2 {
-  background-color: #ff5722; }
-
-.background-rating3 {
-  background-color: #ff9800; }
-
-.background-rating4 {
-  background-color: #ffc107; }
-
-.background-rating5 {
-  background-color: #f5dc00; }
-
-.background-rating6 {
-  background-color: #cddc39; }
-
-.background-rating7 {
-  background-color: #8bc34a; }
-
-.background-rating8 {
-  background-color: #4caf50; }
-
-.background-rating9 {
-  background-color: #43a047; }
-
-.background-rating10 {
-  background-color: #388e3c; }
-
 /**
  *  BUTTONS
  */
@@ -1082,76 +1052,6 @@ input[type=radio]:checked + label:before {
     margin-bottom: 0; }
 
 /**
- *  PAGINATOR
- *
- *  Markup:
- *  -------
- *
- *  <ul class="paginator-list">
- *    <li class="paginator-list-item">
- *      <a href="#" class="paginator-list-link">Prev</a>
- *    </li>
- *    <li class="paginator-list-item">
- *      <a href="#" class="paginator-list-link">1</a>
- *    </li>
- *    <li class="paginator-list-item">
- *      <a href="#" class="paginator-list-link active">2</a>
- *    </li>
- *    <li class="paginator-list-item">
- *      <a href="#" class="paginator-list-link">3</a>
- *    </li>
- *    <li class="paginator-list-item">
- *      <a href="#" class="paginator-list-link">Next</a>
- *    </li>
- *  </ul>
- */
-.paginator-list .paginator-list-item {
-  margin-right: 5px;
-  padding: 0;
-  display: inline-block; }
-  .paginator-list .paginator-list-item:first-child i {
-    margin-right: .5em; }
-  .paginator-list .paginator-list-item:last-child i {
-    margin-left: .5em; }
-  .paginator-list .paginator-list-item .paginator-list-link {
-    background-color: #34495e;
-    border: 1px solid #2c3e50;
-    border-radius: 3px;
-    color: #fff;
-    display: block;
-    padding: .5em 1em;
-    -webkit-transition: background-color .2s ease-in-out;
-    transition: background-color .2s ease-in-out; }
-    .paginator-list .paginator-list-item .paginator-list-link:hover {
-      background-color: #46637f; }
-    .paginator-list .paginator-list-item .paginator-list-link.active {
-      background-color: #1abc9c;
-      color: #fff; }
-
-.paginator-list.paginator-compact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .paginator-list.paginator-compact .paginator-list-item {
-    margin-right: 0; }
-    .paginator-list.paginator-compact .paginator-list-item:not(:last-child) {
-      border-right: 1px solid #2c3e50; }
-    .paginator-list.paginator-compact .paginator-list-item .paginator-list-link {
-      border-radius: 0; }
-    .paginator-list.paginator-compact .paginator-list-item:first-child .paginator-list-link {
-      border-bottom-left-radius: 3px;
-      border-top-left-radius: 3px; }
-    .paginator-list.paginator-compact .paginator-list-item:last-child .paginator-list-link {
-      border-bottom-right-radius: 3px;
-      border-top-right-radius: 3px; }
-
-.paginator-list.paginator-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center; }
-
-/**
  *  TABLES
  */
 .table {
@@ -1278,49 +1178,6 @@ input[type=radio]:checked + label:before {
     display: table-cell; } }
 
 /**
- *  TABS
- *
- *  Markup:
- *  -------
- *
- *  <div class="c-tabs">
- *    <a href="link" title="#" data-targetclass="js-tab1" class="c-tab js-tab">[...]</a>
- *    <a href="link" title="#" data-targetclass="js-tab2" class="c-tab js-tab active">[...]</a>
- *  </div>
- *  <div class="js-tab1 c-tab-content">
- *    [...]
- *  </div>
- *  <div class="js-tab2 c-tab-content selected">
- *    [...]
- *  </div>
- *
- */
-.tabs {
-  border-bottom: 1px solid #465f78;
-  margin-bottom: 30px;
-  text-align: center; }
-  .tabs .tab {
-    border-bottom: 3px solid transparent;
-    color: #969da6;
-    display: inline-block;
-    line-height: 50px;
-    margin: 0;
-    margin-right: 30px;
-    min-width: 70px;
-    position: relative; }
-    .tabs .tab:hover {
-      color: #1abc9c;
-      text-decoration: none; }
-    .tabs .tab.active {
-      border-bottom: 3px solid #1abc9c;
-      color: #1abc9c; }
-
-.tab-content {
-  display: none; }
-  .tab-content.selected {
-    display: block; }
-
-/**
  *  TYPOGRAPHY
  */
 body {
@@ -1424,36 +1281,6 @@ a {
 .text-gray-light {
   color: #edf3f6; }
 
-.text-rating1 {
-  color: #dd2c00; }
-
-.text-rating2 {
-  color: #ff5722; }
-
-.text-rating3 {
-  color: #ff9800; }
-
-.text-rating4 {
-  color: #ffc107; }
-
-.text-rating5 {
-  color: #f5dc00; }
-
-.text-rating6 {
-  color: #cddc39; }
-
-.text-rating7 {
-  color: #8bc34a; }
-
-.text-rating8 {
-  color: #4caf50; }
-
-.text-rating9 {
-  color: #43a047; }
-
-.text-rating10 {
-  color: #388e3c; }
-
 .text-white {
   color: #fff; }
 
@@ -1537,61 +1364,6 @@ h4 {
     background-color: #e74c3c; }
   .badge--warning {
     background-color: #f0ad4e; }
-
-/**
- *  TAG
- *
- *  Markup:
- *  -------
- *
- *  <ul>
- *    <li class="tag">Fantasy</li>
- *    <li class="tag">Fiction</li>
- *    <li class="tag">Contemporary</li>
- *  </ul>
- *
- *  <ul>
- *    <li class="tag">
- *      <a href="#">Fantasy</a>
- *    </li>
- *    <li class="tag">
- *      <a href="#">Fiction</a>
- *    </li>
- *    <li class="tag">
- *       <a href="#">Contemporary</a>
- *    </li>
- *  </ul>
- *
- */
-.tag {
-  background-color: #34495e;
-  border-radius: 3px 0 0 3px;
-  color: #fff;
-  display: inline-block;
-  line-height: 14px;
-  margin: 0 25px 10px 0;
-  padding: 10px;
-  position: relative; }
-  .tag::before {
-    border-bottom: 17px solid transparent;
-    border-left: 10px solid #34495e;
-    border-top: 17px solid transparent;
-    content: '';
-    height: 0;
-    position: absolute;
-    right: -10px;
-    top: 0;
-    width: 0; }
-  .tag::after {
-    background: #2c3e50;
-    border-radius: 100%;
-    content: '';
-    height: 5px;
-    margin-top: -2.5px;
-    position: absolute;
-    right: -2.5px;
-    top: 50%;
-    width: 5px; }
 
 /**
  *  LOADING BAR
@@ -1831,6 +1603,128 @@ h4 {
   100% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); } }
+
+/**
+ *  PAGINATOR
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <ul class="paginator">
+ *    <li class="paginator-item">
+ *      <a href="#" class="paginator-itemLink">< Prev</a>
+ *    </li>
+ *    <li class="paginator-item">
+ *      <a href="#" class="paginator-itemLink">1</a>
+ *    </li>
+ *    <li class="paginator-item">
+ *      <a href="#" class="paginator-itemLink active">2</a>
+ *    </li>
+ *    <li class="paginator-item">
+ *      <a href="#" class="paginator-itemLink">3</a>
+ *    </li>
+ *    <li class="paginator-item">
+ *      <a href="#" class="paginator-itemLink">Next ></a>
+ *    </li>
+ *  </ul>
+ */
+.paginator-item {
+  display: inline-block;
+  margin-right: 2px; }
+  .paginator-item .paginator-itemLink {
+    background-color: #34495e;
+    border-radius: 3px;
+    display: block;
+    padding: .5em 1em; }
+    .paginator-item .paginator-itemLink.is-active {
+      background-color: #1abc9c;
+      color: #fff;
+      cursor: default; }
+
+/**
+ *  TABS
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="tabs">
+ *    <a href="#" title="#" class="tabs-item">[...]</a>
+ *    <a href="#" title="#" class="tabs-item is-selected">[...]</a>
+ *  </div>
+ *
+ */
+.tabs {
+  border-bottom: 1px solid #465f78;
+  text-align: center; }
+  .tabs-item {
+    border-bottom: 3px solid transparent;
+    color: #969da6;
+    display: inline-block;
+    margin: 0 30px 0 0;
+    min-width: 70px;
+    padding: 15px;
+    position: relative; }
+    .tabs-item:hover {
+      color: #1abc9c;
+      text-decoration: none; }
+    .tabs-item.is-selected {
+      border-bottom: 3px solid #1abc9c;
+      color: #1abc9c; }
+
+/**
+ *  TAG
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <ul>
+ *    <li class="tag">Fantasy</li>
+ *    <li class="tag">Fiction</li>
+ *    <li class="tag">Contemporary</li>
+ *  </ul>
+ *
+ *  <ul>
+ *    <li class="tag">
+ *      <a href="#">Fantasy</a>
+ *    </li>
+ *    <li class="tag">
+ *      <a href="#">Fiction</a>
+ *    </li>
+ *    <li class="tag">
+ *       <a href="#">Contemporary</a>
+ *    </li>
+ *  </ul>
+ *
+ */
+.tag {
+  background-color: #34495e;
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  display: inline-block;
+  line-height: 14px;
+  margin: 0 25px 10px 0;
+  padding: 10px;
+  position: relative; }
+  .tag::before {
+    border-bottom: 17px solid transparent;
+    border-left: 10px solid #34495e;
+    border-top: 17px solid transparent;
+    content: '';
+    height: 0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0; }
+  .tag::after {
+    background: #2c3e50;
+    border-radius: 100%;
+    content: '';
+    height: 5px;
+    margin-top: -2.5px;
+    position: absolute;
+    right: -2.5px;
+    top: 50%;
+    width: 5px; }
 
 .container {
   width: 100%;
