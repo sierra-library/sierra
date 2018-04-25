@@ -12,7 +12,6 @@
 @import 'scss/main';
 
 @import 'scss/background-colors';
-@import 'scss/badges';
 @import 'scss/buttons';
 @import 'scss/forms';
 @import 'scss/helpers';
@@ -24,6 +23,7 @@
 @import 'scss/typography';
 
 // Components
+@import 'scss/components/badge';
 @import 'scss/components/tag';
 @import 'scss/components/loading-bar';
 @import 'scss/components/loading-spinner';

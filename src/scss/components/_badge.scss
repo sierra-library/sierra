@@ -1,0 +1,35 @@
+/**
+ *  BADGES
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <ul>
+ *    <li class="badge badge--primary">Badge 1</li>
+ *    <li class="badge badge--secondary badge--lg">Badge 1</li>
+ *  </ul>
+ *
+ */
+
+.badge {
+  background-color: $bg-badge;
+  border-radius:  $bdr-badge;
+  color: $c-badge;
+  display: inline-block;
+  line-height: $lh-badge;
+  padding: $p-badge;
+
+  &--lg {
+    font-size:  $fz-badge-lg;
+  }
+
+  &--xs {
+    font-size:  $fz-badge-xs;
+  }
+
+  @each $type, $color in $badges-color-map {
+    &--#{$type} {
+      background-color: $color;
+    }
+  }
+}
