@@ -3,25 +3,14 @@
  */
 
 body {
-  font: #{$font-weight-base} #{$font-size-base}/#{$line-height-base} $basefont;
-  color: $c-text;
-
-  @include media-breakpoint-up(md) {
-    font-size: $font-size-base-medium;
-  }
-
-  @include media-breakpoint-up(lg) {
-    font-size: $font-size-base-large;
-  }
-}
-
-img {
-  font-size: 12px;
-  line-height: 1.3em;
+  color: $c-body;
+  font-family: $ff-body;
+  font-size: $fz-body;
+  font-weight: $fw-body;
+  line-height: $lh-body;
 }
 
 p {
-  line-height: 1.5em;
   margin-bottom: 1.5em;
 }
 
@@ -38,71 +27,32 @@ a {
   }
 }
 
-
-// titles commons
 .text {
   &-huge, &-big, &-medium {
     line-height: 1.3em;
     margin-bottom: 1em;
-    margin-top: 1.5em;
-
-    // titles in sections
-    &:first-child {
-      margin-top: .5em;
-    }
   }
 
-  // titles
-
   &-huge {
-    font-family: $heading-font;
-    font-size: 30px;
-    font-weight: $heading-weight;
-    text-transform: $heading-case;
-
-    @include media-breakpoint-up(lg) {
-      font-size: 40px;
-    }
-
-    @include media-breakpoint-up(bp-huge) {
-      font-size: 48px;
-    }
+    font-size: $fz-huge;
   }
 
   &-big {
-    font-family: $heading-font;
-    font-size: 24px;
-    font-weight: $heading-weight;
-    text-transform: $heading-case;
-
-    @include media-breakpoint-up(lg) {
-      font-size: 28px;
-    }
+    font-size: $fz-big;
   }
 
   &-medium {
-    font-family: $heading-font;
-    font-size: 20px;
-    font-weight: $heading-weight;
-    text-transform: $heading-case;
+    font-size: $fz-medium;
   }
 
   &-small {
-    font-size: 12px;
-
-    @include media-breakpoint-up(md) {
-      font-size: 14px;
-    }
+    font-size: $fz-small;
   }
 
   // force element to default font state.
   &-body {
-    font-size: $font-size-base;
-    line-height: 1.5em;
-
-    @include media-breakpoint-up(lg) {
-      font-size: $font-size-base-large;
-    }
+    font-size: $fz-body;
+    line-height: $lh-body;
   }
 }
 

@@ -29,17 +29,9 @@ select,
 input[type=text],
 textarea {
   border-radius: $bdr-m;
-  font-size: $font-size-base;
+  font-size: $fz-body;
   line-height: 1.5em;
   transition: background-color .2s ease-in-out;
-
-  @include media-breakpoint-up(bp-medium) {
-    font-size: $font-size-base-medium;
-  }
-
-  @include media-breakpoint-up(bp-large) {
-    font-size: $font-size-base-large;
-  }
 }
 
 .textarea,
@@ -213,7 +205,7 @@ select::-ms-expand {
     border: 0;
     color: $form-text-color;
     display: block; // prevent small margin at the bottom of textarea
-    font-family: $basefont;
+    font-family: $ff-body;
     padding: 10px 15px;
     width: 100%;
 

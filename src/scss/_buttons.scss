@@ -17,7 +17,7 @@ button {
   border-radius: $button-border-radius;
   color: $button-text-color;
   display: inline-block;
-  font-family: $basefont;
+  font-family: $ff-base;
   font-size: map-get($button-meta, fontSize);
   font-weight: 700;
   line-height: #{map-get($button-meta, lineHeight)}em;
