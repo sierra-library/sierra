@@ -65,8 +65,12 @@
   float: right;
 }
 
-.cf {
-  @include clearfix();
+.clearfix {
+  ::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
 }
 
 .align-center {
@@ -81,62 +85,12 @@
   text-align: left;
 }
 
-
-.align-bottom {
-  vertical-align: bottom;
-}
-.align-middle {
-  vertical-align: middle;
-}
-.align-top {
-  vertical-align: top;
-}
-
-
 /**
- *  TEXT UTILITIES
+ *  OTHERS
  */
-
-.ellipsis {
-  @include ellipsis();
-}
-
-.ellipsis-block {
-  @include ellipsis();
-  display: block;
-}
-
-.word-break {
-  word-break: break-all;
-}
-
-/**
- *  MODIFIERS
- */
-
-.display-block {
-  display: block;
-}
-
-.block-mobile {
-  @include media-breakpoint-down(md) {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%; // useful for buttons
-  }
-}
-
-.display-inline {
-  display: inline;
-}
-
-.hidden {
-  display: none;
-}
 
 .no-margin {
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 .no-wrap {
@@ -151,74 +105,10 @@
   opacity: .5;
 }
 
-
-// deprecated ".icon-rounded". Use rounded-corners instead.
-.icon-rounded,
 .rounded-corners {
   border-radius: 15%;
 }
 
 .rounded {
   border-radius: 100%;
-}
-
-
-/**
- *  VISIBILITY UTILITIES
- */
-
-.hidden-large {
-
-  @include media-breakpoint-up(lg) {
-    display: none;
-  }
-
-  @include media-breakpoint-up(xl) {
-    display: inline-block;
-  }
-}
-
-.hidden-medium {
-
-  @include media-breakpoint-up(md) {
-    display: none;
-  }
-
-  @include media-breakpoint-up(lg) {
-    display: inline-block;
-  }
-}
-
-.show-small {
-  @include media-breakpoint-up(md) {
-    display: none;
-  }
-}
-
-.hide-small {
-  display: none;
-
-  @include media-breakpoint-up(md) {
-    display: block;
-  }
-}
-
-.hide-small-inline-block {
-  display: none!important;
-
-  @include media-breakpoint-up(md) {
-    display: inline-block!important;
-  }
-}
-
-.hide-medium {
-  display: block;
-
-  @include media-breakpoint-up(md) {
-    display: none;
-  }
-
-  @include media-breakpoint-up(lg) {
-    display: block;
-  }
 }

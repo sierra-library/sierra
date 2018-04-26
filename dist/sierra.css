@@ -14,25 +14,6 @@
  * MIXINS
  */
 /**
- *  PLACEHOLDERS
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
-
-.full-width {
-  margin-left: -12px;
-  margin-right: -12px;
-  width: auto;
-  margin-left: -24px;
-  margin-right: -24px; }
-
-/**
  * Reset
  */
 html, body, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
@@ -868,12 +849,10 @@ input[type=radio]:checked + label:before {
 .fright {
   float: right; }
 
-.cf::before, .cf::after {
+.cf ::after {
+  clear: both;
   content: '';
   display: table; }
-
-.cf::after {
-  clear: both; }
 
 .align-center {
   text-align: center; }
@@ -884,54 +863,9 @@ input[type=radio]:checked + label:before {
 .align-left {
   text-align: left; }
 
-.align-bottom {
-  vertical-align: bottom; }
-
-.align-middle {
-  vertical-align: middle; }
-
-.align-top {
-  vertical-align: top; }
-
 /**
- *  TEXT UTILITIES
+ *  OTHERS
  */
-.ellipsis {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
-.ellipsis-block {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: block; }
-
-.word-break {
-  word-break: break-all; }
-
-.text-indent {
-  padding-left: 24px; }
-
-/**
- *  MODIFIERS
- */
-.display-block {
-  display: block; }
-
-@media (max-width: 991px) {
-  .block-mobile {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%; } }
-
-.display-inline {
-  display: inline; }
-
-.hidden {
-  display: none; }
-
 .no-margin {
   margin: 0 !important; }
 
@@ -944,7 +878,6 @@ input[type=radio]:checked + label:before {
 .opacity-low {
   opacity: .5; }
 
-.icon-rounded,
 .rounded-corners {
   border-radius: 15%; }
 
@@ -952,60 +885,11 @@ input[type=radio]:checked + label:before {
   border-radius: 100%; }
 
 /**
- *  VISIBILITY UTILITIES
- */
-@media (min-width: 992px) {
-  .hidden-large {
-    display: none; } }
-
-@media (min-width: 1200px) {
-  .hidden-large {
-    display: inline-block; } }
-
-@media (min-width: 768px) {
-  .hidden-medium {
-    display: none; } }
-
-@media (min-width: 992px) {
-  .hidden-medium {
-    display: inline-block; } }
-
-@media (min-width: 768px) {
-  .show-small {
-    display: none; } }
-
-.hide-small {
-  display: none; }
-  @media (min-width: 768px) {
-    .hide-small {
-      display: block; } }
-
-.hide-small-inline-block {
-  display: none !important; }
-  @media (min-width: 768px) {
-    .hide-small-inline-block {
-      display: inline-block !important; } }
-
-.hide-medium {
-  display: block; }
-  @media (min-width: 768px) {
-    .hide-medium {
-      display: none; } }
-  @media (min-width: 992px) {
-    .hide-medium {
-      display: block; } }
-
-/**
  * LAYOUT
  */
 .section {
   padding-bottom: 20px;
   padding-top: 20px; }
-  .section::before, .section::after {
-    content: '';
-    display: table; }
-  .section::after {
-    clear: both; }
   @media (min-width: 768px) {
     .section {
       padding-bottom: 40px;
@@ -1041,153 +925,6 @@ input[type=radio]:checked + label:before {
     .container-small {
       padding-left: 24px;
       padding-right: 24px; } }
-
-.separator {
-  border-bottom: 1px solid #465f78; }
-
-.main-wrap {
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: padding .25s ease-in-out;
-  transition: padding .25s ease-in-out; }
-  @media (min-width: 1200px) {
-    .main-wrap {
-      padding-left: 250px; } }
-
-.main-content {
-  float: right;
-  margin-left: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%; }
-  .main-content::before, .main-content::after {
-    clear: none; }
-
-/**
- *  TABLES
- */
-.table {
-  background-color: #34495e;
-  border: 1px solid #465f78;
-  border-collapse: collapse;
-  border-radius: 3px;
-  color: #fff;
-  margin-bottom: 20px;
-  max-width: 100%;
-  width: 100%; }
-  .table th,
-  .table td {
-    border-bottom: 1px solid #465f78;
-    padding: 10px; }
-    @media (min-width: 992px) {
-      .table th,
-      .table td {
-        padding: 10px 20px; } }
-  .table td {
-    padding: 14px;
-    position: relative; }
-  .table tr {
-    border-bottom: 1px solid #465f78; }
-  .table thead {
-    border-bottom: 1px solid #465f78; }
-  .table th {
-    background-color: #2c3e50;
-    color: #969da6;
-    font-weight: normal;
-    padding: 5px 14px;
-    white-space: nowrap; }
-
-.table-vertical-center td {
-  vertical-align: middle; }
-
-/**
- *  TABLE RESPONSIVE
- *
- *  Markup:
- *  -------
- *
- *  <table class="table-responsive table-break-small">
- *    <tr>
- *      <th>First column</th>
- *      <th>Second column</th>
- *      <th>Third column</th>
- *    </tr>
- *    <tr>
- *      <td data-th="First column">Blue</td>
- *      <td data-th="Second column">One</td>
- *      <td data-th="Third column">My life fades</td>
- *    </tr>
- *    <tr>
- *      <td data-th="First column">Green</td>
- *      <td data-th="Second column">Two</td>
- *      <td data-th="Third column">when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. </td>
- *    </tr>
- *    <tr>
- *      <td data-th="First column">Yellow</td>
- *      <td data-th="Second column">Three</td>
- *      <td data-th="Third column">A whirlwind of looting, a firestorm of fear. Men began to feed on men. </td>
- *    </tr>
- *  </table>
- *
- */
-.table-responsive th {
-  display: none; }
-
-.table-responsive td {
-  display: block; }
-  .table-responsive td:first-child {
-    border-top: 1px solid #465f78;
-    padding-top: 14px; }
-  .table-responsive td:last-child {
-    padding-bottom: 14px; }
-  .table-responsive td::before {
-    content: attr(data-th) ": ";
-    display: block;
-    font-weight: normal; }
-
-.table-responsive th,
-.table-responsive td {
-  text-align: left; }
-
-.table-responsive.table-break-medium tr {
-  border-top: 1px solid #465f78; }
-
-@media (max-width: 991px) {
-  .table-responsive.table-break-medium td {
-    border: 0;
-    padding-bottom: 0; } }
-
-@media (min-width: 768px) {
-  .table-responsive.table-break-medium td::before {
-    display: none; } }
-
-.table-responsive.table-break-medium td:last-child {
-  padding-bottom: 14px; }
-
-@media (min-width: 768px) {
-  .table-responsive.table-break-medium th,
-  .table-responsive.table-break-medium td {
-    display: table-cell; } }
-
-.table-responsive.table-break-small tr {
-  border-top: 1px solid #465f78; }
-
-@media (max-width: 767px) {
-  .table-responsive.table-break-small td {
-    border: 0;
-    padding-bottom: 0; } }
-
-@media (min-width: 576px) {
-  .table-responsive.table-break-small td::before {
-    display: none; } }
-
-.table-responsive.table-break-small td:last-child {
-  padding-bottom: 14px; }
-
-@media (min-width: 576px) {
-  .table-responsive.table-break-small th,
-  .table-responsive.table-break-small td {
-    display: table-cell; } }
 
 /**
  *  TYPOGRAPHY
@@ -1653,6 +1390,89 @@ h4 {
       background-color: #1abc9c;
       color: #fff;
       cursor: default; }
+
+/**
+ *  TABLE
+ */
+.table {
+  background-color: #34495e;
+  border: 1px solid #465f78;
+  border-collapse: collapse;
+  border-radius: 3px;
+  color: #fff;
+  max-width: 100%;
+  width: 100%; }
+  .table th,
+  .table td {
+    border-bottom: 1px solid #465f78;
+    padding: 10px;
+    position: relative; }
+  .table thead {
+    border-bottom: 1px solid #465f78; }
+  .table th {
+    background-color: #2c3e50;
+    color: #969da6;
+    font-weight: normal;
+    padding: 10px;
+    white-space: nowrap; }
+
+/**
+ *  TABLE RESPONSIVE
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <table class="table table--responsive">
+ *    <tr>
+ *      <th>First column</th>
+ *      <th>Second column</th>
+ *      <th>Third column</th>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Blue</td>
+ *      <td data-th="Second column">One</td>
+ *      <td data-th="Third column">My life fades</td>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Green</td>
+ *      <td data-th="Second column">Two</td>
+ *      <td data-th="Third column">when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. </td>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Yellow</td>
+ *      <td data-th="Second column">Three</td>
+ *      <td data-th="Third column">A whirlwind of looting, a firestorm of fear. Men began to feed on men. </td>
+ *    </tr>
+ *  </table>
+ *
+ */
+.table--responsive th {
+  display: none; }
+
+.table--responsive td {
+  display: block; }
+  @media (max-width: 767px) {
+    .table--responsive td {
+      border: 0; } }
+  .table--responsive td::before {
+    color: #969da6;
+    content: attr(data-th) ": ";
+    display: block;
+    font-weight: normal; }
+    @media (min-width: 576px) {
+      .table--responsive td::before {
+        display: none; } }
+  .table--responsive td:first-child {
+    border-top: 1px solid #465f78; }
+
+.table--responsive th,
+.table--responsive td {
+  text-align: left; }
+  @media (min-width: 576px) {
+    .table--responsive th,
+    .table--responsive td {
+      border-top: 1px solid #465f78;
+      display: table-cell; } }
 
 /**
  *  TABS
