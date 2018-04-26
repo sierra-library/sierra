@@ -3,11 +3,11 @@
  */
 
 
-// Enter and set a maximum width equal to $container-maxwidth.
+// Enter and set a maximum width equal to $mwi-container.
 %max-width {
   margin-left: auto;
   margin-right: auto;
-  max-width: $container-maxwidth;
+  max-width: $mwi-container;
 }
 
 // The ghost, nudged to maintain perfect centering
@@ -93,17 +93,4 @@
 %ellipsis-block {
   @extend %text-overflow;
   display: block;
-}
-
-
-// 100% width inside grid columns
-%full-width {
-  margin-left: -$grid-gutter-width / 2;
-  margin-right: -$grid-gutter-width / 2;
-  width: auto;
-
-  @include media-breakpoint-up(bp-medium) {
-    margin-left: -$grid-gutter-width;
-    margin-right: -$grid-gutter-width;
-  }
 }

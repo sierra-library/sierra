@@ -64,10 +64,10 @@ $bd-m: 1px solid $bdc-base !default;
  *  LAYOUT
  */
 
-$gutterwidth:               24px;
-$container-maxwidth:        1380px;
-$container-medium-maxwidth: 944px;
-$container-small-maxwidth:  400px;
+$w-gutter:               24px;
+$mwi-container:        1380px;
+$mwi-container-medium: 944px;
+$mwi-container-small:  400px;
 $border-box:                true;
 
 $bdr-base: 3px !default;
@@ -92,7 +92,7 @@ $grid-breakpoints: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           24px !default;
+$grid-gutter-width:           $w-gutter !default;
 
 
 

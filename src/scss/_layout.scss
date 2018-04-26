@@ -3,8 +3,6 @@
  */
 
 .section {
-  @include clearfix();
-
   padding-bottom: 20px;
   padding-top: 20px;
 
@@ -12,77 +10,41 @@
     padding-bottom: 40px;
     padding-top: 40px;
   }
-
 }
 
 .container {
   margin: 0 auto;
-  max-width: $container-maxwidth;
-  padding-left: $grid-gutter-width / 2;
-  padding-right: $grid-gutter-width / 2;
+  max-width: $mwi-container;
+  padding-left: $w-gutter / 2;
+  padding-right: $w-gutter / 2;
   width: 100%;
 
   @include media-breakpoint-up(md) {
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
+    padding-left: $w-gutter;
+    padding-right: $w-gutter;
   }
 }
 
 .container-medium {
   margin: 0 auto;
-  max-width: $container-medium-maxwidth;
-  padding-left: $grid-gutter-width / 2;
-  padding-right: $grid-gutter-width / 2;
+  max-width: $mwi-container-medium;
+  padding-left: $w-gutter / 2;
+  padding-right: $w-gutter / 2;
 
   @include media-breakpoint-up(md) {
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
+    padding-left: $w-gutter;
+    padding-right: $w-gutter;
   }
 }
 
 .container-small {
   margin: 0 auto;
-  max-width: $container-small-maxwidth;
-  padding-left: $grid-gutter-width / 2;
-  padding-right: $grid-gutter-width / 2;
+  max-width: $mwi-container-small;
+  padding-left: $w-gutter / 2;
+  padding-right: $w-gutter / 2;
 
   @include media-breakpoint-up(md) {
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
-  }
-}
-
-.full-width {
-  @extend %full-width;
-}
-
-// separator
-.separator {
-  border-bottom: $bd-m;
-}
-
-
-// Specific selector for mobonaut. Must delete ASAP.
-.main-wrap {
-  overflow: hidden;
-  position: relative;
-  transition: padding .25s ease-in-out;
-
-  @include media-breakpoint-up(xl) {
-    padding-left: 250px;
-  }
-}
-
-// Specific selector for mobonaut & appszoom. Must delete ASAP.
-.main-content {
-  float: right;
-  margin-left: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-
-  &::before,
-  &::after {
-    clear: none;
+    padding-left: $w-gutter;
+    padding-right: $w-gutter;
   }
 }
