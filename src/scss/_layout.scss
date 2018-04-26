@@ -3,48 +3,44 @@
  */
 
 .section {
-  padding-bottom: 20px;
-  padding-top: 20px;
-
   @include media-breakpoint-up(md) {
     padding-bottom: 40px;
     padding-top: 40px;
   }
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .container {
+  @include media-breakpoint-up(md) {
+    padding-left: $w-gutter;
+    padding-right: $w-gutter;
+  }
   margin: 0 auto;
   max-width: $mwi-container;
   padding-left: $w-gutter / 2;
   padding-right: $w-gutter / 2;
   width: 100%;
+}
 
+.container-medium {
   @include media-breakpoint-up(md) {
     padding-left: $w-gutter;
     padding-right: $w-gutter;
   }
-}
-
-.container-medium {
   margin: 0 auto;
   max-width: $mwi-container-medium;
   padding-left: $w-gutter / 2;
   padding-right: $w-gutter / 2;
+}
 
+.container-small {
   @include media-breakpoint-up(md) {
     padding-left: $w-gutter;
     padding-right: $w-gutter;
   }
-}
-
-.container-small {
   margin: 0 auto;
   max-width: $mwi-container-small;
   padding-left: $w-gutter / 2;
   padding-right: $w-gutter / 2;
-
-  @include media-breakpoint-up(md) {
-    padding-left: $w-gutter;
-    padding-right: $w-gutter;
-  }
 }
