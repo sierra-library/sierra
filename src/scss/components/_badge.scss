@@ -19,12 +19,12 @@
   line-height: $lh-badge;
   padding: $p-badge;
 
-  &--lg {
-    font-size:  $fz-badge-lg;
+  &--big{
+    font-size:  $fz-badge-big;
   }
 
-  &--xs {
-    font-size:  $fz-badge-xs;
+  &--small {
+    font-size:  $fz-badge-small;
   }
 
   @each $type, $color in $badges-color-map {

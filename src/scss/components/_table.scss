@@ -4,22 +4,22 @@
 
 .table {
   background-color: $bgc-table;
-  border: $bd-m;
+  border: $bd-medium;
   border-collapse: collapse;
-  border-radius: $bdr-m;
+  border-radius: $bdr-medium;
   color: $c-table-text;
   max-width: $mwi-table;
   width: $w-table;
 
   th,
   td {
-    border-bottom: $bd-m;
+    border-bottom: $bd-medium;
     padding:  $p-table-cell;
     position: relative;
   }
 
   thead {
-    border-bottom: $bd-m;
+    border-bottom: $bd-medium;
   }
 
   th {
@@ -85,14 +85,14 @@
     }
 
     &:first-child {
-      border-top: $bd-m;
+      border-top: $bd-medium;
     }
   }
 
   th,
   td {
     @include media-breakpoint-up(sm) {
-      border-top: $bd-m;
+      border-top: $bd-medium;
       display: table-cell;
     }
     text-align: left;

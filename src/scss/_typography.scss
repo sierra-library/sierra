@@ -15,11 +15,11 @@ p {
 }
 
 a {
-  color: $c-primary;
+  color: $c-link;
   text-decoration: none;
 
   &:hover {
-    color: rgba($c-primary, .8);
+    color: $c-link-hover;
   }
 
   &:focus {
@@ -29,24 +29,27 @@ a {
 
 .text {
   &-huge, &-big, &-medium {
-    line-height: 1.3em;
     margin-bottom: 1em;
   }
 
   &-huge {
     font-size: $fz-huge;
+    line-height: $lh-huge;
   }
 
   &-big {
     font-size: $fz-big;
+    line-height: $lh-big;
   }
 
   &-medium {
     font-size: $fz-medium;
+    line-height: $lh-medium;
   }
 
   &-small {
     font-size: $fz-small;
+    line-height: $lh-small;
   }
 
   // force element to default font state.
@@ -58,11 +61,11 @@ a {
 
 // Styles
 .text-light {
-  font-weight: 300;
+  font-weight: $fw-light;
 }
 
 .text-normal {
-  font-weight: 400;
+  font-weight: $fw-normal;
 }
 
 .text-line-through {
@@ -85,10 +88,6 @@ a {
   text-align: center;
 }
 
-.text-lato {
-  font-family: 'Lato', sans-serif;
-}
-
 // titles after titles
 .text-with-subtitle {
   margin-bottom: 0!important;
@@ -105,5 +104,5 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: $heading-weight;
+  font-weight: $fw-headings;
 }

@@ -28,7 +28,7 @@ select {
 select,
 input[type=text],
 textarea {
-  border-radius: $bdr-m;
+  border-radius: $bdr-medium;
   font-size: $fz-body;
   line-height: 1.5em;
   transition: background-color .2s ease-in-out;
@@ -39,8 +39,8 @@ textarea {
 .select {
   //border:1px solid $blue-light;
   border: 0;
-  border: $bd-m;
-  border-radius: $bdr-m;
+  border: $bd-medium;
+  border-radius: $bdr-medium;
   box-shadow: none;
   display: block;
   font-weight: normal;
@@ -290,8 +290,8 @@ input[type=radio] + label:before {
 input[type=checkbox] + label:after,
 input[type=radio] + label:after {
   background-color: $form-bg-color;
-  border: $bd-m;
-  border-radius: $bdr-m;
+  border: $bd-medium;
+  border-radius: $bdr-medium;
   content: '';
 }
 
@@ -479,8 +479,8 @@ input[type=radio]:checked + label:before {
 
 .form-group {
   background-color: $form-bg-color;
-  border: $bd-m;
-  border-radius: $bdr-m;
+  border: $bd-medium;
+  border-radius: $bdr-medium;
   display: inline-block;
   margin-bottom: 20px;
 
@@ -549,13 +549,13 @@ input[type=radio]:checked + label:before {
     margin: 0;
 
     &:first-child {
-      border-bottom-left-radius: $bdr-m;
-      border-top-left-radius: $bdr-m;
+      border-bottom-left-radius: $bdr-medium;
+      border-top-left-radius: $bdr-medium;
     }
 
     &:last-child {
-      border-bottom-right-radius: $bdr-m;
-      border-top-right-radius: $bdr-m;
+      border-bottom-right-radius: $bdr-medium;
+      border-top-right-radius: $bdr-medium;
     }
 
     &:not(:last-child) {
