@@ -18,6 +18,7 @@ $c-primary: #1abc9c !default;
 $c-secondary: #9b59b6 !default;
 $c-dark: #18232f !default;
 $c-light: #34495e !default;
+
 $c-text: $c-white !default;
 $c-link: $c-primary !default;
 $c-link-hover: rgba($c-primary, .8) !default;
@@ -153,42 +154,24 @@ $badges-color-map: (
 ) !default;
 
 // Buttons
-$button-bg-color:       #64829f; // default color for buttons
-$button-text-color:     $c-text; // default color for buttons
-$button-border-color:   $bgc-body;
-$button-border-radius:  2em;
-$button-sizes: (
-  'normal': (
-    fontSize: 12px,
-    lineHeight: 1.5,
-    paddingTB: 10px,
-    paddingLR: 20px
-  ),
-  'big': (
-    fontSize: 16px,
-    lineHeight: 1.5,
-    paddingTB: 10px,
-    paddingLR: 30px
-  ),
-  'small': (
-    fontSize: 11px,
-    lineHeight: 1.273,
-    paddingTB: 6px,
-    paddingLR: 20px
-  ),
-  'huge': (
-    fontSize: 16px,
-    lineHeight: 1.5,
-    paddingTB: 15px,
-    paddingLR: 30px
-  ),
-  'hugeLg': (
-    fontSize: 18px,
-    lineHeight: 1.5,
-    paddingTB: 18px,
-    paddingLR: 50px
-  )
-);
+$bg-button: $c-primary;
+$c-button: $c-text;
+$bdc-button: $bg-button;
+$bd-button: 1px solid $bdc-button;
+$bdr-button: $bdr-medium;
+$ff-button: $ff-body;
+$fz-button: $fz-medium;
+$fw-button: $fw-bold;
+$lh-button: $lh-body;
+$m-button: 0 $m-medium $m-medium 0;
+$p-button: $p-medium $p-big;
+$tt-button: uppercase;
+
+$fz-button-big: $fz-big;
+$p-button-big: $p-big $p-huge;
+
+$fz-button-small: $fz-small;
+$p-button-small: $p-small $p-medium;
 
 // Forms
 $form-bg-color: $c-light;
