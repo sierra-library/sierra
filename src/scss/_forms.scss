@@ -15,7 +15,7 @@ label {
 
 // Disable webkit background color
 input:-webkit-autofill {
-  box-shadow: 0 0 0 1000px $form-bg-color inset;
+  box-shadow: 0 0 0 1000px $bgc-form inset;
 }
 
 // Disable arrow on selects
@@ -93,133 +93,92 @@ input[type=radio] {
   appearance: radio;
 }
 
-// Select
+
 .select {
-  background-color: $form-bg-color;
   display: inline-block;
-  margin-right: 10px;
-  padding: 0;
+  margin-right: $m-medium;
   position: relative;
 
-  &.full-width {
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &-fullWidth {
     display: inline-block;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
   }
 
-  &:last-child {
-    margin-right: 0;
-  }
-
-  // font awesome angle
-  .fa-angle-down {
-    color: $c-gray;
-    font-size:  25px;
-    height: 30px;
-    margin-top: -12px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    z-index:  1;
-  }
-
-  // Specific selector for Appszoom. Must delete ASAP.
-  .icon-angle-down {
-    color: $c-primary;
-    font-size: 1.2em;
-    height: 30px;
-    margin-top: -10px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    z-index: 1;
-  }
-
   select {
     appearance: none;
-    background-color: transparent;
+    background-color: $bgc-form;
     border: 0;
-    color: $form-text-color;
-    height: 44px;
-    margin-right: 20px;
-    padding-left: 10px;
-    padding-right: 30px;
-    position: relative;
+    border-radius: $bdr-form;
+    color: $c-form;
+    padding: $p-medium 30px $p-medium $p-big;
     width: 100%;
-    z-index: 2;
-
-    @include media-breakpoint-up(bp-medium) {
-      padding: 8px 15px;
-    }
 
     &:active,
     &:focus {
-      background-color: lighten($form-bg-color, 5%);
+      background-color: $bgc-form-focus;
       border: 0;
       outline: none;
     }
 
-    &:active + i,
-    &:focus + i {
-      z-index:2;
-    }
-
-    option {
-      background-color: $form-bg-color;
-      color: $form-text-color;
-      height: 30px;
+    &::-ms-expand {
+      display: none;
     }
   }
 
-  &.select-small {
-    max-width: 150px;
-
-    select {
-      font-size: 14px!important;
-      height: 24px;
-      line-height: 24px;
-      padding: 0 5px;
-      padding-right: 27px;
-    }
+  &::after,
+  &::before {
+    background: $c-primary;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    height: 2px;
+    margin-top: 2px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform-origin: 1px;
+    width: 10px;
   }
-}
 
-select::-ms-expand {
-  display: none;
-}
+  &::after {
+    transform: rotate(-135deg);
+  }
 
-.select-link {
-  border: 0;
-  color: $c-primary;
+  &::before {
+    transform: rotate(-45deg);
+  }
 }
 
 // textarea
 .textarea {
-  background-color: $bgc-table;
+  background-color: $bgc-form;
   padding: 0;
   width: 100%;
 
   textarea {
     background: transparent;
     border: 0;
-    color: $form-text-color;
-    display: block; // prevent small margin at the bottom of textarea
+    color: $c-form;
+    display: block;
     font-family: $ff-body;
-    padding: 10px 15px;
+    margin-bottom: 0;
+    min-height: 120px;
+    padding: $p-medium $p-big;
     width: 100%;
 
     &:focus,
     &:active {
+      background-color: $bgc-form-focus;
       border: 0;
       outline: none;
-      background-color: lighten($form-bg-color, 5%);
     }
   }
-}
-
-textarea {
-  min-height: 120px;
 }
 
 // Unused selector. Pending delete.
@@ -289,7 +248,7 @@ input[type=radio] + label:before {
 // unchecked checkbox and radio icon
 input[type=checkbox] + label:after,
 input[type=radio] + label:after {
-  background-color: $form-bg-color;
+  background-color: $bgc-form;
   border: $bd-medium;
   border-radius: $bdr-medium;
   content: '';
@@ -352,7 +311,7 @@ input[type=radio]:checked + label:before {
 
 // inputs
 .input {
-  background-color: $form-bg-color;
+  background-color: $bgc-form;
   display: inline-block;
   margin-right: 10px;
   padding: 0;
@@ -360,7 +319,7 @@ input[type=radio]:checked + label:before {
 
   :focus,
   :active {
-    background-color: lighten($form-bg-color, 5%);
+    background-color: $bgc-form-focus;
   }
 
   &.full-width {
@@ -374,7 +333,7 @@ input[type=radio]:checked + label:before {
     background: transparent;
     border: 0;
     box-shadow: none;
-    color: $form-text-color;
+    color: $c-form;
     height: 44px;
     line-height: 44px;
     margin-bottom: 0;
@@ -478,7 +437,7 @@ input[type=radio]:checked + label:before {
  */
 
 .form-group {
-  background-color: $form-bg-color;
+  background-color: $bgc-form;
   border: $bd-medium;
   border-radius: $bdr-medium;
   display: inline-block;

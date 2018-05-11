@@ -175,8 +175,11 @@ $fz-button-small: $fz-small;
 $p-button-small: $p-small $p-medium;
 
 // Forms
-$form-bg-color: $c-light;
-$form-text-color: $c-text;
+$bgc-form: $c-light !default;
+$c-form: $c-text !default;
+$bdr-form: $bdr-medium !default;
+$bgc-form-focus: lighten($bgc-form, 5%) !default;
+
 
 // Loading bar
 $h-loading-bar: 4px !default;
