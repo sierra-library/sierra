@@ -26,24 +26,6 @@ button {
   transition: opacity .2s ease-in-out;
   white-space: nowrap;
 
-  &--big {
-    font-size: $fz-button-big;
-    padding: $p-button-big;
-  }
-
-  &--small {
-    font-size: $fz-button-small;
-    padding: $p-button-small;
-  }
-
-  &--mobileFull {
-    @include media-breakpoint-down(md) {
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%;
-    }
-  }
-
   &:focus,
   &:hover,
   &:active {
@@ -67,6 +49,25 @@ button {
 
   &:last-child {
     margin-right: 0;
+  }
+
+  // sizes
+  &--big {
+    font-size: $fz-button-big;
+    padding: $p-button-big;
+  }
+
+  &--small {
+    font-size: $fz-button-small;
+    padding: $p-button-small;
+  }
+
+  &--mobileFull {
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
   }
 
   // colors
