@@ -178,8 +178,17 @@ $p-button-small: $p-small $p-medium;
 $bgc-form: $c-light !default;
 $c-form: $c-text !default;
 $bdr-form: $bdr-medium !default;
+$bd-form: $bd-medium !default;
+$fz-form: $fz-body !default;
 $bgc-form-focus: lighten($bgc-form, 5%) !default;
-
+$trs-form: background-color .2s ease-in-out !default;
+$c-form-placeholder: $c-gray !default;
+$mih-form-textarea: 120px !default;
+$p-form: $p-medium $p-big !default;
+$size-form-input-icon: 16px !default;
+$c-form-input-icon: $c-gray !default;
+$bd-form-error: 1px solid $c-error !default;
+$bgc-form-error: $bgc-form !default;
 
 // Loading bar
 $h-loading-bar: 4px !default;
