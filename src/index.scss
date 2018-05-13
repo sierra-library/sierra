@@ -4,30 +4,30 @@
 @import 'settings';
 
 // Utils
-@import 'scss/utils/breakpoints';
-@import 'scss/utils/reset';
-@import 'scss/utils/default';
-@import 'scss/utils/background';
-@import 'scss/utils/border';
-@import 'scss/utils/aligner';
-@import 'scss/utils/helpers';
-@import 'scss/utils/layout';
-@import 'scss/utils/typography';
+@import 'utils/breakpoints';
+@import 'utils/reset';
+@import 'utils/default';
+@import 'utils/background';
+@import 'utils/border';
+@import 'utils/aligner';
+@import 'utils/helpers';
+@import 'utils/layout';
+@import 'utils/typography';
 
 // Components
-@import 'scss/components/badge';
-@import 'scss/components/buttons';
-@import 'scss/components/forms';
-@import 'scss/components/loading-bar';
-@import 'scss/components/loading-spinner';
-@import 'scss/components/notification';
-@import 'scss/components/paginator';
-@import 'scss/components/table';
-@import 'scss/components/tabs';
-@import 'scss/components/tag';
+@import 'components/badge';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/loading-bar';
+@import 'components/loading-spinner';
+@import 'components/notification';
+@import 'components/paginator';
+@import 'components/table';
+@import 'components/tabs';
+@import 'components/tag';
 
 // Twitter bootstrap's grid v4.1.0
 // More info: https://getbootstrap.com/examples/grid/
-@import 'scss/grid/grid-framework';
-@import 'scss/grid/grid';
-@import 'scss/utils/grid';
+@import 'grid/grid-framework';
+@import 'grid/grid';
+@import 'utils/grid';

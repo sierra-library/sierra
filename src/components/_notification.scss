@@ -1,0 +1,31 @@
+/**
+ *  NOTIFICATION
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="notification notification--sucess">Success notification</div>
+ *  <div class="notification notification--info">Success info</div>
+ *  <div class="notification notification--error">Success error</div>
+ *  <div class="notification notification--warning">Success warning</div>
+ *
+ */
+
+.notification {
+  border-radius: $bdr-notification;
+  color: $c-notification;
+  margin-bottom: $mb-notification;
+  padding: $p-notification;
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @each $type, $color in $c-map {
+    &--#{$type} {
+      background-color: $color;
+    }
+  }
+}
