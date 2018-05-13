@@ -29,11 +29,11 @@
     display: inline-block;
     margin-right: $mr-paginator-item;
 
-    .paginator-itemLink {
+    &Link {
       background-color: $bg-paginator-item;
       border-radius: $bdr-paginator-item;
       display: block;
-      padding: .5em 1em;
+      padding: $p-paginator-item;
 
       &.is-active {
         background-color: $bg-paginator-item-active;

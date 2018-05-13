@@ -27,6 +27,8 @@ a {
   }
 }
 
+
+// Sizes
 .text {
   &-huge, &-big, &-medium {
     margin-bottom: 1em;
@@ -52,10 +54,19 @@ a {
     line-height: $lh-small;
   }
 
-  // force element to default font state.
+  // set default font state.
   &-body {
     font-size: $fz-body;
     line-height: $lh-body;
+  }
+}
+
+// Colors
+.text {
+  @each $type, $color in $c-map {
+    &-#{$type} {
+      color: $color;
+    }
   }
 }
 
@@ -90,7 +101,7 @@ a {
 
 // titles after titles
 .text-with-subtitle {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 
   + .text-huge,
   + .text-big,
@@ -105,4 +116,17 @@ h2,
 h3,
 h4 {
   font-weight: $fw-headings;
+}
+
+// Aligners
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }

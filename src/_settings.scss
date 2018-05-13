@@ -155,24 +155,24 @@ $badges-color-map: (
 ) !default;
 
 // Buttons
-$bg-button: $c-primary;
-$c-button: $c-text;
-$bdc-button: $bg-button;
-$bd-button: 1px solid $bdc-button;
-$bdr-button: $bdr-medium;
-$ff-button: $ff-body;
-$fz-button: $fz-medium;
-$fw-button: $fw-bold;
-$lh-button: $lh-body;
-$m-button: 0 $m-medium $m-medium $m-medium;
-$p-button: $p-medium $p-big;
-$tt-button: uppercase;
+$bg-button: $c-primary !default;
+$c-button: $c-text !default;
+$bdc-button: $bg-button !default;
+$bd-button: 1px solid $bdc-button !default;
+$bdr-button: $bdr-medium !default;
+$ff-button: $ff-body !default;
+$fz-button: $fz-medium !default;
+$fw-button: $fw-bold !default;
+$lh-button: $lh-body !default;
+$m-button: 0 $m-medium $m-medium $m-medium !default;
+$p-button: $p-medium $p-big !default;
+$tt-button: uppercase !default;
 
-$fz-button-big: $fz-big;
-$p-button-big: $p-big $p-huge;
+$fz-button-big: $fz-big !default;
+$p-button-big: $p-big $p-huge !default;
 
-$fz-button-small: $fz-small;
-$p-button-small: $p-small $p-medium;
+$fz-button-small: $fz-small !default;
+$p-button-small: $p-small $p-medium !default;
 
 // Forms
 $bgc-form: $c-light !default;
@@ -202,9 +202,10 @@ $size-loading-spinner: 30px !default;
 $z-loading-spinner: 1000 !default;
 
 // Notification
+$bdr-notification: $bdr-medium !default;
+$c-notification: $c-text !default;
 $mb-notification: $m-big !default;
 $p-notification: $p-big !default;
-$bdr-notification: $bdr-medium !default;
 
 // Paginator
 $mr-paginator-item: $m-xsmall !default;
@@ -213,6 +214,7 @@ $bg-paginator-item: $c-light !default;
 $c-paginator-item: $c-text !default;
 $bg-paginator-item-active: $c-primary !default;
 $c-paginator-item-active: $c-text !default;
+$p-paginator-item: $p-medium $p-big !default;
 
 // Tabs
 $bdb-tabs-item-selected: 3px solid $c-primary !default;
@@ -228,6 +230,7 @@ $p-tabs-item: $p-big !default;
 // Table
 $bgc-table-header: $bgc-body !default;
 $bgc-table: $c-light !default;
+$bd-table: $bd-medium !default;
 $c-table-heading: $c-gray !default;
 $c-table-text: $c-text !default;
 $fw-table-heading: normal !default;
@@ -235,6 +238,7 @@ $mwi-table: 100% !default;
 $p-table-cell: $p-medium !default;
 $p-table-heading: $p-medium !default;
 $w-table: 100% !default;
+$fz-table-heading: $fz-small !default;
 
 // Tags
 $bg-tag-dot: $bgc-body !default;
@@ -245,6 +249,3 @@ $lh-tag: 16px !default;
 $m-tag: 0 $m-huge $m-medium 0 !default;
 $p-tag: $p-medium !default;
 $size-tag-dot: 5px !default;
-
-$heading-font:          $ff-base;
-$heading-weight:        300;

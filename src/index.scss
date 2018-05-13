@@ -1,24 +1,23 @@
 @charset 'UTF-8';
 
-// Init variables
-@import 'variables';
+// Settings
+@import 'settings';
 
-// Library
-@import 'scss/utils/mixins';
+// Utils
 @import 'scss/utils/breakpoints';
-@import 'scss/reset';
-
-@import 'scss/main';
-
-@import 'scss/colors';
-@import 'scss/forms';
-@import 'scss/helpers';
-@import 'scss/layout';
-@import 'scss/typography';
+@import 'scss/utils/reset';
+@import 'scss/utils/default';
+@import 'scss/utils/background';
+@import 'scss/utils/border';
+@import 'scss/utils/aligner';
+@import 'scss/utils/helpers';
+@import 'scss/utils/layout';
+@import 'scss/utils/typography';
 
 // Components
 @import 'scss/components/badge';
 @import 'scss/components/buttons';
+@import 'scss/components/forms';
 @import 'scss/components/loading-bar';
 @import 'scss/components/loading-spinner';
 @import 'scss/components/notification';
@@ -31,4 +30,4 @@
 // More info: https://getbootstrap.com/examples/grid/
 @import 'scss/grid/grid-framework';
 @import 'scss/grid/grid';
-@import 'scss/grid';
+@import 'scss/utils/grid';

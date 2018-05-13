@@ -12,7 +12,8 @@
  */
 
 .notification {
-  border-radius: $bdr-medium;
+  border-radius: $bdr-notification;
+  color: $c-notification;
   margin-bottom: $mb-notification;
   padding: $p-notification;
 
