@@ -9,6 +9,10 @@
   }
   padding-bottom: $p-huge;
   padding-top: $p-huge;
+
+  & + & {
+    padding-top: 0;
+  }
 }
 
 .container {
