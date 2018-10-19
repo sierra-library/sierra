@@ -1,0 +1,120 @@
+/**
+ *  TYPOGRAPHY
+ */
+
+body {
+  color: $c-body;
+  font-family: $ff-body;
+  font-size: $fz-body;
+  font-weight: $fw-body;
+  line-height: $lh-body;
+}
+
+a {
+  color: $c-link;
+  text-decoration: none;
+
+  &:hover {
+    color: $c-link-hover;
+  }
+
+  &:focus {
+    color: $c-primary;
+  }
+}
+
+
+// Sizes
+.text {
+  &-huge, &-big, &-medium {
+    margin-bottom: 1em;
+  }
+
+  &-huge {
+    font-size: $fz-huge;
+    line-height: $lh-huge;
+  }
+
+  &-big {
+    font-size: $fz-big;
+    line-height: $lh-big;
+  }
+
+  &-medium {
+    font-size: $fz-medium;
+    line-height: $lh-medium;
+  }
+
+  &-small {
+    font-size: $fz-small;
+    line-height: $lh-small;
+  }
+
+  // set default font state.
+  &-body {
+    font-size: $fz-body;
+    line-height: $lh-body;
+  }
+}
+
+// Colors
+.text {
+  @each $type, $color in $c-map {
+    &-#{$type} {
+      color: $color;
+    }
+  }
+}
+
+// Styles
+.text-light {
+  font-weight: $fw-light;
+}
+
+.text-normal {
+  font-weight: $fw-normal;
+}
+
+.text-lineThrough {
+  text-decoration: line-through;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+// titles after titles
+.text-withSubtitle {
+  margin-bottom: 0 !important;
+
+  + .text-huge,
+  + .text-big,
+  + .text-medium,
+  + .text-small, {
+    margin-top: .5em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: $fw-headings;
+}
+
+// Aligners
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}

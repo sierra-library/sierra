@@ -1,0 +1,57 @@
+/**
+ *  LOADING BAR
+ *
+ *  Markup:
+ *  ---------
+ *  <div class="loadingBar"></div>
+ *
+ */
+
+.loadingBar {
+  height: $h-loading-bar;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: $z-loading-bar;
+
+  &::before {
+    animation: loading 2s linear infinite;
+    background-color: $c-primary;
+    content: '';
+    display: block;
+    height: $h-loading-bar;
+    left: -$w-loading-bar;
+    position: absolute;
+    width: $w-loading-bar;
+  }
+}
+
+@keyframes loading {
+  from {
+    left: -$w-loading-bar;
+    width: 30%;
+  }
+
+  50% {
+    width: 30%;
+  }
+
+  70% {
+    width: 70%;
+  }
+
+  80% {
+    left: 50%;
+  }
+
+  95% {
+    left: 120%;
+  }
+
+  to {
+    left: 100%;
+  }
+}

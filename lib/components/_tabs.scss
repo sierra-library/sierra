@@ -1,0 +1,37 @@
+/**
+ *  TABS
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="tabs">
+ *    <a href="#" title="#" class="tabs-item">[...]</a>
+ *    <a href="#" title="#" class="tabs-item is-selected">[...]</a>
+ *  </div>
+ *
+ */
+
+.tabs {
+  border-bottom: $bdb-tabs;
+  text-align: center;
+
+  &-item {
+    border-bottom: $bdb-tabs-item;
+    color: $c-tabs-item;
+    display: inline-block;
+    margin: $m-tabs-item;
+    min-width: $miw-tabs-item;
+    padding: $p-tabs-item;
+    position: relative;
+
+    &:hover {
+      color: $c-tabs-item-hover;
+      text-decoration: none;
+    }
+
+    &.is-selected {
+      border-bottom: $bdb-tabs-item-selected;
+      color: $c-tabs-item-selected;
+    }
+  }
+}

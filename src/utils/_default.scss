@@ -1,0 +1,39 @@
+/**
+ *  MAIN RULES
+ */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: $bgc-body;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+p {
+  font-weight: normal;
+  margin-bottom: $mb-p;
+}
+
+img {
+  max-width: 100%;
+}
+
+strong {
+  font-weight: $fw-strong;
+}
+
+ul {
+  margin-bottom: $mb-ul;
+}
+
+li {
+  list-style: none;
+  margin-bottom: $mb-li;
+}

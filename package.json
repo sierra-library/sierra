@@ -1,8 +1,8 @@
 {
   "name": "sierra-library",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "The smallest and lightest scss library",
-  "main": "dist/sierra.min.css",
+  "main": "lib/index.scss",
   "repository": {
     "type": "git",
     "url": "https://github.com/sierra-library/sierra.git"
@@ -30,34 +30,20 @@
   ],
   "private": false,
   "devDependencies": {
-    "autoprefixer": "^6.3.5",
-    "css-mqpacker": "^4.0.1",
-    "csscomb": "^3.1.8",
-    "cssnano": "^3.5.2",
-    "gulp": "^3.9.0",
-    "gulp-combine-mq": "^0.4.0",
-    "gulp-csscomb": "^3.0.6",
-    "gulp-csso": "^1.0.1",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-minify-css": "^1.2.2",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-postcss": "^6.1.0",
-    "gulp-rename": "~1.2.2",
-    "gulp-sass": "^2.1.1",
-    "gulp-size": "^2.0.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-util": "^3.0.7"
+    "autoprefixer": "8",
+    "cpx": "1",
+    "node-sass": "4",
+    "nodemon": "1",
+    "postcss-cli": "2"
   },
-  "dependencies": {
-    "opencollective": "^1.0.3"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/sierra",
-    "logo": "https://opencollective.com/opencollective/logo.txt"
-  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "scripts": {
-    "postinstall": "opencollective postinstall"
+    "build": "npm run build:prod && npm run build:dev && cpx 'src/**/*.*' ./lib",
+    "build:prod": "node-sass --include-path scss src/index.scss dist/sierra.min.css  --output-style compressed && postcss --use autoprefixer dist/sierra.min.css -d dist/",
+    "build:dev": "node-sass --include-path scss src/index.scss dist/sierra.css && postcss --use autoprefixer dist/sierra.css -d dist/",
+    "watch": "nodemon -e scss -x \"npm run build\""
   }
 }

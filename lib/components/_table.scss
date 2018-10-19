@@ -1,0 +1,123 @@
+/**
+ *  TABLE
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <table class="table">
+ *    <tr>
+ *      <th>First column</th>
+ *      <th>Second column</th>
+ *      <th>Third column</th>
+ *    </tr>
+ *    <tr>
+ *      <td="First column">Blue</td>
+ *      <td="Second column">One</td>
+ *      <td="Third column">My life fades</td>
+ *    </tr>
+ *  </table>
+ *
+ */
+
+
+.table {
+  background-color: $bgc-table;
+  border: $bd-table;
+  border-collapse: collapse;
+  color: $c-table-text;
+  max-width: $mwi-table;
+  width: $w-table;
+
+  th,
+  td {
+    border-bottom: $bd-table;
+    padding:  $p-table-cell;
+    position: relative;
+  }
+
+  thead {
+    border-bottom: $bd-table;
+  }
+
+  th {
+    background-color: $bgc-table-header;
+    color: $c-table-heading;
+    font-size: $fz-table-heading;
+    font-weight: $fw-table-heading;
+    padding: $p-table-heading;
+    white-space: nowrap;
+  }
+}
+
+/**
+ *  TABLE RESPONSIVE
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <table class="table table--responsive">
+ *    <tr>
+ *      <th>First column</th>
+ *      <th>Second column</th>
+ *      <th>Third column</th>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Blue</td>
+ *      <td data-th="Second column">One</td>
+ *      <td data-th="Third column">My life fades</td>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Green</td>
+ *      <td data-th="Second column">Two</td>
+ *      <td data-th="Third column">
+ *        when the world was powered by the black fuel... and the desert
+ *        sprouted great cities of pipe and steel.
+ *      </td>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Yellow</td>
+ *      <td data-th="Second column">Three</td>
+ *      <td data-th="Third column">
+ *        A whirlwind of looting, a firestorm of fear.
+ *      </td>
+ *    </tr>
+ *  </table>
+ *
+ */
+
+.table--responsive {
+
+  th {
+    display: none;
+  }
+
+  td {
+    @include media-breakpoint-down(sm) {
+      border: 0;
+    }
+    display: block;
+
+    &::before {
+      @include media-breakpoint-up(sm) {
+        display: none;
+      }
+      color: $c-table-heading;
+      content: attr(data-th)': ';
+      display: block;
+      font-weight: normal;
+    }
+
+    &:first-child {
+      border-top: $bd-table;
+    }
+  }
+
+  th,
+  td {
+    @include media-breakpoint-up(sm) {
+      border-top: $bd-table;
+      display: table-cell;
+    }
+    text-align: left;
+  }
+}

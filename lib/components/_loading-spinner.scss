@@ -1,0 +1,139 @@
+/**
+ *  LOADING SPINNER
+ *
+ *  Markup:
+ *  ---------
+ *  <div class='loadingSpinner'>
+ *    <span class='loadingSpinner-inner'></span>
+ *    <span class='loadingSpinner-inner'></span>
+ *    <span class='loadingSpinner-inner'></span>
+ *    <span class='loadingSpinner-inner'></span>
+ *  </div>
+ *
+ */
+
+.loadingSpinner {
+  animation: rotateLoader 4s infinite;
+  animation-timing-function: ease-in-out;
+  display: block;
+  height: $size-loading-spinner;
+  left: 50%;
+  margin-left: -$size-loading-spinner / 2;
+  margin-top: -$size-loading-spinner / 2;
+  position: fixed;
+  top: 50%;
+  width: $size-loading-spinner;
+  z-index: $z-loading-spinner;
+
+  &-inner {
+    animation-timing-function: ease-in-out;
+    background-color: $bg-loading-spinner;
+    border-radius: 100%;
+    display: block;
+    height: $size-loading-spinner-inner;
+    position: absolute;
+    width: $size-loading-spinner-inner;
+
+    &:nth-child(1) {
+      animation: translateBall1 1s infinite;
+      left: 0;
+      top: 0;
+      transform: translate3d($size-loading-spinner-inner / 2, $size-loading-spinner-inner / 2, 0);
+    }
+
+    &:nth-child(2) {
+      animation: translateBall2 1s infinite;
+      right: 0;
+      top: 0;
+    }
+
+    &:nth-child(3) {
+      animation: translateBall3 1s infinite;
+      bottom: 0;
+      right: 0;
+    }
+
+    &:nth-child(4) {
+      animation: translateBall4 1s infinite;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+@keyframes rotateLoader {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes translateBall1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d($size-loading-spinner-inner / 2, $size-loading-spinner-inner / 2, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes translateBall2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-$size-loading-spinner-inner / 2, $size-loading-spinner-inner / 2, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes translateBall3 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-$size-loading-spinner-inner / 2, -$size-loading-spinner-inner / 2, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes translateBall4 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d($size-loading-spinner-inner / 2, -$size-loading-spinner-inner / 2, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}

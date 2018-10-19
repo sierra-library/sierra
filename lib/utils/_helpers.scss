@@ -1,0 +1,47 @@
+/**
+ *  FLOATS
+ */
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.clearfix {
+  ::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+/**
+ *  OTHERS
+ */
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.opacity-low {
+  opacity: .5;
+}
+
+.rounded-corners {
+  border-radius: 15%;
+}
+
+.rounded {
+  border-radius: 100%;
+}
