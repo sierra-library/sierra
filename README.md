@@ -5,7 +5,7 @@ Sierra Library
 
 The smallest and lightest scss library
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![npm version](https://badge.fury.io/js/sierra-library.svg)](https://badge.fury.io/js/sierra-library) [![Bower version](https://badge.fury.io/bo/sierra.svg)](https://badge.fury.io/bo/sierra)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![npm version](https://badge.fury.io/js/sierra-library.svg)](https://badge.fury.io/js/sierra-library)
 
 #### Online demo
 
@@ -17,9 +17,9 @@ What's the difference with other SCSS libraries?
 
 This is a micro SCSS library to help you build websites
 
-&nbsp; &nbsp; ✓ Only 37.03 kB (8.9 kB gzipped)<br>
+&nbsp; &nbsp; ✓ Only 32.9 kB (8.2 kB gzipped)<br>
 &nbsp; &nbsp; ✓ Modular<br>
-&nbsp; &nbsp; ✓ Adjust colors, borders, radius & sizes in the variables.scss file<br>
+&nbsp; &nbsp; ✓ Customize colors, borders, radius & sizes<br>
 &nbsp; &nbsp; ✓ Responsive
 
 Quick install
@@ -28,11 +28,6 @@ Quick install
 Using npm
 ```bash
 npm install sierra-library --save-dev
-```
-
-Using bower
-```bash
-bower install sierra --save
 ```
 
 Import
@@ -47,31 +42,41 @@ or directly in your html
 <link rel="stylesheet" href="dist/sierra.min.css">
 ```
 
+Customize
+-----------
+If you want to customize Sierra library's theme, create your own `custom-settings` file and add it just **before** importing sierra files:
+
+```scss
+@import 'custom-settings';
+@import 'sierra-library/scss/sierra';
+```
+
+This `custom-settings.scss` file should contain all those SCSS variables you want to overwrite:
+
+```scss
+$c-primary: #3498db;
+$c-secondary: #2ecc71;
+
+$fz-base: 18px;
+```
 
 Contributing
 -----------
-Please, before creating a new Pull Request, open an issue at [GitHub Issues](https://github.com/Sierra-Library/sierra/issues).
-Remember to specify if you are able or unable, to develop the enhancement/feature.
-
 
 #### Contributing rules
 - Do not include unrelated commits in the same Pull Request.
 - Use .editorconfig file located in the root folder. [More info](http://editorconfig.org/)
 - Use the .scss-lint file located in the root folder.
-- In order to make this library easy to maintain you can use mixins, placeholders and even functions if necessary. The golden rule here is keeping it as simple as possible. Sometimes is better a simple solution that takes a few more lines of code, rather than one that adds complexity for the sake of one-liners. Just use common sense here. In case of doubt join our chat at [sierra-library gitter](https://gitter.im/sierra-library/sierra).
-- Many selector names can be improved, but try to avoid changing them (do it only if strictly necessary). We will change them in the V3 with BEM naming.
+- In case of doubt, join our chat [sierra-library gitter](https://gitter.im/sierra-library/sierra).
 
 
 Who's Using This?
 -----------
 - [Appszoom](http://www.appszoom.com)
 - [Appszoom developers](http://www.appszoom.com/developers)
-- [Mobonaut](http://www.mobonaut.com)
 
-Are you using Sierra Library in your awesome project too? [drop us](mailto:dpam23@gmail.com) an email!
+Are you using Sierra Library in your awesome project too? [drop us](mailto:dpam23@gmail.com) an email.
 
 
 ---
 Made by [Joan Claret](http://joanclaret.github.io/) ([@dpam23](https://twitter.com/dpam23)) and [contributors](https://github.com/sierra-library/sierra/graphs/contributors) &nbsp;|&nbsp; This library is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
-
-Many thanks to [Angela Lareki](http://larekidesign.squarespace.com/) for designing some modules and [Joan Leon](https://twitter.com/nucliweb) for all the advices and linting files.
