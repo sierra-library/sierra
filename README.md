@@ -9,7 +9,7 @@ The smallest and lightest scss library
 
 #### Online demo
 
-[Visit demo website](http://sierra-library.github.io/).
+[Visit demo website](https://sierra-library.github.io/).
 
 
 What's the difference with other SCSS libraries?
@@ -79,4 +79,4 @@ Are you using Sierra Library in your awesome project too? [drop us](mailto:dpam2
 
 
 ---
-Made by [Joan Claret](http://joanclaret.github.io/) ([@dpam23](https://twitter.com/dpam23)) and [contributors](https://github.com/sierra-library/sierra/graphs/contributors) &nbsp;|&nbsp; This library is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
+Made by [Joan Claret](https://joanclaret.github.io/) ([@dpam23](https://twitter.com/dpam23)) and [contributors](https://github.com/sierra-library/sierra/graphs/contributors) &nbsp;|&nbsp; This library is licensed under the [GNU General Public License v2.0](https://github.com/sierra-library/sierra/blob/master/LICENSE.md).
