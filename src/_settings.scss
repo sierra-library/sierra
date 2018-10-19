@@ -93,24 +93,11 @@ $bd-medium: 1px solid $bdc-base !default;
 $bdr-base: 3px !default;
 $bdr-medium: $bdr-base !default;
 
-// Margin
-$m-xsmall: 2px !default;
-$m-small: 4px !default;
-$m-medium: 8px !default;
-$m-big: 16px !default;
-$m-huge: 24px !default;
-
-// Padding
-$p-small: 4px !default;
-$p-medium: 8px !default;
-$p-big: 16px !default;
-$p-huge: 24px !default;
-
-// Layout
-$w-gutter: 24px !default;
-$mwi-container: 1380px !default;
-$mwi-container-medium: 944px !default;
-$mwi-container-small: 400px !default;
+// Defaults (HTML elements)
+$fw-strong: $fw-bold !default;
+$mb-p: 1.5em !default;
+$mb-ul: 1em !default;
+$mb-li: 5em !default;
 
 // Grid
 $grid-breakpoints: (
@@ -130,6 +117,25 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px
 ) !default;
+
+// Margin
+$m-xsmall: 2px !default;
+$m-small: 4px !default;
+$m-medium: 8px !default;
+$m-big: 16px !default;
+$m-huge: 24px !default;
+
+// Padding
+$p-small: 4px !default;
+$p-medium: 8px !default;
+$p-big: 16px !default;
+$p-huge: 24px !default;
+
+// Layout
+$w-gutter: 24px !default;
+$mwi-container: 1380px !default;
+$mwi-container-medium: 944px !default;
+$mwi-container-small: 400px !default;
 
 
 /**

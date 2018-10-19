@@ -18,7 +18,7 @@ body {
 
 p {
   font-weight: normal;
-  margin-bottom: 1em;
+  margin-bottom: $mb-p;
 }
 
 img {
@@ -26,18 +26,14 @@ img {
 }
 
 strong {
-  font-weight: $fw-bold;
+  font-weight: $fw-strong;
 }
 
 ul {
-  margin-bottom: 1em;
+  margin-bottom: $mb-ul;
 }
 
 li {
   list-style: none;
-  margin-bottom: .5em;
-}
-
-pre {
-  margin-bottom: 2em !important;
+  margin-bottom: $mb-li;
 }
