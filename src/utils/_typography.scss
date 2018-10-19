@@ -79,7 +79,7 @@ a {
   font-weight: $fw-normal;
 }
 
-.text-line-through {
+.text-lineThrough {
   text-decoration: line-through;
 }
 
@@ -91,12 +91,8 @@ a {
   text-transform: uppercase;
 }
 
-.text-transform-none {
-  text-transform: none;
-}
-
 // titles after titles
-.text-with-subtitle {
+.text-withSubtitle {
   margin-bottom: 0 !important;
 
   + .text-huge,
