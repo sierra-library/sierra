@@ -208,6 +208,8 @@ pre {
     .section {
       padding-bottom: 48px;
       padding-top: 48px; } }
+  .section + .section {
+    padding-top: 0; }
 
 .container {
   margin: 0 auto;
@@ -320,7 +322,7 @@ a {
 .text-normal {
   font-weight: 400; }
 
-.text-line-through {
+.text-lineThrough {
   text-decoration: line-through; }
 
 .text-italic {
@@ -329,18 +331,12 @@ a {
 .text-uppercase {
   text-transform: uppercase; }
 
-.text-transform-none {
-  text-transform: none; }
-
-.text-center {
-  text-align: center; }
-
-.text-with-subtitle {
+.text-withSubtitle {
   margin-bottom: 0 !important; }
-  .text-with-subtitle + .text-huge,
-  .text-with-subtitle + .text-big,
-  .text-with-subtitle + .text-medium,
-  .text-with-subtitle + .text-small {
+  .text-withSubtitle + .text-huge,
+  .text-withSubtitle + .text-big,
+  .text-withSubtitle + .text-medium,
+  .text-withSubtitle + .text-small {
     margin-top: .5em; }
 
 h1,
@@ -1093,7 +1089,7 @@ input:-webkit-autofill {
  *      <a href="#" class="paginator-itemLink">1</a>
  *    </li>
  *    <li class="paginator-item">
- *      <a href="#" class="paginator-itemLink active">2</a>
+ *      <a href="#" class="paginator-itemLink is-active">2</a>
  *    </li>
  *    <li class="paginator-item">
  *      <a href="#" class="paginator-itemLink">3</a>
