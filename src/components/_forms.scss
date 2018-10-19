@@ -1,6 +1,34 @@
 /**
  *  FORMS
+ *
+ *  Markup:
+ *  ---------
+ *  <div class="input input-fullWidth">
+ *    <input id="#" placeholder="#" type="text">
+ *  </div>
+ *
+ *  <div class="select select-fullWidth">
+ *    <select name="#" id="#">
+ *      <option>Option 1</option>
+ *      <option>Option 2</option>
+ *    </select>
+ *  </div>
+ *
+ *  <div class="textarea">
+ *    <textarea id="#"></textarea>
+ *  </div>
+ *
+ *  <div class="radio">
+ *    <input id="#" name="#" type="radio" value="">
+ *    <label for="#">Radio button</label>
+ *  </div>
+ *
+ *  <div class="checkbox">
+ *    <input id="#" name="#" type="checkbox" value="">
+ *    <label for="#">Checkbox</label>
+ *  </div>
  */
+
 
 // prevent input default appearence on webkit
 input,
