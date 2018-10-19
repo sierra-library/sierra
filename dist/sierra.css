@@ -1,5 +1,5 @@
 /**
- *  VARIABLES
+ *  SETTINGS
  */
 /**
  *  COMPONENTS
@@ -48,7 +48,7 @@ body {
 
 p {
   font-weight: normal;
-  margin-bottom: 1em; }
+  margin-bottom: 1.5em; }
 
 img {
   max-width: 100%; }
@@ -61,10 +61,7 @@ ul {
 
 li {
   list-style: none;
-  margin-bottom: .5em; }
-
-pre {
-  margin-bottom: 2em !important; }
+  margin-bottom: 5em; }
 
 /**
  *  BACKGROUND
@@ -251,9 +248,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5em; }
-
-p {
-  margin-bottom: 1.5em; }
 
 a {
   color: #1abc9c;
@@ -481,6 +475,33 @@ button {
 
 /**
  *  FORMS
+ *
+ *  Markup:
+ *  ---------
+ *  <div class="input input-fullWidth">
+ *    <input id="#" placeholder="#" type="text">
+ *  </div>
+ *
+ *  <div class="select select-fullWidth">
+ *    <select name="#" id="#">
+ *      <option>Option 1</option>
+ *      <option>Option 2</option>
+ *    </select>
+ *  </div>
+ *
+ *  <div class="textarea">
+ *    <textarea id="#"></textarea>
+ *  </div>
+ *
+ *  <div class="radio">
+ *    <input id="#" name="#" type="radio" value="">
+ *    <label for="#">Radio button</label>
+ *  </div>
+ *
+ *  <div class="checkbox">
+ *    <input id="#" name="#" type="checkbox" value="">
+ *    <label for="#">Checkbox</label>
+ *  </div>
  */
 input,
 textarea {
@@ -857,7 +878,7 @@ input:-webkit-autofill {
 /**
  *  LOADING SPINNER
  *
- *  Markdown:
+ *  Markup:
  *  ---------
  *  <div class='loadingSpinner'>
  *    <span class='loadingSpinner-inner'></span>
