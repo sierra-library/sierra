@@ -34,7 +34,7 @@ Import
 -----------
 In sass files (recommended)
 ```scss
-@import 'sierra-library/dist/sierra';
+@import 'sierra-library/lib/index';
 ```
 
 or directly in your html
@@ -48,7 +48,7 @@ If you want to customize Sierra library's theme, create your own `custom-setting
 
 ```scss
 @import 'custom-settings';
-@import 'sierra-library/scss/sierra';
+@import 'sierra-library/lib/index';
 ```
 
 This `custom-settings.scss` file should contain all those SCSS variables you want to overwrite:
