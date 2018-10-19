@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+src
+dist
+.editorconfig
+.gitignore
+.sass-lint.yml
+.scss-lint.yml

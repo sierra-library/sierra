@@ -1,8 +1,8 @@
 {
   "name": "sierra-library",
-  "version": "3.0.0",
+  "version": "3.0.0-b",
   "description": "The smallest and lightest scss library",
-  "main": "src/index.scss",
+  "main": "lib/index.scss",
   "repository": {
     "type": "git",
     "url": "https://github.com/sierra-library/sierra.git"
@@ -31,16 +31,17 @@
   "private": false,
   "devDependencies": {
     "autoprefixer": "8",
+    "cpx": "1",
     "node-sass": "4",
     "nodemon": "1",
     "postcss-cli": "2"
   },
   "browserslist": [
-   "> 1%",
-   "last 2 versions"
- ],
+    "> 1%",
+    "last 2 versions"
+  ],
   "scripts": {
-    "build": "npm run build:prod && npm run build:dev",
+    "build": "npm run build:prod && npm run build:dev && cpx 'src/**/*.*' ./lib",
     "build:prod": "node-sass --include-path scss src/index.scss dist/sierra.min.css  --output-style compressed && postcss --use autoprefixer dist/sierra.min.css -d dist/",
     "build:dev": "node-sass --include-path scss src/index.scss dist/sierra.css && postcss --use autoprefixer dist/sierra.css -d dist/",
     "watch": "nodemon -e scss -x \"npm run build\""
