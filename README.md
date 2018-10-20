@@ -10,7 +10,8 @@ The smallest and lightest scss library
 #### Online demo
 
 [Visit demo website](https://sierra-library.github.io/).
-[Visit Customization example](https://sierra-library.github.io/examples/example1/index.html).
+
+[Visit a theme customization example](https://sierra-library.github.io/examples/example1/index.html).
 
 
 What's the difference with other SCSS libraries?
@@ -61,7 +62,11 @@ $c-secondary: #2ecc71;
 $fz-base: 18px;
 ```
 
-You can find a customization example here: [website ](https://sierra-library.github.io/examples/example1/index.html) [code ](https://github.com/sierra-library/sierra-library.github.io/tree/master/examples/example1)
+You can find a customization example here
+
+[website ](https://sierra-library.github.io/examples/example1/index.html)
+
+[code ](https://github.com/sierra-library/sierra-library.github.io/tree/master/examples/example1)
 
 Contributing
 -----------
