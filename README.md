@@ -61,12 +61,12 @@ $c-secondary: #2ecc71;
 
 $fz-base: 18px;
 ```
-
+#### Examples
 You can find a customization example here
 
-[website ](https://sierra-library.github.io/examples/example1/index.html)
+[Theme customization example](https://sierra-library.github.io/examples/example1/index.html)
 
-[code ](https://github.com/sierra-library/sierra-library.github.io/tree/master/examples/example1)
+[Theme customization example code ](https://github.com/sierra-library/sierra-library.github.io/tree/master/examples/example1)
 
 Contributing
 -----------
