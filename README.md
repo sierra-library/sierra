@@ -62,7 +62,6 @@ $c-secondary: #2ecc71;
 $fz-base: 18px;
 ```
 #### Examples
-You can find a customization example here
 
 [Theme customization example](https://sierra-library.github.io/examples/example1/index.html)
 
