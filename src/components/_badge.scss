@@ -30,6 +30,7 @@
   @each $type, $color in $badges-color-map {
     &--#{$type} {
       background-color: $color;
+      color: $c-badge-colored;
     }
   }
 }
