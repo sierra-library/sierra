@@ -548,7 +548,7 @@ button {
     color: #03a9f4; }
     .button--outlined:hover {
       background-color: transparent;
-      color: #03a9f4;
+      color: rgba(3, 169, 244, 0.8);
       opacity: .8; }
 
 /**
