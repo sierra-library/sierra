@@ -113,10 +113,11 @@ $p-big: 16px !default;
 $p-huge: 36px !default;
 
 // Layout
-$w-gutter: 24px !default;
+$bgc-container: transparent !default;
 $mwi-container: 1380px !default;
 $mwi-container-medium: 944px !default;
 $mwi-container-small: 400px !default;
+$w-gutter: 24px !default;
 
 // Grid
 $grid-breakpoints: (
@@ -230,7 +231,7 @@ $bdb-tabs: $bd-medium !default;
 $c-tabs-item-hover: $c-primary !default;
 $c-tabs-item-selected: $c-primary !default;
 $c-tabs-item: $c-gray !default;
-$m-tabs-item: 0 $m-huge 0 0 !default;
+$m-tabs-item: 0 $m-medium 0 0 !default;
 $miw-tabs-item: 70px !default;
 $p-tabs-item: $p-big !default;
 
@@ -253,6 +254,6 @@ $bg-tag: $c-light !default;
 $bdr-tag: $bdr-medium 0 0 $bdr-medium !default;
 $c-tag: $c-text !default;
 $lh-tag: 16px !default;
-$m-tag: 0 $m-huge $m-medium 0 !default;
+$m-tag: 0 $m-medium $m-medium 0 !default;
 $p-tag: $p-medium !default;
 $size-tag-dot: 5px !default;
