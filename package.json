@@ -1,6 +1,6 @@
 {
   "name": "sierra-library",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "The smallest and lightest scss library",
   "main": "lib/index.scss",
   "repository": {
