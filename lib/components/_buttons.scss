@@ -96,7 +96,7 @@ button {
 
     &:hover {
       background-color: rgba($c-white, .8);
-      color: $c-primary;
+      color: rgba($c-primary, .8);
     }
   }
 
@@ -122,9 +122,23 @@ button {
 
   &--transparent {
     background-color: transparent;
+    color: $c-button-transparent;
 
     &:hover {
       background-color: transparent;
+      color: rgba($c-button-transparent, .8);
+      opacity: .8;
+    }
+  }
+
+  &--outlined {
+    background-color: transparent;
+    border: $bd-medium;
+    color: $c-primary;
+
+    &:hover {
+      background-color: transparent;
+      color: $c-primary;
       opacity: .8;
     }
   }

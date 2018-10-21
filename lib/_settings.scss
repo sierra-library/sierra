@@ -13,18 +13,18 @@ $c-info: #5bc0de !default;
 $c-warning: #f0ad4e !default;
 $c-error: #e74c3c !default;
 $c-gray: #969da6 !default;
-$c-gray-light: #edf3f6 !default;
+$c-gray-light: #eceff1 !default;
 
-$c-primary: #1abc9c !default;
-$c-secondary: #9b59b6 !default;
+$c-primary: #03a9f4 !default;
+$c-secondary: #e91e63 !default;
 $c-dark: #18232f !default;
-$c-light: #34495e !default;
+$c-light: $c-gray-light !default;
 
-$c-text: $c-white !default;
+$c-text: #607d8b !default;
 $c-link: $c-primary !default;
 $c-link-hover: rgba($c-primary, .8) !default;
 
-$bgc-body: #2c3e50 !default;
+$bgc-body: $c-white !default;
 
 $c-map: (
   'primary':              $c-primary,
@@ -70,7 +70,7 @@ $fw-base: 400 !default;
 $fz-base: 16px !default;
 $lh-base: 1.5em !default;
 
-$fz-huge: 30px !default;
+$fz-huge: 36px !default;
 $fz-big: 24px !default;
 $fz-medium: $fz-base !default;
 $fz-small: 12px !default;
@@ -88,7 +88,7 @@ $fw-body: $fw-base !default;
 $lh-body: $lh-base !default;
 
 // Border
-$bdc-base: #465f78 !default;
+$bdc-base: #d5d9db !default;
 $bd-medium: 1px solid $bdc-base !default;
 $bdr-base: 3px !default;
 $bdr-medium: $bdr-base !default;
@@ -100,11 +100,11 @@ $mb-ul: 1em !default;
 $mb-li: .5em !default;
 
 // Margin
-$m-xsmall: 2px !default;
-$m-small: 4px !default;
-$m-medium: 8px !default;
-$m-big: 16px !default;
-$m-huge: 36px !default;
+$m-xsmall: 4px !default;
+$m-small: 8px !default;
+$m-medium: 16px !default;
+$m-big: 36px !default;
+$m-huge: 48px !default;
 
 // Padding
 $p-small: 4px !default;
@@ -143,6 +143,7 @@ $container-max-widths: (
 
 // Badges
 $c-badge: $c-text !default;
+$c-badge-colored: $c-white !default;
 $bg-badge: $c-light !default;
 $bdr-badge: $bdr-medium !default;
 $lh-badge: 1.2em !default;
@@ -161,10 +162,11 @@ $badges-color-map: (
 
 // Buttons
 $bg-button: $c-primary !default;
-$c-button: $c-text !default;
+$c-button: $c-white !default;
+$c-button-transparent: $c-primary !default;
 $bdc-button: $bg-button !default;
 $bd-button: 1px solid $bdc-button !default;
-$bdr-button: $bdr-medium !default;
+$bdr-button: 200px !default;
 $ff-button: $ff-body !default;
 $fz-button: $fz-medium !default;
 $fw-button: $fw-bold !default;
@@ -196,19 +198,19 @@ $bd-form-error: 1px solid $c-error !default;
 $bgc-form-error: $bgc-form !default;
 
 // Loading bar
-$h-loading-bar: 4px !default;
+$h-loading-bar: 6px !default;
 $w-loading-bar: 300px !default;
 $z-loading-bar: 1000 !default;
 
 // Loading spinner
-$bg-loading-spinner: $c-white !default;
+$bg-loading-spinner: $c-secondary !default;
 $size-loading-spinner-inner: 9px !default;
 $size-loading-spinner: 30px !default;
 $z-loading-spinner: 1000 !default;
 
 // Notification
 $bdr-notification: $bdr-medium !default;
-$c-notification: $c-text !default;
+$c-notification: $c-white !default;
 $mb-notification: $m-big !default;
 $p-notification: $p-big !default;
 
@@ -218,7 +220,7 @@ $bdr-paginator-item: $bdr-medium !default;
 $bg-paginator-item: $c-light !default;
 $c-paginator-item: $c-text !default;
 $bg-paginator-item-active: $c-primary !default;
-$c-paginator-item-active: $c-text !default;
+$c-paginator-item-active: $c-white !default;
 $p-paginator-item: $p-medium $p-big !default;
 
 // Tabs
