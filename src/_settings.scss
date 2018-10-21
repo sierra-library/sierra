@@ -25,7 +25,6 @@ $c-link: $c-primary !default;
 $c-link-hover: rgba($c-primary, .8) !default;
 
 $bgc-body: $c-white !default;
-$bgc-container: transparent !default;
 
 $c-map: (
   'primary':              $c-primary,
@@ -114,10 +113,11 @@ $p-big: 16px !default;
 $p-huge: 36px !default;
 
 // Layout
-$w-gutter: 24px !default;
+$bgc-container: transparent !default;
 $mwi-container: 1380px !default;
 $mwi-container-medium: 944px !default;
 $mwi-container-small: 400px !default;
+$w-gutter: 24px !default;
 
 // Grid
 $grid-breakpoints: (
