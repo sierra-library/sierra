@@ -134,11 +134,11 @@ button {
   &--outlined {
     background-color: transparent;
     border: $bd-medium;
-    color: $c-primary;
+    color: $c-button-outlined;
 
     &:hover {
       background-color: transparent;
-      color: $c-primary;
+      color: rgba($c-button-outlined, .8);
       opacity: .8;
     }
   }
