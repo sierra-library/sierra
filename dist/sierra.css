@@ -538,7 +538,7 @@ button {
   .button--transparent {
     background-color: transparent;
     color: #03a9f4; }
-    .button--transparent:hover {
+    .button--transparent:active, .button--transparent:hover, .button--transparent:focus {
       background-color: transparent;
       color: rgba(3, 169, 244, 0.8);
       opacity: .8; }
@@ -546,7 +546,7 @@ button {
     background-color: transparent;
     border: 1px solid #d5d9db;
     color: #03a9f4; }
-    .button--outlined:hover {
+    .button--outlined:active, .button--outlined:hover, .button--outlined:focus {
       background-color: transparent;
       color: rgba(3, 169, 244, 0.8);
       opacity: .8; }

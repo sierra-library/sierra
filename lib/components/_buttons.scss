@@ -124,7 +124,9 @@ button {
     background-color: transparent;
     color: $c-button-transparent;
 
-    &:hover {
+    &:active,
+    &:hover,
+    &:focus {
       background-color: transparent;
       color: rgba($c-button-transparent, .8);
       opacity: .8;
@@ -136,7 +138,9 @@ button {
     border: $bd-medium;
     color: $c-button-outlined;
 
-    &:hover {
+    &:active,
+    &:hover,
+    &:focus {
       background-color: transparent;
       color: rgba($c-button-outlined, .8);
       opacity: .8;
