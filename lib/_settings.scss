@@ -173,7 +173,7 @@ $ff-button: $ff-body !default;
 $fz-button: $fz-medium !default;
 $fw-button: $fw-bold !default;
 $lh-button: $lh-body !default;
-$m-button: 0 $m-medium $m-medium $m-medium !default;
+$m-button: 0 $m-small $m-medium $m-small !default;
 $p-button: $p-medium $p-big !default;
 $tt-button: uppercase !default;
 
@@ -181,7 +181,7 @@ $fz-button-big: $fz-big !default;
 $p-button-big: $p-big $p-huge !default;
 
 $fz-button-small: $fz-small !default;
-$p-button-small: $p-small $p-medium !default;
+$p-button-small: $p-small $p-big !default;
 
 // Forms
 $bgc-form: $c-light !default;

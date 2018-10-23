@@ -304,7 +304,7 @@ li {
  *  TYPOGRAPHY
  */
 body {
-  color: #607d8b;
+  color: #272727;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -424,7 +424,7 @@ h4 {
 .badge {
   background-color: #eceff1;
   border-radius: 3px;
-  color: #607d8b;
+  color: #272727;
   display: inline-block;
   line-height: 1.2em;
   padding: 8px 16px; }
@@ -479,7 +479,7 @@ button {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5em;
-  margin: 0 16px 16px 16px;
+  margin: 0 8px 16px 8px;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
@@ -505,7 +505,7 @@ button {
     padding: 16px 36px; }
   .button--small {
     font-size: 12px;
-    padding: 4px 8px; }
+    padding: 4px 16px; }
   @media (max-width: 991px) {
     .button--mobileFull {
       margin-left: 0;
@@ -636,7 +636,7 @@ input:-webkit-autofill {
     background-color: transparent;
     border: 0;
     border-radius: 0;
-    color: #607d8b;
+    color: #272727;
     display: block;
     font-size: 16px;
     line-height: 1.5em;
@@ -678,7 +678,7 @@ input:-webkit-autofill {
   .textarea textarea {
     background: transparent;
     border: 0;
-    color: #607d8b;
+    color: #272727;
     display: block;
     font-family: "Lato", sans-serif;
     font-size: 16px;
@@ -823,7 +823,7 @@ input:-webkit-autofill {
     border: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
-    color: #607d8b;
+    color: #272727;
     font-size: 16px;
     line-height: 1.5em;
     margin: 0;
@@ -1235,7 +1235,7 @@ input:-webkit-autofill {
   background-color: #eceff1;
   border: 1px solid #d5d9db;
   border-collapse: collapse;
-  color: #607d8b;
+  color: #272727;
   max-width: 100%;
   width: 100%; }
   .table th,
@@ -1374,7 +1374,7 @@ input:-webkit-autofill {
 .tag {
   background-color: #eceff1;
   border-radius: 3px 0 0 3px;
-  color: #607d8b;
+  color: #272727;
   display: inline-block;
   line-height: 16px;
   margin: 0 16px 16px 0;
