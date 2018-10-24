@@ -250,7 +250,7 @@ li {
   opacity: .5; }
 
 .rounded-corners {
-  border-radius: 15%; }
+  border-radius: 5px; }
 
 .rounded {
   border-radius: 100%; }
