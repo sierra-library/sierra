@@ -1,9 +1,9 @@
-![Sierra cover](http://sierra-library.github.io/img/github/github-cover.png)
+<p align="center">
+    <a href="https://sierra-library.github.io/" target="_blank"><img width="400" src="http://sierra-library.github.io/img/github/github-cover.svg"></a><br> 
+    The smallest and lightest scss library
+</p>
 
-Sierra Library
-========================================
-
-The smallest and lightest scss library
+---
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sierra-library/sierra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![npm version](https://badge.fury.io/js/sierra-library.svg)](https://badge.fury.io/js/sierra-library)
 
