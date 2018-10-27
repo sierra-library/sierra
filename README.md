@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://sierra-library.github.io/" target="_blank"><img width="500" src="http://sierra-library.github.io/img/github/github-cover2.svg"></a><br> 
+    <a href="https://sierra-library.github.io/" target="_blank"><img width="500" src="http://sierra-library.github.io/img/github/github-cover-2.svg"></a><br> 
     The smallest and lightest scss library
 </p>
 
