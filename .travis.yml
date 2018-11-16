@@ -14,6 +14,6 @@ branches:
   - master
   - stable
 script:
-  - npm run build:prod
+  - npm run build
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
