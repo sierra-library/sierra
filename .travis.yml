@@ -1,0 +1,17 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+    - node_modules
+notifications:
+  email:
+    - dpam23@gmail.com
+node_js:
+  - '10'
+  - '9'
+after_success:
+  - npm run travis-deploy-once "npm run semantic-release"
+branches:
+  only:
+  - master
+  - stable
