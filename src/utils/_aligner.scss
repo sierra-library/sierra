@@ -42,7 +42,7 @@
   align-self: flex-end;
 }
 
-.aligner--grow,
-.flex-grow {
+.flex-grow, // deprecated selector
+.aligner--grow {
   flex-grow: 1;
 }
