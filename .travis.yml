@@ -9,9 +9,11 @@ notifications:
 node_js:
   - '10'
   - '9'
-after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
 branches:
   only:
   - master
   - stable
+script:
+  - npm run build:prod
+after_success:
+  - npm run travis-deploy-once "npm run semantic-release"
