@@ -39,9 +39,7 @@
     "husky": "1",
     "node-sass": "4",
     "nodemon": "1",
-    "postcss-cli": "2",
-    "travis-deploy-once": "5",
-    "semantic-release": "15"
+    "postcss-cli": "2"
   },
   "browserslist": [
     "> 1%",
@@ -52,9 +50,7 @@
     "build:prod": "node-sass --include-path scss src/index.scss dist/sierra.min.css  --output-style compressed && postcss --use autoprefixer dist/sierra.min.css -d dist/",
     "build:dev": "node-sass --include-path scss src/index.scss dist/sierra.css && postcss --use autoprefixer dist/sierra.css -d dist/",
     "co": "git cz",
-    "watch": "nodemon -e scss -x \"npm run build\"",
-    "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "watch": "nodemon -e scss -x \"npm run build\""
   },
   "config": {
     "commitizen": {
