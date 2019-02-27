@@ -53,7 +53,7 @@ input:-webkit-autofill {
   border: $bd-form;
   border-radius: $bdr-form;
   box-shadow: none;
-  display: block;
+  display: inline-block;
   font-weight: normal;
   margin-bottom: 20px;
   overflow: hidden;
@@ -140,7 +140,13 @@ input:-webkit-autofill {
 .textarea {
   background-color: $bgc-form;
   padding: 0;
-  width: 100%;
+
+  &-fullWidth {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
 
   textarea {
     background: transparent;
