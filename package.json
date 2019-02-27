@@ -47,7 +47,7 @@
     "last 2 versions"
   ],
   "scripts": {
-    "publish": "npm run build && npm run np",
+    "publish": "npm run build",
     "build": "npm run build:prod && npm run build:dev && cpx 'src/**/*.*' ./lib",
     "build:prod": "node-sass --include-path scss src/index.scss dist/sierra.min.css  --output-style compressed && postcss --use autoprefixer dist/sierra.min.css -d dist/",
     "build:dev": "node-sass --include-path scss src/index.scss dist/sierra.css && postcss --use autoprefixer dist/sierra.css -d dist/",
