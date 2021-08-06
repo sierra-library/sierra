@@ -26,41 +26,6 @@
     }
   ],
   "private": false,
-  "devDependencies": {
-    "@commitlint/cli": "7",
-    "@commitlint/config-conventional": "7",
-    "autoprefixer": "8",
-    "commitizen": "3",
-    "cpx": "1",
-    "cz-conventional-changelog": "2",
-    "husky": "1",
-    "node-sass": "4",
-    "nodemon": "1",
-    "np": "3",
-    "postcss-cli": "2"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "scripts": {
-    "publish": "npm run build",
-    "build": "npm run build:prod && npm run build:dev && cpx 'src/**/*.*' ./lib",
-    "build:prod": "node-sass --include-path scss src/index.scss dist/sierra.min.css  --output-style compressed && postcss --use autoprefixer dist/sierra.min.css -d dist/",
-    "build:dev": "node-sass --include-path scss src/index.scss dist/sierra.css && postcss --use autoprefixer dist/sierra.css -d dist/",
-    "co": "git cz",
-    "watch": "nodemon -e scss -x \"npm run build\""
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "bugs": {
     "url": "https://github.com/sierra-library/sierra/issues"
   },
