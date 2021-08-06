@@ -5,7 +5,7 @@
   "main": "lib/index.scss",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sierra-library/sierra.git"
+    "url": "git+https://github.com/webksde/sierra.git"
   },
   "keywords": [
     "scss",
