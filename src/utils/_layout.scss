@@ -23,8 +23,8 @@
   background-color: $bgc-container;
   margin: 0 auto;
   max-width: $mwi-container;
-  padding-left: $w-gutter / 2;
-  padding-right: $w-gutter / 2;
+  padding-left: $w-gutter * 0.5;
+  padding-right: $w-gutter * 0.5;
   width: 100%;
 }
 
@@ -35,8 +35,8 @@
   }
   margin: 0 auto;
   max-width: $mwi-container-medium;
-  padding-left: $w-gutter / 2;
-  padding-right: $w-gutter / 2;
+  padding-left: $w-gutter * 0.5;
+  padding-right: $w-gutter * 0.5;
 }
 
 .container-small {
@@ -46,6 +46,6 @@
   }
   margin: 0 auto;
   max-width: $mwi-container-small;
-  padding-left: $w-gutter / 2;
-  padding-right: $w-gutter / 2;
+  padding-left: $w-gutter * 0.5;
+  padding-right: $w-gutter * 0.5;
 }

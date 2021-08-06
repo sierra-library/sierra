@@ -2,10 +2,12 @@
 //
 // Generate semantic grid columns with these mixins.
 
+@use "sass:math";
+
 @mixin make-container() {
   width: 100%;
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width * 0.5);
+  padding-left: ($grid-gutter-width * 0.5);
   margin-right: auto;
   margin-left: auto;
 }
@@ -23,8 +25,8 @@
 @mixin make-row() {
   display: flex;
   flex-wrap: wrap;
-  margin-right: ($grid-gutter-width / -2);
-  margin-left: ($grid-gutter-width / -2);
+  margin-right: math.div($grid-gutter-width, -2);
+  margin-left: math.div($grid-gutter-width, -2);
 }
 
 @mixin make-col-ready() {
@@ -34,19 +36,19 @@
   // later on to override this initial width.
   width: 100%;
   min-height: 1px; // Prevent collapsing
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width * 0.5);
+  padding-left: ($grid-gutter-width * 0.5);
 }
 
 @mixin make-col($size, $columns: $grid-columns) {
-  flex: 0 0 percentage($size / $columns);
+  flex: 0 0 percentage(math.div($size, $columns));
   // Add a `max-width` to ensure content within each column does not blow out
   // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
   // do not appear to require this.
-  max-width: percentage($size / $columns);
+  max-width: percentage(math.div($size, $columns));
 }
 
 @mixin make-col-offset($size, $columns: $grid-columns) {
-  $num: $size / $columns;
+  $num: math.div($size, $columns);
   margin-left: if($num == 0, 0, percentage($num));
 }

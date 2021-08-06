@@ -36,9 +36,9 @@
 
   // triangle arrow
   &::before {
-    border-bottom: ($lh-tag / 2) + $p-tag solid transparent;
+    border-bottom: ($lh-tag * 0.5) + $p-tag solid transparent;
     border-left: $p-tag solid $bg-tag;
-    border-top: ($lh-tag / 2) + $p-tag solid transparent;
+    border-top: ($lh-tag * 0.5) + $p-tag solid transparent;
     content: '';
     height: 0;
     position: absolute;
@@ -53,9 +53,9 @@
     border-radius: 100%;
     content: '';
     height: $size-tag-dot;
-    margin-top: -$size-tag-dot / 2;
+    margin-top: -$size-tag-dot * 0.5;
     position: absolute;
-    right: -$size-tag-dot / 2;
+    right: -$size-tag-dot * 0.5;
     top: 50%;
     width: $size-tag-dot;
   }
