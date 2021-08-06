@@ -5,7 +5,7 @@
   "main": "lib/index.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sierra-library/sierra.git"
+    "url": "git+https://github.com/sierra-library/sierra.git"
   },
   "keywords": [
     "scss",
@@ -19,10 +19,7 @@
     "lightweight",
     "frontend"
   ],
-  "author": {
-    "name": "Sierra-library",
-    "url": "https://github.com/sierra-library"
-  },
+  "author": "Sierra-library (https://github.com/sierra-library)",
   "licenses": [
     {
       "type": "GNU General Public License v2.0."
@@ -63,5 +60,10 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/sierra-library/sierra/issues"
+  },
+  "homepage": "https://github.com/sierra-library/sierra#readme",
+  "license": "ISC"
 }
