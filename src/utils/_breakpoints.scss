@@ -71,7 +71,10 @@
       @content;
     }
   } @else {
-    @content;
+    // Largest (last) breakpoint
+    @media (max-width: (map-get($grid-breakpoints, $name) - 1px)) {
+      @content;
+    }
   }
 }
 

@@ -331,7 +331,7 @@ input:-webkit-autofill {
   &-icon {
     fill: $c-form-input-icon;
     height: $size-form-input-icon;
-    margin-top: -$size-form-input-icon / 2;
+    margin-top: -$size-form-input-icon * 0.5;
     position: absolute;
     right: $m-medium;
     top: 50%;
